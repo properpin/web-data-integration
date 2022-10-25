@@ -33,7 +33,7 @@ public class SevenMil implements Matchable {
 
 	protected String id;
 	protected String provenance;
-	// private List<Industry> industries;
+	private List<String> industries;
 	protected String name;
 	private Integer foundingYear;
 	private String country;
@@ -43,7 +43,7 @@ public class SevenMil implements Matchable {
 	public SevenMil(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
-		// industries = new LinkedList<>();
+		industries = new LinkedList<>();
 	}
 
 	@Override
@@ -64,19 +64,19 @@ public class SevenMil implements Matchable {
 		this.name = name;
 	}
 
-	// public String getIndustries() {
-		// return industries;
-	// }
+	public List<String> getIndustries() {
+		return industries;
+	}
 
-	// public void setIndustries(List<Industry> industries) {
-	// 	this.industries = industries;
-	// }
+	public void setIndustries(List<String> industries) {
+		this.industries = industries;
+	}
 
 	public Integer getFoundingYear() {
 		return foundingYear;
 	}
 
-	public void setDate(Integer foundingYear) {
+	public void setFoundingYear(Integer foundingYear) {
 		this.foundingYear = foundingYear;
 	}
 	
@@ -92,7 +92,7 @@ public class SevenMil implements Matchable {
 		return city;
 	}
 
-	public void setcity(String city) {
+	public void setCity(String city) {
 		this.city = city;
 	}
 
