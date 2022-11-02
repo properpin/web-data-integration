@@ -4,7 +4,9 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
@@ -68,14 +70,14 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new MovieDateComparator2Years(), 0.5);
-		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
+		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
+//		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByDecadeGenerator());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
+		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 30);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
@@ -93,9 +95,9 @@ public class IR_using_linear_combination
 //		  correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 //		 Alternative: Create a maximum-weight, bipartite matching
-//		 MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-//		 maxWeight.run();
-//		 correspondences = maxWeight.getResult();
+		 MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		 maxWeight.run();
+		 correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
