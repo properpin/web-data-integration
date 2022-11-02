@@ -1,0 +1,41 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+SELECT
+?name
+(GROUP_CONCAT(DISTINCT ?ind_label; SEPARATOR=",") AS  ?industry_label_list)
+?revenue
+?netIncome
+?equity
+?numEmployees
+(GROUP_CONCAT( DISTINCT ?locationCity_label; SEPARATOR=",") AS  ?locationCity_list)
+?stockSymbol
+(GROUP_CONCAT(DISTINCT ?tradedAs; SEPARATOR=",") AS  ?tradedAs_list) 
+(GROUP_CONCAT( DISTINCT ?ceo_name; SEPARATOR=",") AS  ?ceo_name_list)
+?foundingDate
+(GROUP_CONCAT( DISTINCT ?founded; SEPARATOR=",") AS ?founded_list)
+WHERE {
+?x a dbo:Company . 
+?x rdfs:label ?name . 
+?x dbo:industry ?industry .
+?industry rdfs:label ?ind_label . 
+?x dbo:numberOfEmployees ?numEmployees .
+?x dbo:revenue ?revenue .
+
+OPTIONAL {
+?x dbo:netIncome ?netIncome .
+?x dbo:equity ?equity .
+?x dbp:symbol ?stockSymbol .
+?x dbp:tradedAs ?tradedAs .
+?x dbp:keyPeople ?ceo .
+?ceo rdfs:label ?ceo_name .
+?x dbo:foundingDate ?foundingDate .
+?x dbp:founded ?founded .
+?x dbo:locationCity ?locationCity .
+?locationCity rdfs:label ?locationCity_label .
+}
+FILTER(
+LANG(?name)="en" 
+&& LANG(?ind_label)="en"
+)}
