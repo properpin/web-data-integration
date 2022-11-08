@@ -59,7 +59,7 @@ public class DBpedia implements Matchable {
 	protected String provenance;
     private String name;
     private List<String> industries;
-	private Integer revenue;
+	private Long revenue;
 	private Integer foundingYear;
     private String city;
     private Long numberOfEmployees;
@@ -98,11 +98,11 @@ public class DBpedia implements Matchable {
 		this.industries = industries;
 	}
 	
-	public Integer getRevenue() {
+	public Long getRevenue() {
 		return revenue;
 	}
 
-	public void setRevenue(Integer revenue) {
+	public void setRevenue(Long revenue) {
 		this.revenue = revenue;
 	}
 

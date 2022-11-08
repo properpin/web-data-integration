@@ -30,23 +30,23 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class FTXMLReader extends XMLMatchableReader<FT, Attribute>  {
+public class FtXMLReader extends XMLMatchableReader<Ft, Attribute>  {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
-	protected void initialiseDataset(DataSet<FT, Attribute> dataset) {
+	protected void initialiseDataset(DataSet<Ft, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 		
 	}
 	
 	@Override
-	public FT createModelFromElement(Node node, String provenanceInfo) {
+	public Ft createModelFromElement(Node node, String provenanceInfo) {
 		String id = getValueFromChildElement(node, "id");
 
 		// create the object with id and provenance information
-		FT ft = new FT(id, provenanceInfo);
+		Ft ft = new Ft(id, provenanceInfo);
 
 		// fill the attributes
 		ft.setName(getValueFromChildElement(node, "name"));

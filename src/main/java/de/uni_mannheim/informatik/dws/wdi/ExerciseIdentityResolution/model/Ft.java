@@ -23,7 +23,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class FT implements Matchable {
+public class Ft implements Matchable {
 
 	/*
 	 example entry 
@@ -62,7 +62,7 @@ public class FT implements Matchable {
 	private String website;
 
 
-	public FT(String identifier, String provenance) {
+	public Ft(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
 		industries = new LinkedList<>();
@@ -164,8 +164,8 @@ public class FT implements Matchable {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof FT){
-			return this.getIdentifier().equals(((FT) obj).getIdentifier());
+		if(obj instanceof Ft){
+			return this.getIdentifier().equals(((Ft) obj).getIdentifier());
 		}else
 			return false;
 	}
