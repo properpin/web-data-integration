@@ -2,6 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 
+
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
@@ -9,8 +10,11 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Mo
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpediaXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.FtXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.MovieXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -54,67 +58,89 @@ public class IR_using_linear_combination
     {
 		// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
-		HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+		//HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
+		//new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
+		//HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
+		//new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+		
+		HashedDataSet<DBpedia, Attribute> dataFt = new HashedDataSet<>();
+		new DBpediaXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
 		
 		HashedDataSet<DBpedia, Attribute> dataDBpedia = new HashedDataSet<>();
 		new DBpediaXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
+		// MatchingGoldStandard gsTest = new MatchingGoldStandard();
+		// gsTest.loadFromCSVFile(new File(
+		//		"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+		
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+				"data/goldstandard/GS_ft_db.csv"));
 
 		// create a matching rule
-		LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+		//LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
+		//		0.7);
+		LinearCombinationMatchingRule<DBpedia, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+		
 		// create debug report in csv
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
+		// matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_ft_db_test.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
-		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
+		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
+		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
+		
+		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.5);
+		// matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
 		
 
 		// create a blocker (blocking strategy)
 //		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByDecadeGenerator());
-//		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
-		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 30);
-		blocker.setMeasureBlockSizes(true);
+		NoBlocker<DBpedia, Attribute> blocker = new NoBlocker<>();
+		// SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 30);
+		// blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		// blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		
+		// StandardRecordBlocker<DBpedia, Attribute> blocker = new StandardRecordBlocker<DBpedia, Attribute>(new MovieBlockingKeyByDecadeGenerator());
 		
 		// Initialize Matching Engine
-		MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
+		MatchingEngine<DBpedia, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
-		Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAcademyAwards, dataActors, null, matchingRule,
+		
+		//Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
+		//		dataAcademyAwards, dataActors, null, matchingRule,
+		//		blocker);
+		
+		Processable<Correspondence<DBpedia, Attribute>> correspondences = engine.runIdentityResolution(
+				dataFt, dataDBpedia, null, matchingRule,
 				blocker);
-
+		
+		// TODO: Exercise anschauen und minimal example ausführen
+		
 		// Create a top-1 global matching
 //		  correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 //		 Alternative: Create a maximum-weight, bipartite matching
-		 MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		 MaximumBipartiteMatchingAlgorithm<DBpedia,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
 		 maxWeight.run();
 		 correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
-		
+		// new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
+		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_dbpedia_correspondences.csv"), correspondences);		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
-		MatchingEvaluator<Movie, Attribute> evaluator = new MatchingEvaluator<Movie, Attribute>();
+		MatchingEvaluator<DBpedia, Attribute> evaluator = new MatchingEvaluator<DBpedia, Attribute>();
 		Performance perfTest = evaluator.evaluateMatching(correspondences,
 				gsTest);
 
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("DBpedia <-> FT");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
