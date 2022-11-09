@@ -99,24 +99,24 @@ FT_ID_745,dbpedia_2480,1.0,pkn orlen,pkn orlen,True
 FT_ID_163,dbpedia_3321,1.0,deutsche post,deutsche post,True
 FT_ID_1204,dbpedia_6444,1.0,leidos,leidos,True
 FT_ID_206,dbpedia_1236,1.0,gilead sciences,gilead sciences,True
-FT_ID_1051,dbpedia_6650,0.9743589743589743,teva pharmaceutical,teva pharmaceuticals,False
+FT_ID_1051,dbpedia_6650,0.9743589743589743,teva pharmaceutical,teva pharmaceuticals,True
 FT_ID_415,dbpedia_2794,0.9473684210526316,rwe group,rewe group,False
 FT_ID_1936,dbpedia_5043,0.9411764705882353,tmx group,tx group,False
-FT_ID_98,dbpedia_2660,0.9230769230769231,sanofi ,sanofi,False
+FT_ID_98,dbpedia_2660,0.9230769230769231,sanofi ,sanofi,True
 FT_ID_256,dbpedia_80,0.9189189189189189,kb financial group,fbl financial group,False
-FT_ID_1362,dbpedia_3494,0.9166666666666666,brown-forman,brown–forman,False
+FT_ID_1362,dbpedia_3494,0.9166666666666666,brown-forman,brown–forman,True
 FT_ID_1451,dbpedia_6392,0.9090909090909091,ss&c technologies,sys technologies,False
-FT_ID_1281,dbpedia_2387,0.9032258064516129,banco de sabadell,banco sabadell,False
+FT_ID_1281,dbpedia_2387,0.9032258064516129,banco de sabadell,banco sabadell,True
 FT_ID_1436,dbpedia_1076,0.9032258064516129,thor industries,toray industries,False
 FT_ID_1021,dbpedia_3274,0.9019607843137255,ia financial corporation,doral financial corporation,False
-FT_ID_1002,dbpedia_5837,0.9,eletrobrás,eletrobras,False
-FT_ID_1121,dbpedia_4474,0.9,west fraser timber co.,west fraser timber,False
+FT_ID_1002,dbpedia_5837,0.9,eletrobrás,eletrobras,True
+FT_ID_1121,dbpedia_4474,0.9,west fraser timber co.,west fraser timber,True
 FT_ID_57,dbpedia_3467,0.9,taiwan semiconductor,varian semiconductor,False
 FT_ID_697,dbpedia_1222,0.9,s&p global,wsp global,False
-FT_ID_630,dbpedia_514,0.896551724137931,deutsche boerse,deutsche börse,False
+FT_ID_630,dbpedia_514,0.896551724137931,deutsche boerse,deutsche börse,True
 FT_ID_1975,dbpedia_1836,0.8888888888888888,jb financial group,op financial group,False
 FT_ID_413,dbpedia_1964,0.8888888888888888,ctbc financial,atb financial,False
-FT_ID_1316,dbpedia_3162,0.88,international airlines,international airlines group,False
+FT_ID_1316,dbpedia_3162,0.88,international airlines,international airlines group,True
 FT_ID_356,dbpedia_427,0.88,gree electric appliances,gome electrical appliances,False
 FT_ID_1056,dbpedia_3332,0.875,3i group,ei group,False
 FT_ID_1212,dbpedia_2201,0.875,experian,nexperia,False
@@ -127,14 +127,14 @@ FT_ID_1436,dbpedia_3602,0.8666666666666667,thor industries,topy industries,False
 FT_ID_1940,dbpedia_6443,0.8648648648648649,asm international,haynes international,False
 FT_ID_1877,dbpedia_3354,0.8648648648648649,wesco international,tyco international,False
 FT_ID_1690,dbpedia_2011,0.8648648648648649,sba communications,axis communications,False
-FT_ID_1632,dbpedia_1261,0.8636363636363636,interactive brokers group,interactive brokers,False
-FT_ID_56,dbpedia_3907,0.8571428571428572,santander,santander uk,False
+FT_ID_1632,dbpedia_1261,0.8636363636363636,interactive brokers group,interactive brokers,True
+FT_ID_56,dbpedia_3907,0.8571428571428572,santander,santander uk,True
 FT_ID_1182,dbpedia_5137,0.8571428571428572,sto express,sf express,False
 FT_ID_1163,dbpedia_2176,0.8571428571428572,cj corporation,zi corporation,False
 FT_ID_631,dbpedia_3801,0.8571428571428572,labcorp,tabcorp,False
 FT_ID_213,dbpedia_5611,0.8571428571428572,takeda pharmaceutical,otsuka pharmaceutical,False
 FT_ID_1983,dbpedia_1830,0.8571428571428572,unity software,nsite software,False
-FT_ID_1816,dbpedia_2661,0.8571428571428572,sartorius,sartorius ag,False
+FT_ID_1816,dbpedia_2661,0.8571428571428572,sartorius,sartorius ag,True
 FT_ID_995,dbpedia_4892,0.8571428571428572,aercap holdings,ezra holdings,False
 FT_ID_596,dbpedia_2079,0.8571428571428572,rogers communications,hearst communications,False
 FT_ID_1017,dbpedia_5729,0.8571428571428572,agc,agco,False
@@ -145,13 +145,13 @@ FT_ID_309,dbpedia_4796,0.85,american electric,american electric power,False
 FT_ID_1537,dbpedia_1256,0.8484848484848485,sinopac financial,intact financial,False
 FT_ID_459,dbpedia_1076,0.8484848484848485,toyota industries,toray industries,False
 FT_ID_1524,dbpedia_1761,0.8461538461538461,bank of india,bank of china,False
-FT_ID_38,dbpedia_4507,0.8461538461538461,bnp paribas,bnp paribas cib,False
+FT_ID_38,dbpedia_4507,0.8461538461538461,bnp paribas,bnp paribas cib,True
 FT_ID_432,dbpedia_5268,0.8444444444444444,national bank of canada,national bank of kenya,False
 FT_ID_822,dbpedia_2652,0.8421052631578947,absa group,sas group,False
 FT_ID_886,dbpedia_5988,0.8421052631578947,cez group,cbre group,False
 FT_ID_415,dbpedia_5988,0.8421052631578947,rwe group,cbre group,False
 FT_ID_1877,dbpedia_6408,0.8421052631578947,wesco international,tower international,False
-FT_ID_185,dbpedia_2548,0.8421052631578947,mizuho financial,mizuho financial group,False
+FT_ID_185,dbpedia_2548,0.8421052631578947,mizuho financial,mizuho financial group,True
 FT_ID_831,dbpedia_651,0.8421052631578947,cms energy,tc energy,False
 FT_ID_1656,dbpedia_1239,0.8421052631578947,bawag group,bg group,False
 FT_ID_535,dbpedia_1828,0.8421052631578947,cbre group,crt group,False
@@ -195,7 +195,7 @@ FT_ID_1712,dbpedia_2689,0.8235294117647058,sumec corporation,disco corporation,F
 FT_ID_1452,dbpedia_3159,0.8235294117647058,adani enterprises,icahn enterprises,False
 FT_ID_63,dbpedia_5587,0.8235294117647058,bmw group,om group,False
 FT_ID_1712,dbpedia_6677,0.8235294117647058,sumec corporation,amrep corporation,False
-FT_ID_214,dbpedia_4626,0.8235294117647058,philip morris international,philip morris operations,False
+FT_ID_214,dbpedia_4626,0.8235294117647058,philip morris international,philip morris operations,True
 FT_ID_411,dbpedia_3684,0.8235294117647058,bt group,otb group,False
 FT_ID_72,dbpedia_3332,0.8235294117647058,aia group,ei group,False
 FT_ID_846,dbpedia_2630,0.8235294117647058,mtn group,bt group,False
@@ -218,7 +218,7 @@ FT_ID_1014,dbpedia_3439,0.8181818181818181,yango group,anora group,False
 FT_ID_233,dbpedia_4208,0.8163265306122449,canadian natural resources,alpha natural resources,False
 FT_ID_482,dbpedia_6798,0.8148148148148149,hyundai mobis,hyundai glovis,False
 FT_ID_389,dbpedia_1688,0.8148148148148149,american tower,american well,False
-FT_ID_138,dbpedia_5371,0.8148148148148149,caterpillar,caterpillar inc.,False
+FT_ID_138,dbpedia_5371,0.8148148148148149,caterpillar,caterpillar inc.,True
 FT_ID_1574,dbpedia_4911,0.8148148148148149,hna technology,m3 technology,False
 FT_ID_1587,dbpedia_4911,0.8148148148148149,dxc technology,m3 technology,False
 FT_ID_194,dbpedia_1056,0.8148148148148149,hca healthcare,ge healthcare,False
@@ -243,12 +243,12 @@ FT_ID_1279,dbpedia_1130,0.8108108108108107,yara international,finca internationa
 FT_ID_1877,dbpedia_6662,0.8108108108108107,wesco international,smit international,False
 FT_ID_213,dbpedia_3802,0.8095238095238095,takeda pharmaceutical,taisho pharmaceutical,False
 FT_ID_184,dbpedia_2278,0.8095238095238095,honeywell international,belle international,False
-FT_ID_1910,dbpedia_5384,0.8095238095238095,commercial metals,commercial metals company,False
+FT_ID_1910,dbpedia_5384,0.8095238095238095,commercial metals,commercial metals company,True
 FT_ID_1114,dbpedia_928,0.8095238095238095,siam commercial bank,united commercial bank,False
 FT_ID_587,dbpedia_3404,0.8095238095238095,baxter international,navistar international,False
 FT_ID_278,dbpedia_1691,0.8085106382978724,shinhan financial group,american financial group,False
 FT_ID_278,dbpedia_4031,0.8085106382978724,shinhan financial group,stancorp financial group,False
-FT_ID_800,dbpedia_5150,0.8076923076923077,samsung fire & marine,samsung fire & marine insurance,False
+FT_ID_800,dbpedia_5150,0.8076923076923077,samsung fire & marine,samsung fire & marine insurance,True
 FT_ID_358,dbpedia_484,0.2962962962962963,dollar general,jugopetrol ad,False
 FT_ID_514,dbpedia_4314,0.2962962962962963,ally financial,iac (company),False
 FT_ID_70,dbpedia_6001,0.2962962962962963,china life insurance,capreit,False
