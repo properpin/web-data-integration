@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
 public class NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity implements Comparator<DBpedia, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
-	private AbsoluteDifferenceSimilarity sim = new AbsoluteDifferenceSimilarity(10.0);
+	private AbsoluteDifferenceSimilarity sim = new AbsoluteDifferenceSimilarity(1000000.0);
 	
 	private ComparatorLogger comparisonLog;
 
