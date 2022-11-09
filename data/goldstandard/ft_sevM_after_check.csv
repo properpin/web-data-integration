@@ -1,0 +1,501 @@
+ft_id,sevM_id,LevScore,ft,sevMil,label
+FT_ID_129,7.1M_488,1.0,intesa sanpaolo,intesa sanpaolo,True
+FT_ID_191,7.1M_171,1.0,anz,anz,True
+FT_ID_1234,7.1M_1770,1.0,tenaris,tenaris,True
+FT_ID_322,7.1M_642,1.0,applied materials,applied materials,True
+FT_ID_1145,7.1M_474,1.0,leonardo,leonardo,True
+FT_ID_31,7.1M_184,1.0,comcast,comcast,True
+FT_ID_455,7.1M_1374,1.0,xcel energy,xcel energy,True
+FT_ID_504,7.1M_1922,1.0,lam research,lam research,True
+FT_ID_460,7.1M_144,1.0,astrazeneca,astrazeneca,True
+FT_ID_1363,7.1M_1174,1.0,assurant,assurant,True
+FT_ID_552,7.1M_142,1.0,aon,aon,True
+FT_ID_171,7.1M_56,1.0,lockheed martin,lockheed martin,True
+FT_ID_364,7.1M_576,1.0,poste italiane,poste italiane,True
+FT_ID_66,7.1M_319,1.0,abbvie,abbvie,True
+FT_ID_956,7.1M_1184,1.0,suncorp group,suncorp group,True
+FT_ID_842,7.1M_1284,1.0,cdw,cdw,True
+FT_ID_631,7.1M_903,1.0,labcorp,labcorp,True
+FT_ID_1496,7.1M_1698,1.0,acciona,acciona,True
+FT_ID_1326,7.1M_415,1.0,teleperformance,teleperformance,True
+FT_ID_204,7.1M_139,1.0,icici bank,icici bank,True
+FT_ID_1734,7.1M_552,1.0,rite aid,rite aid,True
+FT_ID_743,7.1M_988,1.0,dsm,dsm,True
+FT_ID_1664,7.1M_1035,1.0,autodesk,autodesk,True
+FT_ID_1009,7.1M_1909,1.0,edwards lifesciences,edwards lifesciences,True
+FT_ID_114,7.1M_22,1.0,oracle,oracle,True
+FT_ID_21,7.1M_49,1.0,unitedhealth group,unitedhealth group,True
+FT_ID_1838,7.1M_1958,1.0,wayfair,wayfair,True
+FT_ID_35,7.1M_62,1.0,morgan stanley,morgan stanley,True
+FT_ID_1124,7.1M_1551,1.0,givaudan,givaudan,True
+FT_ID_377,7.1M_235,1.0,state street,state street,True
+FT_ID_341,7.1M_1324,1.0,panasonic,panasonic,True
+FT_ID_187,7.1M_320,1.0,arcelormittal,arcelormittal,True
+FT_ID_300,7.1M_428,1.0,inditex,inditex,True
+FT_ID_85,7.1M_41,1.0,pepsico,pepsico,True
+FT_ID_779,7.1M_1731,1.0,astellas pharma,astellas pharma,True
+FT_ID_1710,7.1M_326,1.0,aramark,aramark,True
+FT_ID_789,7.1M_1969,1.0,zoetis,zoetis,True
+FT_ID_598,7.1M_623,1.0,m&t bank,m&t bank,True
+FT_ID_1667,7.1M_1715,1.0,twitter,twitter,True
+FT_ID_94,7.1M_434,1.0,chubb,chubb,True
+FT_ID_500,7.1M_420,1.0,aviva,aviva,True
+FT_ID_165,7.1M_994,1.0,broadcom,broadcom,True
+FT_ID_546,7.1M_422,1.0,magna international,magna international,True
+FT_ID_1231,7.1M_307,1.0,alstom,alstom,True
+FT_ID_759,7.1M_816,1.0,sandvik,sandvik,True
+FT_ID_141,7.1M_645,1.0,charles schwab,charles schwab,True
+FT_ID_615,7.1M_114,1.0,halliburton,halliburton,True
+FT_ID_711,7.1M_194,1.0,uber,uber,True
+FT_ID_5,7.1M_19,1.0,amazon,amazon,True
+FT_ID_150,7.1M_461,1.0,tesla,tesla,True
+FT_ID_267,7.1M_288,1.0,banco do brasil,banco do brasil,True
+FT_ID_224,7.1M_189,1.0,société générale,société générale,True
+FT_ID_471,7.1M_165,1.0,carrefour,carrefour,True
+FT_ID_258,7.1M_191,1.0,hp,hp,True
+FT_ID_272,7.1M_58,1.0,abb,abb,True
+FT_ID_310,7.1M_693,1.0,macquarie group,macquarie group,True
+FT_ID_1062,7.1M_750,1.0,mahindra & mahindra,mahindra & mahindra,True
+FT_ID_316,7.1M_1511,1.0,phillips 66,phillips 66,True
+FT_ID_15,7.1M_43,1.0,shell,shell,True
+FT_ID_503,7.1M_983,1.0,intuit,intuit,True
+FT_ID_538,7.1M_13,1.0,infosys,infosys,True
+FT_ID_446,7.1M_249,1.0,standard bank group,standard bank group,True
+FT_ID_613,7.1M_164,1.0,delta air lines,delta air lines,True
+FT_ID_127,7.1M_508,1.0,conocophillips,conocophillips,True
+FT_ID_39,7.1M_66,1.0,johnson & johnson,johnson & johnson,True
+FT_ID_12,7.1M_1280,1.0,bank of china,bank of china,True
+FT_ID_653,7.1M_1700,1.0,dte energy,dte energy,True
+FT_ID_547,7.1M_1242,1.0,analog devices,analog devices,True
+FT_ID_211,7.1M_145,1.0,nike,nike,True
+FT_ID_219,7.1M_232,1.0,travelers,travelers,True
+FT_ID_510,7.1M_157,1.0,continental,continental,True
+FT_ID_1229,7.1M_985,1.0,alcoa,alcoa,True
+FT_ID_553,7.1M_550,1.0,telus,telus,True
+FT_ID_524,7.1M_214,1.0,thales,thales,True
+FT_ID_1882,7.1M_1947,1.0,tenneco,tenneco,True
+FT_ID_277,7.1M_562,1.0,mckesson,mckesson,True
+FT_ID_544,7.1M_240,1.0,lg electronics,lg electronics,True
+FT_ID_1464,7.1M_1100,1.0,avery dennison,avery dennison,True
+FT_ID_214,7.1M_306,1.0,philip morris international,philip morris international,True
+FT_ID_215,7.1M_583,1.0,paypal,paypal,True
+FT_ID_25,7.1M_104,1.0,chevron,chevron,True
+FT_ID_64,7.1M_127,1.0,petrobras,petrobras,True
+FT_ID_28,7.1M_176,1.0,total,total,True
+FT_ID_1064,7.1M_1326,1.0,ucb,ucb,True
+FT_ID_467,7.1M_1931,1.0,kinder morgan,kinder morgan,True
+FT_ID_655,7.1M_684,1.0,nxp semiconductors,nxp semiconductors,True
+FT_ID_1786,7.1M_1042,1.0,manpower,manpower,True
+FT_ID_227,7.1M_246,1.0,aflac,aflac,True
+FT_ID_532,7.1M_1405,1.0,albertsons,albertsons,True
+FT_ID_1290,7.1M_1241,1.0,schaeffler,schaeffler,True
+FT_ID_595,7.1M_254,1.0,telstra,telstra,True
+FT_ID_951,7.1M_803,1.0,motorola solutions,motorola solutions,True
+FT_ID_283,7.1M_620,1.0,saint-gobain,saint-gobain,True
+FT_ID_332,7.1M_1150,1.0,discover financial services,discover financial services,True
+FT_ID_1174,7.1M_755,1.0,cemex,cemex,True
+FT_ID_266,7.1M_659,1.0,mastercard,mastercard,True
+FT_ID_968,7.1M_667,1.0,solvay,solvay,True
+FT_ID_1591,7.1M_1908,1.0,owens corning,owens corning,True
+FT_ID_423,7.1M_75,1.0,philips,philips,True
+FT_ID_1372,7.1M_808,1.0,netapp,netapp,True
+FT_ID_213,7.1M_933,0.9767441860465116,takeda pharmaceutical,takeda pharmaceuticals,True
+FT_ID_1051,7.1M_506,0.9743589743589743,teva pharmaceutical,teva pharmaceuticals,True
+FT_ID_858,7.1M_1633,0.96,t rowe price,t. rowe price,True
+FT_ID_221,7.1M_168,0.9545454545454546,mondelez international,mondelēz international,True
+FT_ID_112,7.1M_259,0.95,bristol myers squibb,bristol-myers squibb,True
+FT_ID_1066,7.1M_317,0.9473684210526316,akzo nobel,akzonobel,True
+FT_ID_1097,7.1M_1046,0.9411764705882353,dassault systemes,dassault systèmes,True
+FT_ID_583,7.1M_458,0.9411764705882353,colgate-palmolive,colgate palmolive,True
+FT_ID_312,7.1M_966,0.9411764705882353,swiss re ,swiss re,True
+FT_ID_501,7.1M_431,0.9375,sherwin-williams,sherwin williams,True
+FT_ID_120,7.1M_843,0.9333333333333333,credit agricole,crédit agricole,True
+FT_ID_591,7.1M_647,0.9333333333333333,parker-hannifin,parker hannifin,True
+FT_ID_98,7.1M_86,0.9230769230769231,sanofi ,sanofi,True
+FT_ID_318,7.1M_814,0.9230769230769231,repsol ,repsol,True
+FT_ID_256,7.1M_360,0.9189189189189189,kb financial group,bmo financial group,False
+FT_ID_1975,7.1M_360,0.9189189189189189,jb financial group,bmo financial group,False
+FT_ID_433,7.1M_735,0.9122807017543859,the estée lauder companies,the estée lauder companies inc.,True
+FT_ID_252,7.1M_283,0.9090909090909091,bayer ,bayer,True
+FT_ID_359,7.1M_762,0.9047619047619048,kraft heinz company,the kraft heinz company,True
+FT_ID_1281,7.1M_1794,0.9032258064516129,banco de sabadell,banco sabadell,True
+FT_ID_808,7.1M_734,0.9032258064516129,hcl technologies,ca technologies,False
+FT_ID_1279,7.1M_1250,0.8947368421052632,yara international,harman international,False
+FT_ID_1391,7.1M_360,0.8947368421052632,bnk financial group,bmo financial group,False
+FT_ID_1771,7.1M_360,0.8947368421052632,dgb financial group,bmo financial group,False
+FT_ID_382,7.1M_1954,0.8928571428571429,regeneron pharmaceuticals,"regeneron pharmaceuticals, inc.",True
+FT_ID_109,7.1M_1624,0.8888888888888888,enel,entel,False
+FT_ID_95,7.1M_15,0.8888888888888888,citic,citi,False
+FT_ID_514,7.1M_1854,0.8888888888888888,ally financial,lpl financial,False
+FT_ID_587,7.1M_377,0.8888888888888888,baxter international,baxter international inc.,True
+FT_ID_198,7.1M_295,0.8846153846153846,nab - national australia bank,national australia bank,True
+FT_ID_655,7.1M_1370,0.8823529411764706,nxp semiconductors,on semiconductor,False
+FT_ID_608,7.1M_888,0.88,stanley black & decker,"stanley black & decker, inc.",True
+FT_ID_1004,7.1M_1497,0.88,db insurance,qbe insurance,False
+FT_ID_876,7.1M_1245,0.88,commerzbank,commerzbank ag,True
+FT_ID_351,7.1M_133,0.8780487804878049,standard chartered,standard chartered bank,True
+FT_ID_213,7.1M_506,0.8780487804878049,takeda pharmaceutical,teva pharmaceuticals,False
+FT_ID_1450,7.1M_1792,0.875,mohawk industries,shaw industries,False
+FT_ID_1451,7.1M_734,0.875,ss&c technologies,ca technologies,False
+FT_ID_426,7.1M_737,0.875,dnb bank,dbs bank,False
+FT_ID_546,7.1M_1250,0.8717948717948718,magna international,harman international,False
+FT_ID_1288,7.1M_1209,0.8679245283018868,frontier communications parent,frontier communications,True
+FT_ID_194,7.1M_1999,0.8666666666666667,hca healthcare,sharp healthcare,False
+FT_ID_1690,7.1M_981,0.8648648648648649,sba communications,tata communications,False
+FT_ID_1503,7.1M_1440,0.8648648648648649,zebra technologies,zensar technologies,False
+FT_ID_1279,7.1M_422,0.8648648648648649,yara international,magna international,False
+FT_ID_1940,7.1M_1250,0.8648648648648649,asm international,harman international,False
+FT_ID_596,7.1M_1209,0.8636363636363636,rogers communications,frontier communications,False
+FT_ID_1598,7.1M_107,0.8636363636363636,samsung electro-mechanics,samsung electronics,False
+FT_ID_793,7.1M_506,0.8571428571428572,vertex pharmaceuticals,teva pharmaceuticals,False
+FT_ID_1324,7.1M_1709,0.8571428571428572,apa,afpa,False
+FT_ID_1202,7.1M_1960,0.8571428571428572,kerry group,kier group,False
+FT_ID_218,7.1M_177,0.8571428571428572,midea group,ikea group,False
+FT_ID_552,7.1M_111,0.8571428571428572,aon,avon,False
+FT_ID_658,7.1M_142,0.8571428571428572,aeon,aon,False
+FT_ID_1314,7.1M_947,0.8571428571428572,electronic arts,electronic arts (ea),True
+FT_ID_118,7.1M_220,0.8571428571428572,edf ,edf,True
+FT_ID_69,7.1M_1646,0.8571428571428572,equinor,equinox,False
+FT_ID_1351,7.1M_1651,0.8571428571428572,halkbank,akbank,False
+FT_ID_702,7.1M_1859,0.8571428571428572,trane technologies,tata technologies,False
+FT_ID_1170,7.1M_1814,0.8571428571428572,steel authority of india,steel authority of india limited,True
+FT_ID_1750,7.1M_1738,0.85,burlington stores,"burlington stores, inc.",True
+FT_ID_778,7.1M_149,0.85,american airlines group,american airlines,True
+FT_ID_569,7.1M_388,0.85,infineon technologies,indite technologies,False
+FT_ID_593,7.1M_360,0.85,woori financial group,bmo financial group,False
+FT_ID_622,7.1M_1250,0.85,hermès international,harman international,False
+FT_ID_622,7.1M_938,0.85,hermès international,nerium international,False
+FT_ID_175,7.1M_44,0.8484848484848485,dell technologies,hcl technologies,False
+FT_ID_702,7.1M_734,0.8484848484848485,trane technologies,ca technologies,False
+FT_ID_1503,7.1M_734,0.8484848484848485,zebra technologies,ca technologies,False
+FT_ID_1451,7.1M_1544,0.8484848484848485,ss&c technologies,fmc technologies,False
+FT_ID_1451,7.1M_44,0.8484848484848485,ss&c technologies,hcl technologies,False
+FT_ID_1712,7.1M_1880,0.8484848484848485,sumec corporation,bose corporation,False
+FT_ID_1869,7.1M_1854,0.8461538461538461,e-l financial,lpl financial,False
+FT_ID_1524,7.1M_1280,0.8461538461538461,bank of india,bank of china,False
+FT_ID_125,7.1M_1209,0.8444444444444444,charter communications,frontier communications,False
+FT_ID_1218,7.1M_1370,0.8421052631578947,on semiconductor corp.,on semiconductor,True
+FT_ID_574,7.1M_335,0.8421052631578947,lumen technologies,agilent technologies,False
+FT_ID_925,7.1M_794,0.8421052631578947,ww grainger,grainger,True
+FT_ID_1775,7.1M_177,0.8421052631578947,pik group,ikea group,False
+FT_ID_822,7.1M_1972,0.8421052631578947,absa group,uba group,False
+FT_ID_1727,7.1M_981,0.8421052631578947,shaw communications,tata communications,False
+FT_ID_596,7.1M_469,0.8372093023255813,rogers communications,charter communications,False
+FT_ID_90,7.1M_923,0.8372093023255813,glencore international,dyncorp international,False
+FT_ID_125,7.1M_507,0.8372093023255813,charter communications,rogers communications,False
+FT_ID_439,7.1M_1402,0.8333333333333334,principal financial group,lincoln financial group,False
+FT_ID_175,7.1M_388,0.8333333333333334,dell technologies,indite technologies,False
+FT_ID_1690,7.1M_866,0.8333333333333334,sba communications,cox communications,False
+FT_ID_1535,7.1M_729,0.8333333333333334,rexel,parexel,False
+FT_ID_1940,7.1M_422,0.8333333333333334,asm international,magna international,False
+FT_ID_1988,7.1M_422,0.8333333333333334,efg international,magna international,False
+FT_ID_1690,7.1M_486,0.8333333333333334,sba communications,l-3 communications,False
+FT_ID_57,7.1M_1370,0.8333333333333334,taiwan semiconductor,on semiconductor,False
+FT_ID_690,7.1M_501,0.8333333333333334,ecolab,escola,False
+FT_ID_734,7.1M_717,0.8333333333333334,singtel,sitel,False
+FT_ID_1475,7.1M_854,0.8333333333333334,ventas,vestas,False
+FT_ID_1763,7.1M_1859,0.8333333333333334,akamai technologies,tata technologies,False
+FT_ID_262,7.1M_219,0.8333333333333334,salesforce.com,salesforce,False
+FT_ID_1118,7.1M_360,0.8292682926829268,meritz financial group,bmo financial group,False
+FT_ID_928,7.1M_468,0.8292682926829268,united microelectronics,stmicroelectronics,False
+FT_ID_1542,7.1M_360,0.8292682926829268,mebuki financial group,bmo financial group,False
+FT_ID_613,7.1M_1588,0.8275862068965517,delta air lines,latam airlines,False
+FT_ID_985,7.1M_117,0.8275862068965517,tenet healthcare,ge healthcare,False
+FT_ID_278,7.1M_1402,0.8260869565217391,shinhan financial group,lincoln financial group,False
+FT_ID_1827,7.1M_252,0.8260869565217391,booz allen hamilton holding,booz allen hamilton,False
+FT_ID_1712,7.1M_1699,0.8235294117647058,sumec corporation,sabre corporation,False
+FT_ID_1607,7.1M_454,0.8235294117647058,stifel financial,sun life financial,False
+FT_ID_120,7.1M_1210,0.8235294117647058,credit agricole,crédit agricole cib,True
+FT_ID_985,7.1M_1140,0.8235294117647058,tenet healthcare,genesis healthcare,False
+FT_ID_411,7.1M_1972,0.8235294117647058,bt group,uba group,False
+FT_ID_574,7.1M_1544,0.8235294117647058,lumen technologies,fmc technologies,False
+FT_ID_1658,7.1M_1370,0.8235294117647058,will semiconductor,on semiconductor,False
+FT_ID_64,7.1M_652,0.8235294117647058,petrobras,petronas,False
+FT_ID_3,7.1M_17,0.8235294117647058,jpmorgan chase,jpmorgan chase & co.,True
+FT_ID_1763,7.1M_734,0.8235294117647058,akamai technologies,ca technologies,False
+FT_ID_1988,7.1M_1778,0.8235294117647058,efg international,hub international,False
+FT_ID_650,7.1M_292,0.8235294117647058,cgn power,ge power,False
+FT_ID_1940,7.1M_1778,0.8235294117647058,asm international,hub international,False
+FT_ID_906,7.1M_675,0.8235294117647058,alleghany,allergan,False
+FT_ID_985,7.1M_1419,0.8235294117647058,tenet healthcare,sentara healthcare,False
+FT_ID_596,7.1M_866,0.8205128205128205,rogers communications,cox communications,False
+FT_ID_1690,7.1M_507,0.8205128205128205,sba communications,rogers communications,False
+FT_ID_481,7.1M_360,0.8205128205128205,hana financial group,bmo financial group,False
+FT_ID_477,7.1M_1415,0.8181818181818181,dsv panalpina,panalpina,False
+FT_ID_793,7.1M_933,0.8181818181818181,vertex pharmaceuticals,takeda pharmaceuticals,False
+FT_ID_571,7.1M_1700,0.8181818181818181,devon energy,dte energy,False
+FT_ID_164,7.1M_1150,0.8163265306122449,pnc financial services,discover financial services,False
+FT_ID_854,7.1M_1847,0.8148148148148149,public storage,public sector,False
+FT_ID_835,7.1M_1497,0.8125,qbe insurance group,qbe insurance,False
+FT_ID_1712,7.1M_316,0.8125,sumec corporation,ncr corporation,False
+FT_ID_36,7.1M_137,0.8125,goldman sachs group,goldman sachs,True
+FT_ID_1712,7.1M_800,0.8125,sumec corporation,urs corporation,False
+FT_ID_175,7.1M_734,0.8125,dell technologies,ca technologies,False
+FT_ID_1524,7.1M_203,0.8125,bank of india,state bank of india,False
+FT_ID_1952,7.1M_1767,0.8125,xpo logistics,"xpo logistics, inc.",True
+FT_ID_1350,7.1M_1987,0.8125,smurfit kappa group,smurfit kappa,True
+FT_ID_702,7.1M_50,0.8108108108108107,trane technologies,huawei technologies,False
+FT_ID_622,7.1M_1778,0.8108108108108107,hermès international,hub international,False
+FT_ID_702,7.1M_388,0.8108108108108107,trane technologies,indite technologies,False
+FT_ID_574,7.1M_1440,0.8108108108108107,lumen technologies,zensar technologies,False
+FT_ID_1940,7.1M_938,0.8108108108108107,asm international,nerium international,False
+FT_ID_1727,7.1M_486,0.8108108108108107,shaw communications,l-3 communications,False
+FT_ID_1727,7.1M_866,0.8108108108108107,shaw communications,cox communications,False
+FT_ID_1988,7.1M_938,0.8108108108108107,efg international,nerium international,False
+FT_ID_861,7.1M_1440,0.8108108108108107,roper technologies,zensar technologies,False
+FT_ID_1391,7.1M_1402,0.8095238095238095,bnk financial group,lincoln financial group,False
+FT_ID_1518,7.1M_360,0.8095238095238095,fukuoka financial group,bmo financial group,False
+FT_ID_1762,7.1M_360,0.8095238095238095,juroku  financial group,bmo financial group,False
+FT_ID_622,7.1M_796,0.8095238095238095,hermès international,colliers international,False
+FT_ID_328,7.1M_1575,0.8095238095238095,saudi electricity,saudi electricity company,True
+FT_ID_1028,7.1M_1402,0.8085106382978724,american financial group,lincoln financial group,False
+FT_ID_1149,7.1M_506,0.2962962962962963,foshan haitian flavouring and food,teva pharmaceuticals,False
+FT_ID_607,7.1M_16,0.2962962962962963,nippon yusen,bank of america,False
+FT_ID_1205,7.1M_910,0.2941176470588235,eastman chemical,shoppers drug mart,False
+FT_ID_1569,7.1M_1334,0.2941176470588235,adani green energy,frieslandcampina,False
+FT_ID_391,7.1M_803,0.29268292682926833,sun hung kai properties,motorola solutions,False
+FT_ID_366,7.1M_1540,0.29268292682926833,china unicom,polska akademia rachunkowości,False
+FT_ID_120,7.1M_569,0.29268292682926833,credit agricole,us army corps of engineers,False
+FT_ID_1429,7.1M_1463,0.2909090909090909,chailease holding,school district of hillsborough county,False
+FT_ID_1166,7.1M_989,0.2857142857142857,coupang,dick's sporting goods,False
+FT_ID_1750,7.1M_313,0.2857142857142857,burlington stores,abn amro bank n.v.,False
+FT_ID_1822,7.1M_1439,0.2857142857142857,info edge india,aiesec,False
+FT_ID_377,7.1M_895,0.2857142857142857,state street,new york-presbyterian hospital,False
+FT_ID_408,7.1M_802,0.2857142857142857,heineken,hsbc retail banking and wealth management,False
+FT_ID_1237,7.1M_483,0.2857142857142857,illumina,altran,False
+FT_ID_737,7.1M_1996,0.2857142857142857,saudi arabian mining,caltrans,False
+FT_ID_1847,7.1M_587,0.2857142857142857,amadeus it group ,wells fargo home mortgage,False
+FT_ID_633,7.1M_408,0.2857142857142857,inpex,unicredit,False
+FT_ID_1677,7.1M_1952,0.2857142857142857,zheshang development group,indian air force,False
+FT_ID_481,7.1M_1461,0.2857142857142857,hana financial group,icon plc,False
+FT_ID_1514,7.1M_1336,0.2857142857142857,martin marietta materials,allscripts,False
+FT_ID_676,7.1M_1456,0.2857142857142857,republic services,ucla health,False
+FT_ID_318,7.1M_1237,0.2857142857142857,repsol ,hexaware technologies,False
+FT_ID_543,7.1M_327,0.2807017543859649,tokyo electron,"ministero istruzione, universita' e ricerca",False
+FT_ID_661,7.1M_1194,0.28,atlas copco,the children's hospital of philadelphia,False
+FT_ID_1764,7.1M_1276,0.28,ems-chemie holding,wake county public school system,False
+FT_ID_330,7.1M_1846,0.2777777777777778,nippon steel ,fraser health authority,False
+FT_ID_581,7.1M_724,0.2777777777777778,activision blizzard,va medical center,False
+FT_ID_1024,7.1M_1381,0.2777777777777778,continental resources,rijkswaterstaat,False
+FT_ID_65,7.1M_338,0.27586206896551724,deutsche telekom,comcast cable,False
+FT_ID_564,7.1M_1590,0.27586206896551724,muyuan foodstuff,quad/graphics,False
+FT_ID_485,7.1M_1239,0.27586206896551724,cme group,metro cash and carry,False
+FT_ID_1199,7.1M_1569,0.27586206896551724,expedia group,nestlé nespresso,False
+FT_ID_708,7.1M_1738,0.27586206896551724,mosaic,"burlington stores, inc.",False
+FT_ID_721,7.1M_390,0.27586206896551724,steel dynamics,coldwell banker,False
+FT_ID_1676,7.1M_1340,0.2727272727272727,sunny optical technology group,australia post,False
+FT_ID_1480,7.1M_241,0.2727272727272727,atmos energy,bombardier,False
+FT_ID_1976,7.1M_1143,0.2727272727272727,ampol ,philips lighting,False
+FT_ID_113,7.1M_573,0.2702702702702703,coca-cola,zurich insurance company ltd,False
+FT_ID_1123,7.1M_943,0.2702702702702703,chow tai fook jewellery,anglo american,False
+FT_ID_1720,7.1M_1183,0.2702702702702703,starwood property trust,hallmark cards,False
+FT_ID_225,7.1M_1325,0.2702702702702703,schneider electric,rbc capital markets,False
+FT_ID_878,7.1M_1600,0.2702702702702703,lg display,washington state university,False
+FT_ID_1596,7.1M_1924,0.2692307692307693,korea shipbuilding & offshore engineering,leo burnett,False
+FT_ID_1675,7.1M_1130,0.2666666666666667,wpg holdings,woolworths limited,False
+FT_ID_237,7.1M_687,0.2666666666666667,marathon petroleum,fedex ground,False
+FT_ID_1991,7.1M_1001,0.2666666666666667,match group,washington university in st. louis,False
+FT_ID_1233,7.1M_438,0.2666666666666667,goodyear,colegio,False
+FT_ID_1224,7.1M_1245,0.2666666666666667,turkish airlines,commerzbank ag,False
+FT_ID_1682,7.1M_1639,0.2666666666666667,next,media markt,False
+FT_ID_64,7.1M_959,0.2666666666666667,petrobras,dsv - global transport and logistics,False
+FT_ID_1067,7.1M_1535,0.2666666666666667,celanese,servier,False
+FT_ID_222,7.1M_1472,0.2666666666666667,mcdonald's,unisa,False
+FT_ID_861,7.1M_453,0.2666666666666667,roper technologies,insidesecure,False
+FT_ID_249,7.1M_1495,0.26086956521739135,general dynamics,agility,False
+FT_ID_1617,7.1M_1835,0.26086956521739135,kyushu financial group,discovery communications,False
+FT_ID_1235,7.1M_1920,0.26086956521739135,bluescope steel,l brands,False
+FT_ID_770,7.1M_1023,0.26086956521739135,fortis (canada),gobierno,False
+FT_ID_455,7.1M_1914,0.26086956521739135,xcel energy,diversey inc,False
+FT_ID_1199,7.1M_1700,0.26086956521739135,expedia group,dte energy,False
+FT_ID_1470,7.1M_1538,0.26086956521739135,charoen pokphand foods,university of notre dame,False
+FT_ID_249,7.1M_1220,0.26086956521739135,general dynamics,groupon,False
+FT_ID_278,7.1M_1307,0.25806451612903225,shinhan financial group,millicom,False
+FT_ID_1619,7.1M_724,0.25806451612903225,trip.com group,va medical center,False
+FT_ID_1321,7.1M_1069,0.25806451612903225,didi global,"santander bank, n.a.",False
+FT_ID_131,7.1M_1747,0.25806451612903225,us bancorp,construction industry,False
+FT_ID_1058,7.1M_1172,0.25806451612903225,jde peet's,flowserve corporation,False
+FT_ID_886,7.1M_211,0.2564102564102564,cez group,social security administration,False
+FT_ID_1536,7.1M_1358,0.2564102564102564,alliant energy,bon secours health system,False
+FT_ID_1648,7.1M_1434,0.2564102564102564,china communications services,specsavers,False
+FT_ID_1925,7.1M_431,0.25,rothschild & co.,sherwin williams,False
+FT_ID_470,7.1M_614,0.25,firstrand,coca-cola femsa,False
+FT_ID_764,7.1M_1157,0.25,great wall motor ,autoliv,False
+FT_ID_1476,7.1M_627,0.25,cooper companies,fnb south africa,False
+FT_ID_1472,7.1M_178,0.25,orient securities,cargill,False
+FT_ID_1447,7.1M_155,0.25,wistron,u.s. bank,False
+FT_ID_1808,7.1M_1973,0.25,american national group,food lion,False
+FT_ID_1777,7.1M_82,0.25,bank of suzhou,united states marine corps,False
+FT_ID_419,7.1M_1753,0.25,ericsson,virginia commonwealth university,False
+FT_ID_664,7.1M_937,0.24489795918367352,edp-energias de portugal,maxim healthcare services,False
+FT_ID_96,7.1M_1011,0.24390243902439024,lloyds banking group,government of alberta,False
+FT_ID_1971,7.1M_657,0.24242424242424243,musashino bank,wns global services,False
+FT_ID_1172,7.1M_293,0.24242424242424243,new world development,epam systems,False
+FT_ID_1393,7.1M_1123,0.24242424242424243,spotify technology,royal air force,False
+FT_ID_1437,7.1M_394,0.24242424242424243,williams-sonoma,american red cross,False
+FT_ID_288,7.1M_1534,0.24137931034482762,dominion energy,sağlık bakanlığı-turkish ministry of health,False
+FT_ID_1082,7.1M_140,0.24,shenzhen mindray bio-medical electronics,exxonmobil,False
+FT_ID_1976,7.1M_311,0.24,ampol ,european commission,False
+FT_ID_359,7.1M_1873,0.24,kraft heinz company,darden,False
+FT_ID_62,7.1M_1324,0.24,procter & gamble,panasonic,False
+FT_ID_1882,7.1M_1553,0.24,tenneco,university of iowa,False
+FT_ID_318,7.1M_136,0.23529411764705888,repsol ,nyc department of education,False
+FT_ID_1368,7.1M_997,0.23529411764705888,xcmg construction machinery,natixis,False
+FT_ID_1667,7.1M_1712,0.23529411764705888,twitter,nsw health,False
+FT_ID_372,7.1M_1173,0.23529411764705888,moderna,turner construction company,False
+FT_ID_1076,7.1M_1515,0.23529411764705888,guangzhou automobile group,law firm,False
+FT_ID_1836,7.1M_1192,0.23529411764705888,titan (india),university of calgary,False
+FT_ID_59,7.1M_1160,0.23529411764705888,ford motor,loblaw companies limited,False
+FT_ID_1785,7.1M_796,0.23076923076923073,atos,colliers international,False
+FT_ID_742,7.1M_1445,0.23076923076923073,mgm resorts,deloitte canada,False
+FT_ID_1516,7.1M_558,0.23076923076923073,kghm polska miedz,blackrock,False
+FT_ID_691,7.1M_835,0.23076923076923073,sinopharm group,houston isd,False
+FT_ID_850,7.1M_167,0.23076923076923073,genuine parts,merrill lynch,False
+FT_ID_965,7.1M_182,0.22857142857142854,shenwan hongyuan group,mary kay inc.,False
+FT_ID_1765,7.1M_744,0.22857142857142854,medical properties trust,snc-lavalin,False
+FT_ID_1985,7.1M_385,0.2222222222222222,swedish match,bureau veritas,False
+FT_ID_1673,7.1M_69,0.2222222222222222,bank of zhengzhou,state farm,False
+FT_ID_991,7.1M_1931,0.2222222222222222,suzano papel e celulose,kinder morgan,False
+FT_ID_1121,7.1M_461,0.2222222222222222,west fraser timber co.,tesla,False
+FT_ID_71,7.1M_1190,0.2222222222222222,roche holding,landmark group,False
+FT_ID_358,7.1M_1559,0.2222222222222222,dollar general,cathay pacific airways,False
+FT_ID_250,7.1M_1535,0.2222222222222222,power corp of canada,servier,False
+FT_ID_1422,7.1M_578,0.2222222222222222,adecco,the hartford,False
+FT_ID_338,7.1M_449,0.21621621621621623,marsh & mclennan,promsvyaznedvizhimost,False
+FT_ID_10,7.1M_1404,0.2142857142857143,alphabet,zurich north america,False
+FT_ID_1110,7.1M_1728,0.2142857142857143,credicorp,akamai technologies,False
+FT_ID_832,7.1M_347,0.2142857142857143,quinenco,publix super markets,False
+FT_ID_1529,7.1M_1194,0.21276595744680848,us foods,the children's hospital of philadelphia,False
+FT_ID_1642,7.1M_1270,0.21052631578947367,bank of kyoto,biogen,False
+FT_ID_169,7.1M_1139,0.21052631578947367,sk hynix,bridgestone,False
+FT_ID_472,7.1M_1796,0.21052631578947367,fujitsu,itc infotech,False
+FT_ID_66,7.1M_511,0.21052631578947367,abbvie,qatar airways,False
+FT_ID_657,7.1M_1584,0.21052631578947367,booking holdings,university of delaware,False
+FT_ID_404,7.1M_1258,0.21052631578947367,nokia,barnes & noble,False
+FT_ID_1595,7.1M_870,0.21052631578947367,quilter,north carolina state university,False
+FT_ID_211,7.1M_415,0.21052631578947367,nike,teleperformance,False
+FT_ID_1676,7.1M_1750,0.20833333333333337,sunny optical technology group,federal government,False
+FT_ID_70,7.1M_227,0.2068965517241379,china life insurance,nordstrom,False
+FT_ID_127,7.1M_1690,0.2068965517241379,conocophillips,jeunesse global,False
+FT_ID_814,7.1M_1196,0.2068965517241379,chongqing rural bank,skf group,False
+FT_ID_1393,7.1M_1085,0.20512820512820518,spotify technology,coca-cola enterprises,False
+FT_ID_1913,7.1M_1276,0.20512820512820518,grifols,wake county public school system,False
+FT_ID_1817,7.1M_1632,0.19999999999999996,tsim sha tsui properties,airbnb,False
+FT_ID_614,7.1M_561,0.19999999999999996,bharat petroleum,asda,False
+FT_ID_1642,7.1M_728,0.19999999999999996,bank of kyoto,gartner,False
+FT_ID_832,7.1M_543,0.19999999999999996,quinenco,university of illinois at urbana-champaign,False
+FT_ID_37,7.1M_1046,0.19999999999999996,hsbc holdings,dassault systèmes,False
+FT_ID_713,7.1M_1769,0.19999999999999996,gemdale,igt,False
+FT_ID_1304,7.1M_155,0.19999999999999996,china resources power,u.s. bank,False
+FT_ID_426,7.1M_965,0.19999999999999996,dnb bank,uk ministry of defence,False
+FT_ID_286,7.1M_875,0.19999999999999996,diageo,university of cincinnati,False
+FT_ID_437,7.1M_22,0.19999999999999996,michelin group,oracle,False
+FT_ID_945,7.1M_972,0.19512195121951215,alexandria real estate equities,baidu inc.,False
+FT_ID_1456,7.1M_237,0.19354838709677424,unicharm,the walt disney company,False
+FT_ID_1526,7.1M_273,0.19354838709677424,commercial bank of qatar ,dupont,False
+FT_ID_956,7.1M_1322,0.19354838709677424,suncorp group,allstate financial,False
+FT_ID_1084,7.1M_930,0.19047619047619047,tongwei,dignity health,False
+FT_ID_1104,7.1M_231,0.19047619047619047,bdo unibank,particular,False
+FT_ID_624,7.1M_1978,0.19047619047619047,koç holding,free-lance,False
+FT_ID_1370,7.1M_192,0.19047619047619047,yuexiu property ,eskom,False
+FT_ID_166,7.1M_991,0.19047619047619047,lukoil,vanderbilt university medical center,False
+FT_ID_525,7.1M_956,0.1875,bouygues,tecnológico de monterrey,False
+FT_ID_530,7.1M_1881,0.1875,bunge,maruti suzuki india limited,False
+FT_ID_846,7.1M_1743,0.18604651162790697,mtn group,austin independent school district,False
+FT_ID_309,7.1M_269,0.18181818181818177,american electric,pemex,False
+FT_ID_926,7.1M_1128,0.18181818181818177,viatris,lyft,False
+FT_ID_362,7.1M_1815,0.18181818181818177,hewlett packard enterprise,starcom,False
+FT_ID_1212,7.1M_548,0.18181818181818177,experian,"ping an insurance (group) company of china ,ltd",False
+FT_ID_1464,7.1M_1039,0.18181818181818177,avery dennison,fonterra,False
+FT_ID_1198,7.1M_1791,0.18181818181818177,umicore,mutual of omaha,False
+FT_ID_389,7.1M_1408,0.18181818181818177,american tower,wärtsilä,False
+FT_ID_1851,7.1M_850,0.18181818181818177,digital china group,adt,False
+FT_ID_91,7.1M_1250,0.18181818181818177,cisco systems,harman international,False
+FT_ID_657,7.1M_752,0.18181818181818177,booking holdings,atento,False
+FT_ID_144,7.1M_1149,0.18181818181818177,hitachi,unam,False
+FT_ID_1814,7.1M_1454,0.17647058823529416,suzuken,cedars-sinai medical center,False
+FT_ID_1797,7.1M_1637,0.17647058823529416,qingdao rural commercial bank,senac,False
+FT_ID_417,7.1M_1981,0.17647058823529416,aegon,nationwide childrens hospital,False
+FT_ID_646,7.1M_332,0.17647058823529416,cincinnati financial,kimberly-clark,False
+FT_ID_1525,7.1M_621,0.17391304347826086,rhb bank,indian railways,False
+FT_ID_1205,7.1M_1779,0.17391304347826086,eastman chemical,express,False
+FT_ID_592,7.1M_1023,0.17391304347826086,vedanta limited,gobierno,False
+FT_ID_50,7.1M_311,0.16666666666666663,intel,european commission,False
+FT_ID_1538,7.1M_879,0.16666666666666663,b3,ust global,False
+FT_ID_541,7.1M_444,0.16666666666666663,canadian pacific railway,leroy merlin,False
+FT_ID_923,7.1M_1419,0.16666666666666663,essity,sentara healthcare,False
+FT_ID_1639,7.1M_173,0.16666666666666663,world fuel services,aecom,False
+FT_ID_1208,7.1M_797,0.16666666666666663,banca mediolanum,flipkart,False
+FT_ID_709,7.1M_91,0.16666666666666663,bharti airtel,j.p. morgan,False
+FT_ID_1299,7.1M_1718,0.16666666666666663,banco bpm,cae,False
+FT_ID_1835,7.1M_1702,0.16666666666666663,sistema,anglogold ashanti,False
+FT_ID_173,7.1M_210,0.16000000000000003,westpac banking group,sncf,False
+FT_ID_946,7.1M_34,0.16000000000000003,julius baer group,vodafone,False
+FT_ID_654,7.1M_1367,0.16000000000000003,china hongqiao group,optus,False
+FT_ID_931,7.1M_30,0.15384615384615385,snam,mcdonald's corporation,False
+FT_ID_157,7.1M_1518,0.15384615384615385,walgreens,university of colorado boulder,False
+FT_ID_1056,7.1M_1498,0.15384615384615385,3i group,tivit,False
+FT_ID_457,7.1M_7,0.15384615384615385,synchrony financial,walmart,False
+FT_ID_441,7.1M_997,0.15384615384615385,fortum,natixis,False
+FT_ID_1755,7.1M_690,0.15384615384615385,bajaj auto,dhl supply chain,False
+FT_ID_1189,7.1M_364,0.14814814814814814,bank of changsha,rolls-royce,False
+FT_ID_1098,7.1M_1998,0.14814814814814814,gd power development,ryanair,False
+FT_ID_198,7.1M_515,0.14634146341463417,nab - national australia bank,office depot,False
+FT_ID_780,7.1M_1331,0.1428571428571429,kla,peace corps,False
+FT_ID_1886,7.1M_743,0.1428571428571429,grupa lotos,mtn,False
+FT_ID_528,7.1M_1964,0.13793103448275867,orange,department of justice and constitutional development,False
+FT_ID_1986,7.1M_537,0.1333333333333333,twilio,t-systems,False
+FT_ID_780,7.1M_1397,0.1333333333333333,kla,informeg srl,False
+FT_ID_846,7.1M_670,0.1333333333333333,mtn group,syntel,False
+FT_ID_103,7.1M_1788,0.1333333333333333,mitsubishi,aafes,False
+FT_ID_1632,7.1M_218,0.1333333333333333,interactive brokers group,iqvia,False
+FT_ID_1040,7.1M_452,0.1333333333333333,punjab national bank,teksystems,False
+FT_ID_1358,7.1M_1661,0.12903225806451613,japan exchange group,itc limited,False
+FT_ID_890,7.1M_324,0.125,unipol gruppo,sgs,False
+FT_ID_1443,7.1M_1701,0.125,kimco realty,ntnu,False
+FT_ID_1711,7.1M_28,0.12121212121212122,china industrial securities,google,False
+FT_ID_1319,7.1M_460,0.11764705882352944,krung thai bank,no,False
+FT_ID_316,7.1M_319,0.11764705882352944,phillips 66,abbvie,False
+FT_ID_1579,7.1M_387,0.11764705882352944,royalty pharma,sas,False
+FT_ID_300,7.1M_1739,0.11428571428571432,inditex,godrej & boyce mfg. co. ltd.,False
+FT_ID_1599,7.1M_1482,0.11111111111111116,invitation homes,cn,False
+FT_ID_1565,7.1M_161,0.11111111111111116,bank of guizhou,g4s,False
+FT_ID_1896,7.1M_1541,0.11111111111111116,samsung sds,chili's,False
+FT_ID_1374,7.1M_814,0.11111111111111116,galp energia,repsol,False
+FT_ID_1134,7.1M_74,0.10526315789473684,east west bancorp,ge,False
+FT_ID_118,7.1M_1047,0.10526315789473684,edf ,marriott hotels,False
+FT_ID_1113,7.1M_1522,0.10526315789473684,coterra energy ,unum,False
+FT_ID_63,7.1M_1797,0.10526315789473684,bmw group,indeed.com,False
+FT_ID_1377,7.1M_39,0.10526315789473684,shengjing bank,cisco,False
+FT_ID_505,7.1M_815,0.10526315789473684,erste group bank,uwv,False
+FT_ID_1745,7.1M_1105,0.09999999999999998,adani total gas,unhcr,False
+FT_ID_1650,7.1M_1251,0.09523809523809523,ganfeng lithium,my own,False
+FT_ID_1349,7.1M_32,0.09523809523809523,idexx laboratories,nhs,False
+FT_ID_1159,7.1M_823,0.09090909090909094,kingfisher,sou autonomo,False
+FT_ID_1747,7.1M_791,0.08695652173913049,johnson matthey,gap inc.,False
+FT_ID_1600,7.1M_766,0.08333333333333337,zto express (cayman),cb&i,False
+FT_ID_673,7.1M_161,0.07999999999999996,h&m - hennes & mauritz,g4s,False
+FT_ID_1315,7.1M_603,0.07692307692307687,flutter entertainment,sasol,False
+FT_ID_368,7.1M_987,0.07407407407407407,csx,internal revenue service,False
+FT_ID_1185,7.1M_1964,0.07272727272727275,nvr,department of justice and constitutional development,False
+FT_ID_402,7.1M_557,0.0714285714285714,canadian national railway,sky,False
+FT_ID_195,7.1M_61,0.0714285714285714,dow,promobroker agente de seguros y de fianzas s a de c v,False
+FT_ID_1583,7.1M_286,0.0714285714285714,hokuhoku financial group,bbva,False
+FT_ID_1479,7.1M_412,0.0714285714285714,slm,the ohio state university,False
+FT_ID_899,7.1M_1656,0.06666666666666665,annaly capital management,kerry,False
+FT_ID_1252,7.1M_1821,0.05405405405405406,shanxi xinghuacun fen wine factory,ugl,False
+FT_ID_1825,7.1M_52,0.0,icon (ireland),gsk,False
+FT_ID_1087,7.1M_1127,0.0,lkq,air products,False
+FT_ID_1228,7.1M_557,0.0,zimmer biomet,sky,False
+FT_ID_719,7.1M_271,0.0,fox,hca,False
+FT_ID_613,7.1M_899,0.0,delta air lines,ooo,False
+FT_ID_543,7.1M_1054,0.0,tokyo electron,gsa,False
+FT_ID_1608,7.1M_1983,0.0,ypf ,sonda,False
+FT_ID_938,7.1M_74,0.0,pko bank polski,ge,False
+FT_ID_1892,7.1M_1183,0.0,f&f,hallmark cards,False
+FT_ID_688,7.1M_279,0.0,ppg ,humana,False
+FT_ID_1603,7.1M_639,0.0,workday,zte,False
+FT_ID_74,7.1M_637,0.0,bhp group,cintas,False
+FT_ID_1471,7.1M_1279,0.0,indusind bank,lcl,False
+FT_ID_886,7.1M_471,0.0,cez group,jabil,False
+FT_ID_603,7.1M_574,0.0,sumitomo mitsui trust,ppd,False
