@@ -50,9 +50,9 @@ public class IR_using_linear_combination
 	 */
 
 	// default log without each record
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	//private static final Logger logger = WinterLogManager.activateLogger("default");
 	// show log on console
-	//private static final Logger logger = WinterLogManager.activateLogger("traceFile");
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
     
 	public static void main( String[] args ) throws Exception
     {
