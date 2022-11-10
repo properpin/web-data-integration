@@ -195,7 +195,7 @@ FT_ID_690,7.1M_501,0.8333333333333334,ecolab,escola,False
 FT_ID_734,7.1M_717,0.8333333333333334,singtel,sitel,False
 FT_ID_1475,7.1M_854,0.8333333333333334,ventas,vestas,False
 FT_ID_1763,7.1M_1859,0.8333333333333334,akamai technologies,tata technologies,False
-FT_ID_262,7.1M_219,0.8333333333333334,salesforce.com,salesforce,False
+FT_ID_262,7.1M_219,0.8333333333333334,salesforce.com,salesforce,True
 FT_ID_1118,7.1M_360,0.8292682926829268,meritz financial group,bmo financial group,False
 FT_ID_928,7.1M_468,0.8292682926829268,united microelectronics,stmicroelectronics,False
 FT_ID_1542,7.1M_360,0.8292682926829268,mebuki financial group,bmo financial group,False
@@ -226,7 +226,7 @@ FT_ID_793,7.1M_933,0.8181818181818181,vertex pharmaceuticals,takeda pharmaceutic
 FT_ID_571,7.1M_1700,0.8181818181818181,devon energy,dte energy,False
 FT_ID_164,7.1M_1150,0.8163265306122449,pnc financial services,discover financial services,False
 FT_ID_854,7.1M_1847,0.8148148148148149,public storage,public sector,False
-FT_ID_835,7.1M_1497,0.8125,qbe insurance group,qbe insurance,False
+FT_ID_835,7.1M_1497,0.8125,qbe insurance group,qbe insurance,True
 FT_ID_1712,7.1M_316,0.8125,sumec corporation,ncr corporation,False
 FT_ID_36,7.1M_137,0.8125,goldman sachs group,goldman sachs,True
 FT_ID_1712,7.1M_800,0.8125,sumec corporation,urs corporation,False
