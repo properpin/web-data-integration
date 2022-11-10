@@ -141,7 +141,7 @@ FT_ID_1017,dbpedia_5729,0.8571428571428572,agc,agco,False
 FT_ID_1021,dbpedia_438,0.8518518518518519,ia financial corporation,tompkins financial corporation,False
 FT_ID_1051,dbpedia_5611,0.85,teva pharmaceutical,otsuka pharmaceutical,False
 FT_ID_1118,dbpedia_6179,0.85,meritz financial group,ia financial group,False
-FT_ID_309,dbpedia_4796,0.85,american electric,american electric power,False
+FT_ID_309,dbpedia_4796,0.85,american electric,american electric power,True
 FT_ID_1537,dbpedia_1256,0.8484848484848485,sinopac financial,intact financial,False
 FT_ID_459,dbpedia_1076,0.8484848484848485,toyota industries,toray industries,False
 FT_ID_1524,dbpedia_1761,0.8461538461538461,bank of india,bank of china,False

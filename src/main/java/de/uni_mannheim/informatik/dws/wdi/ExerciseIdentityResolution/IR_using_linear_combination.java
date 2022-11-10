@@ -10,6 +10,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Mo
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpediaXMLReader;
@@ -78,12 +79,13 @@ public class IR_using_linear_combination
 		
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/GS_ft_db_new.csv"));
+				"data/goldstandard/GS_ft_db.csv"));
 
 		// create a matching rule
 		//LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 		//		0.7);
 		LinearCombinationMatchingRule<DBpedia, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+		
 		
 		// create debug report in csv
 		// matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
@@ -93,7 +95,8 @@ public class IR_using_linear_combination
 		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
-		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 1);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
+		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
 		// matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
 		
 
@@ -122,7 +125,6 @@ public class IR_using_linear_combination
 				dataFt, dataDBpedia, null, matchingRule,
 				blocker);
 		
-		// TODO: Exercise anschauen und minimal example ausführen
 		
 		// Create a top-1 global matching
 		  correspondences = engine.getTopKInstanceCorrespondences(correspondences, 3, 1);
