@@ -17,6 +17,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
@@ -28,7 +29,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CompanyNameComparatorLevenshteinSimilarity implements Comparator<DBpedia, Attribute> {
+public class CompanyNameComparatorLevenshteinSimilarity implements Comparator<Company, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
@@ -37,8 +38,8 @@ public class CompanyNameComparatorLevenshteinSimilarity implements Comparator<DB
 
 	@Override
 	public double compare(
-			DBpedia record1,
-			DBpedia record2,
+			Company record1,
+			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		String s1 = record1.getName();

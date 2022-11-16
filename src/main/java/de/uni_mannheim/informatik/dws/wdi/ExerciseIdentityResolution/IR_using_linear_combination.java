@@ -16,6 +16,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 // import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpediaXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
@@ -56,9 +58,9 @@ public class IR_using_linear_combination
 	 */
 
 	// default log without each record
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	// private static final Logger logger = WinterLogManager.activateLogger("default");
 	// show log on console
-	//private static final Logger logger = WinterLogManager.activateLogger("traceFile");
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
     
 	public static void main( String[] args ) throws Exception
     {
@@ -69,11 +71,11 @@ public class IR_using_linear_combination
 		//HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
 		//new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
 		
-		HashedDataSet<DBpedia, Attribute> dataFt = new HashedDataSet<>();
-		new DBpediaXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
+		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
 		
-		HashedDataSet<DBpedia, Attribute> dataDBpedia = new HashedDataSet<>();
-		new DBpediaXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
+		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -83,12 +85,12 @@ public class IR_using_linear_combination
 		
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/GS_ft_db.csv"));
+				"data/goldstandard/gs_ft_db_lower.csv"));
 
 		// create a matching rule
 		//LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 		//		0.7);
-		LinearCombinationMatchingRule<DBpedia, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+		LinearCombinationMatchingRule<Company, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
 		
 		
 		// create debug report in csv
@@ -100,26 +102,28 @@ public class IR_using_linear_combination
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.3);
-		matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.7);
-		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.5);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.7);
+		// matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.3);
+		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.3);
 //		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
 		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
-		// matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
 		
 
 		// create a blocker (blocking strategy)
-		//StandardRecordBlocker<DBpedia, Attribute> blocker = new StandardRecordBlocker<DBpedia, Attribute>(new CompanyBlockingKeyByNameGenerator());
-		// StandardRecordBlocker<DBpedia, Attribute> blocker = new StandardRecordBlocker<DBpedia, Attribute>(new CompanyBlockingKeyByYearGenerator());
-		NoBlocker<DBpedia, Attribute> blocker = new NoBlocker<>();
+		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
+		// NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+
+		blocker.setMeasureBlockSizes(true);
+		
 		// Blocker<Movie, Attribute> blocker2 = new StandardBlocker<DBpedia, Attribute>((m) -> Integer.toString(m.getDate().getYear() / 10));
-//		blocker.setMeasureBlockSizes(true);
+		
 		//Write debug results to file:
-//		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_ft_db.csv", 100);
 		
 		
 		// Initialize Matching Engine
-		MatchingEngine<DBpedia, Attribute> engine = new MatchingEngine<>();
+		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
@@ -128,13 +132,13 @@ public class IR_using_linear_combination
 		//		dataAcademyAwards, dataActors, null, matchingRule,
 		//		blocker);
 		
-		Processable<Correspondence<DBpedia, Attribute>> correspondences = engine.runIdentityResolution(
+		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
 				dataFt, dataDBpedia, null, matchingRule,
 				blocker);
 		
 		
-		// Create a top-1 global matching
-		  correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.7);
+		// Create a top-1 global matching - ONLY IF SURE THAT THERE ARE NO DUPLICATES
+		 // correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.9);
 
 //		 Alternative: Create a maximum-weight, bipartite matching
 		//  MaximumBipartiteMatchingAlgorithm<DBpedia,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
@@ -146,7 +150,7 @@ public class IR_using_linear_combination
 		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_dbpedia_correspondences.csv"), correspondences);		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
-		MatchingEvaluator<DBpedia, Attribute> evaluator = new MatchingEvaluator<DBpedia, Attribute>();
+		MatchingEvaluator<Company, Attribute> evaluator = new MatchingEvaluator<Company, Attribute>();
 
 		Performance perfTest = evaluator.evaluateMatching(correspondences.get(),
 				gsTest);

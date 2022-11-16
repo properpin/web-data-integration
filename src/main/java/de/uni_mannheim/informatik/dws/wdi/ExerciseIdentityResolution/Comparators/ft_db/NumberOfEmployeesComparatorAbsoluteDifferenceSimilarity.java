@@ -17,6 +17,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 
@@ -27,7 +28,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity implements Comparator<DBpedia, Attribute> {
+public class NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity implements Comparator<Company, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
 	private AbsoluteDifferenceSimilarity sim = new AbsoluteDifferenceSimilarity(1000000.0);
@@ -36,8 +37,8 @@ public class NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity implements 
 
 	@Override
 	public double compare(
-			DBpedia record1,
-			DBpedia record2,
+			Company record1,
+			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		double s1 = record1.getNumberOfEmployees();

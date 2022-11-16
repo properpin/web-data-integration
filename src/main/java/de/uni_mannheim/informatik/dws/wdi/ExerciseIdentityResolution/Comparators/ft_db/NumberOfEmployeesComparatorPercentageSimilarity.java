@@ -18,6 +18,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
@@ -29,17 +30,17 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NumberOfEmployeesComparatorPercentageSimilarity implements Comparator<DBpedia, Attribute> {
+public class NumberOfEmployeesComparatorPercentageSimilarity implements Comparator<Company, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
-	private PercentageSimilarity sim = new PercentageSimilarity(10);
+	private PercentageSimilarity sim = new PercentageSimilarity(5);
 	
 	private ComparatorLogger comparisonLog;
 
 	@Override
 	public double compare(
-			DBpedia record1,
-			DBpedia record2,
+			Company record1,
+			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		double s1 = record1.getNumberOfEmployees();

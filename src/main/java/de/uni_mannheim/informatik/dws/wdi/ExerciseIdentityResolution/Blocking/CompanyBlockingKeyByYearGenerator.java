@@ -13,6 +13,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpediaXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
@@ -34,7 +35,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * 
  */
 public class CompanyBlockingKeyByYearGenerator extends
-		RecordBlockingKeyGenerator<DBpedia, Attribute> {
+		RecordBlockingKeyGenerator<Company, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -43,8 +44,8 @@ public class CompanyBlockingKeyByYearGenerator extends
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
 	 */
 	@Override
-	public void generateBlockingKeys(DBpedia record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-			DataIterator<Pair<String, DBpedia>> resultCollector) {
+	public void generateBlockingKeys(Company record, Processable<Correspondence<Attribute, Matchable>> correspondences,
+			DataIterator<Pair<String, Company>> resultCollector) {
 
 				String blockingKeyValue = record.getFoundingYear().toString();
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
