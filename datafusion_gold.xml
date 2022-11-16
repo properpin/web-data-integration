@@ -1,0 +1,391 @@
+<companies>
+	<company>
+		<id>ft_id_272</id>
+		<name>abb</name>
+		<industries>
+			<industry>
+				<name>Technology</name>
+			</industry>
+			<industry>
+				<name>Electrical</name>
+			</industry>
+			<industry>
+				<name>Elctronics Manufacturing</name>
+			</industry>
+		</industries>
+		<revenue>28945000000</revenue>
+		<foundingYear>1988</foundingYear>
+		<country>Switzerland</country>
+		<city>Zurich</city>
+		<numberOfEmployees>105000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Björn Klas Otto Rosengren</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.abb.com</website>
+	</company>
+	<company>
+		<id>ft_id_66</id>
+		<name>abbvie</name>
+		<industries>
+			<industry>
+				<name>Grugs</name>
+			</industry>
+			<industry>
+				<name>Biotechnology</name>
+			</industry>
+		</industries>
+		<revenue>56197000000</revenue>
+		<foundingYear>2013</foundingYear>
+		<country>United States</country>
+		<city>North Chicago</city>
+		<numberOfEmployees>50000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Richard A. Gonzalez</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.abbvie.com</website>
+	</company>
+	<company>
+		<id>ft_id_1231</id>
+		<name>Alstom</name>
+		<industries>
+			<industry>
+				<name>Rail Transport</name>
+			</industry>
+		</industries>
+		<revenue>15188000000</revenue>
+		<foundingYear>1928</foundingYear>
+		<country>France</country>
+		<city>Saint-Ouen</city>
+		<numberOfEmployees>75000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Henri Poupart-Lafarge</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.alstom.com</website>
+	</company>
+	<company>
+		<id>ft_id_1664</id>
+		<name>Autodesk</name>
+		<industries>
+			<industry>
+				<name>IT Software &amp; Services</name>
+			</industry>
+		</industries>
+		<revenue>3798000000</revenue>
+		<foundingYear>1982</foundingYear>
+		<country>United States</country>
+		<city>San Rafael</city>
+		<numberOfEmployees>12600</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Andrew Anagnost</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.autodesk.com</website>
+	</company>
+	<company>
+		<id>ft_id_1464</id>
+		<name>Avery Dennison</name>
+		<industries>
+			<industry>
+				<name>Materials</name>
+			</industry>
+		</industries>
+		<revenue>8408000000</revenue>
+		<foundingYear>1935</foundingYear>
+		<country>United States</country>
+		<city>Glendale</city>
+		<numberOfEmployees>36000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Mitchell R. Butier</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.averydennison.com</website>
+	</company>
+	<company>
+		<id>ft_id_598</id>
+		<name>M&amp;T Bank</name>
+		<industries>
+			<industry>
+				<name>Banking</name>
+			</industry>
+		</industries>
+		<revenue>6106000000</revenue>
+		<foundingYear>1856</foundingYear>
+		<country>United States</country>
+		<city>Buffalo</city>
+		<numberOfEmployees>17373</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>René F. Jones</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.mtb.com</website>
+	</company>
+	<company>
+		<id>ft_id_35</id>
+		<name>Morgan Stanley</name>
+		<industries>
+			<industry>
+				<name>Financial services</name>
+			</industry>
+		</industries>
+		<revenue>59755000000</revenue>
+		<foundingYear>1924</foundingYear>
+		<country>United States</country>
+		<city>New York</city>
+		<numberOfEmployees>68000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>James Patrick Gorman</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.morganstanley.com</website>
+	</company>
+	<company>
+		<id>ft_id_85</id>
+		<name>PepsiCo</name>
+		<industries>
+			<industry>
+				<name>Food, Drink &amp; Tobacco</name>
+			</industry>
+		</industries>
+		<revenue>79470000000</revenue>
+		<foundingYear>1965</foundingYear>
+		<country>United States</country>
+		<city>Purchase</city>
+		<numberOfEmployees>309000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Ramon Luis Laguarta</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.pepsico.com</website>
+	</company>
+	<company>
+		<id>ft_id_423</id>
+		<name>Philips</name>
+		<industries>
+			<industry>
+				<name>Health Care Equipment &amp; Services</name>
+			</industry>
+		</industries>
+		<revenue>20297000000</revenue>
+		<foundingYear>1891</foundingYear>
+		<country>Netherlands</country>
+		<city>Amsterdam</city>
+		<numberOfEmployees>81592</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Frans van Houten</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.philips.com</website>
+	</company>
+	<company>
+		<id>ft_id_214</id>
+		<name>Philip Morris International</name>
+		<industries>
+			<industry>
+				<name>Food, Drink &amp; Tobacco</name>
+			</industry>
+		</industries>
+		<revenue>31405000000</revenue>
+		<foundingYear>1847</foundingYear>
+		<country>United States</country>
+		<city>New York</city>
+		<numberOfEmployees>69600</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Jacek Olczak</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.pmi.com</website>
+	</company>
+	<company>
+		<id>ft_id_711</id>
+		<name>Uber</name>
+		<industries>
+			<industry>
+				<name>Transportation Mobility</name>
+			</industry>
+		</industries>
+		<revenue>17455000000</revenue>
+		<foundingYear>2009</foundingYear>
+		<country>United States</country>
+		<city>San Francisco</city>
+		<numberOfEmployees>29300</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Dara Khosrowshahi</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.uber.com</website>
+	</company>
+	<company>
+		<id>ft_id_112</id>
+		<name>Bristol Myers Squibb</name>
+		<industries>
+			<industry>
+				<name>Drugs &amp; Biotechnology</name>
+			</industry>
+		</industries>
+		<revenue>46385000000</revenue>
+		<foundingYear>1887</foundingYear>
+		<country>United States</country>
+		<city>New York</city>
+		<numberOfEmployees>32200</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Giovanni Caforio</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.bms.com</website>
+	</company>
+	<company>
+		<id>ft_id_842</id>
+		<name>CDW</name>
+		<industries>
+			<industry>
+				<name>IT Software &amp; Services</name>
+			</industry>
+		</industries>
+		<revenue>20821000000</revenue>
+		<foundingYear>1984</foundingYear>
+		<country>United States</country>
+		<city>Lincolnshire</city>
+		<numberOfEmployees>15000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Christine A. Leahy</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.cdw.com</website>
+	</company>
+	<company>
+		<id>ft_id_613</id>
+		<name>Delta Air Lines</name>
+		<industries>
+			<industry>
+				<name>Transportation</name>
+			</industry>
+		</industries>
+		<revenue>29899000000</revenue>
+		<foundingYear>1925</foundingYear>
+		<country>United States</country>
+		<city>Atlanta</city>
+		<numberOfEmployees>83000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Edward Herman Bastian</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.delta.com</website>
+	</company>
+	<company>
+		<id>ft_id_300</id>
+		<name>Inditex</name>
+		<industries>
+			<industry>
+				<name>Retailing</name>
+			</industry>
+		</industries>
+		<revenue>30492000000</revenue>
+		<foundingYear>1985</foundingYear>
+		<country>Spain</country>
+		<city>A Coruña</city>
+		<numberOfEmployees>144116</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Oscar García Maceiras</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.inditex.com/en</website>
+	</company>
+	<company>
+		<id>ft_id_5</id>
+		<name>Amazon</name>
+		<industries>
+			<industry>
+				<name>Retailing</name>
+			</industry>
+		</industries>
+		<revenue>469822000000</revenue>
+		<foundingYear>1994</foundingYear>
+		<country>United States</country>
+		<city>Seattle</city>
+		<numberOfEmployees>1608000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Andrew R. Jassy</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.amazon.com</website>
+	</company>
+	<company>
+		<id>ft_id_12</id>
+		<name>Bank of China</name>
+		<industries>
+			<industry>
+				<name>Banking</name>
+			</industry>
+		</industries>
+		<revenue>152425000000</revenue>
+		<foundingYear>1912</foundingYear>
+		<country>China</country>
+		<city>Beijing</city>
+		<numberOfEmployees>309084</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Liu Liange</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://bochk.com</website>
+	</company>
+	<company>
+		<id>ft_id_258</id>
+		<name>HP</name>
+		<industries>
+			<industry>
+				<name>Technology Hardware &amp; Equipment</name>
+			</industry>
+		</industries>
+		<revenue>63583000000</revenue>
+		<foundingYear>1939</foundingYear>
+		<country>United States</country>
+		<city>Palo Alto</city>
+		<numberOfEmployees>51000</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Enrique Lores</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.hp.com</website>
+	</company>
+	<company>
+		<id>ft_id_1064</id>
+		<name>UCB</name>
+		<industries>
+			<industry>
+				<name>Drugs &amp; Biotechnology</name>
+			</industry>
+		</industries>
+		<revenue>6835000000</revenue>
+		<foundingYear>1928</foundingYear>
+		<country>Belgium</country>
+		<city>Brussels</city>
+		<numberOfEmployees>7600</numberOfEmployees>
+		<ceoNames>
+			<ceoName>
+				<name>Jean-Christophe Tellier</name>
+			</ceoName>
+		</ceoNames>
+		<website>http://www.ucb.com</website>
+	</company>
+</companies>
