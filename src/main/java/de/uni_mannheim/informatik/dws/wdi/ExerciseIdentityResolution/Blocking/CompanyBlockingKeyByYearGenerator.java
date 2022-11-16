@@ -33,7 +33,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CompanyBlockingKeyByNameGenerator extends
+public class CompanyBlockingKeyByYearGenerator extends
 		RecordBlockingKeyGenerator<DBpedia, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -46,14 +46,7 @@ public class CompanyBlockingKeyByNameGenerator extends
 	public void generateBlockingKeys(DBpedia record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, DBpedia>> resultCollector) {
 
-				String[] tokens  = record.getName().split(" ");
-
-				String blockingKeyValue = "";
-		
-				for(int i = 0; i <= 2 && i < tokens.length; i++) {
-					blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
-				}
-				
+				String blockingKeyValue = record.getFoundingYear().toString();
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
 	}
 

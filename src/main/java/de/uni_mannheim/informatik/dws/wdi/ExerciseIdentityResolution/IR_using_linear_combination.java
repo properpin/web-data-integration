@@ -6,12 +6,17 @@ import java.io.File;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+<<<<<<< HEAD
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
+=======
+// import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
+>>>>>>> 8c96b3263d17840c47f01b62ece2b1a6d91272e3
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
@@ -97,22 +102,24 @@ public class IR_using_linear_combination
 		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
+
 		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.5);
 		matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.5);
 		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.5);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.7);
+		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
 		// matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
 		
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<DBpedia, Attribute> blocker = new StandardRecordBlocker<DBpedia, Attribute>(new CompanyBlockingKeyByNameGenerator());
-		// NoBlocker<DBpedia, Attribute> blocker = new NoBlocker<>();
-		// SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 30);
+		// StandardRecordBlocker<DBpedia, Attribute> blocker = new StandardRecordBlocker<DBpedia, Attribute>(new CompanyBlockingKeyByYearGenerator());
+
 		// Blocker<Movie, Attribute> blocker2 = new StandardBlocker<DBpedia, Attribute>((m) -> Integer.toString(m.getDate().getYear() / 10));
-		// blocker.setMeasureBlockSizes(true);
+		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		// blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
-		// StandardRecordBlocker<DBpedia, Attribute> blocker2 = new StandardRecordBlocker<DBpedia, Attribute>();
 		
 		// Initialize Matching Engine
 		MatchingEngine<DBpedia, Attribute> engine = new MatchingEngine<>();
