@@ -11,7 +11,9 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Mo
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpediaXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
@@ -95,8 +97,9 @@ public class IR_using_linear_combination
 		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
-		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
-		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.5);
+		matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.5);
+		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.5);
 		// matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
 		
 
