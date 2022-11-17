@@ -14,11 +14,17 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.MovieXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
@@ -46,75 +52,91 @@ public class IR_using_machine_learning {
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
 	
     public static void main( String[] args ) throws Exception
     {
 		// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
-		HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);		
+		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_db_train.csv"));
 
 		// create a matching rule
+		// 1) logistic regression
 		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Movie, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
+		String modelType = "SimpleLogistic";
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
 		
+		// 2) tree classfier
+		/*
+		String options[] = new String[1];
+		options[0] = "-U";
+		String modelType = "J48"; 
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
+		*/
+
 		// add comparators
-		matchingRule.addComparator(new MovieTitleComparatorEqual());
-		matchingRule.addComparator(new MovieDateComparator2Years());
-		matchingRule.addComparator(new MovieDateComparator10Years());
-		matchingRule.addComparator(new MovieDirectorComparatorJaccard());
-		matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
-		matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
-		matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
-		matchingRule.addComparator(new MovieTitleComparatorJaccard());
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
+		//matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity());
+		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity());
+		//matchingRule.addComparator(new MovieTitleComparatorEqual());
+		//matchingRule.addComparator(new MovieDateComparator2Years());
+		//matchingRule.addComparator(new MovieDateComparator10Years());
+		//matchingRule.addComparator(new MovieDirectorComparatorJaccard());
+		//matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
+		//matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
+		//matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
+		//matchingRule.addComparator(new MovieTitleComparatorJaccard());
 		
 		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
-		RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataAcademyAwards, dataActors, null, matchingRule, gsTraining);
+		//RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
+		RuleLearner<Company, Attribute> learner = new RuleLearner<>();
+		learner.learnMatchingRule(dataFt, dataDBpedia, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
+		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_db.csv", 100);
 		
 		// Initialize Matching Engine
-		MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
+		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
-		Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAcademyAwards, dataActors, null, matchingRule,
+		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
+				dataFt, dataDBpedia, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_db_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+				"data/goldstandard/gs_ft_db_lower.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
-		MatchingEvaluator<Movie, Attribute> evaluator = new MatchingEvaluator<Movie, Attribute>();
+		MatchingEvaluator<Company, Attribute> evaluator = new MatchingEvaluator<Company, Attribute>();
 		Performance perfTest = evaluator.evaluateMatching(correspondences,
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("FT <-> DBpedia");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
