@@ -1,0 +1,801 @@
+ft_id;db_id;LevScore;ft;dbpedia;label
+ft_id_959;dbpedia_6248;1.0;voya financial;voya financial;TRUE
+ft_id_298;dbpedia_1034;1.0;amerisourcebergen;amerisourcebergen;TRUE
+ft_id_676;dbpedia_1847;1.0;republic services;republic services;TRUE
+ft_id_1372;dbpedia_910;1.0;netapp;netapp;TRUE
+ft_id_42;dbpedia_3411;1.0;pfizer;pfizer;TRUE
+ft_id_121;dbpedia_3849;1.0;airbus;airbus;TRUE
+ft_id_799;dbpedia_2590;1.0;westrock;westrock;TRUE
+ft_id_351;dbpedia_6537;1.0;standard chartered;standard chartered;TRUE
+ft_id_1894;dbpedia_3850;1.0;essex property trust;essex property trust;TRUE
+ft_id_1008;dbpedia_5822;1.0;ebay;ebay;TRUE
+ft_id_884;dbpedia_3648;1.0;expeditors international;expeditors international;TRUE
+ft_id_432;dbpedia_3410;1.0;national bank of canada;national bank of canada;TRUE
+ft_id_1734;dbpedia_3096;1.0;rite aid;rite aid;TRUE
+ft_id_1964;dbpedia_3477;1.0;veon;veon;TRUE
+ft_id_1800;dbpedia_2638;1.0;doordash;doordash;TRUE
+ft_id_243;dbpedia_2872;1.0;cosco shipping;cosco shipping;TRUE
+ft_id_135;dbpedia_6858;1.0;iberdrola;iberdrola;TRUE
+ft_id_421;dbpedia_4563;1.0;lennar;lennar;TRUE
+ft_id_1864;dbpedia_1920;1.0;inventec;inventec;TRUE
+ft_id_807;dbpedia_1833;1.0;mapfre;mapfre;TRUE
+ft_id_347;dbpedia_2042;1.0;schlumberger;schlumberger;TRUE
+ft_id_512;dbpedia_5062;1.0;murata manufacturing;murata manufacturing;TRUE
+ft_id_1856;dbpedia_279;1.0;veeva systems;veeva systems;TRUE
+ft_id_1598;dbpedia_6399;1.0;samsung electro-mechanics;samsung electro-mechanics;TRUE
+ft_id_567;dbpedia_2106;1.0;swedbank;swedbank;TRUE
+ft_id_14;dbpedia_4278;1.0;exxonmobil;exxonmobil;TRUE
+ft_id_1859;dbpedia_2673;1.0;abrdn;abrdn;TRUE
+ft_id_30;dbpedia_1066;1.0;china mobile;china mobile;TRUE
+ft_id_547;dbpedia_1689;1.0;analog devices;analog devices;TRUE
+ft_id_619;dbpedia_415;1.0;china steel;china steel;TRUE
+ft_id_1560;dbpedia_3939;1.0;eqt;eqt;TRUE
+ft_id_1890;dbpedia_660;1.0;pennymac financial services;pennymac financial services;TRUE
+ft_id_1623;dbpedia_4395;1.0;investec;investec;TRUE
+ft_id_1414;dbpedia_4886;1.0;faurecia;faurecia;TRUE
+ft_id_175;dbpedia_2062;1.0;dell technologies;dell technologies;TRUE
+ft_id_1278;dbpedia_990;1.0;dassault aviation;dassault aviation;TRUE
+ft_id_234;dbpedia_1467;1.0;sun life financial;sun life financial;TRUE
+ft_id_739;dbpedia_1563;1.0;asahi kasei;asahi kasei;TRUE
+ft_id_1312;dbpedia_901;1.0;arista networks;arista networks;TRUE
+ft_id_279;dbpedia_1317;1.0;asml holding;asml holding;TRUE
+ft_id_255;dbpedia_905;1.0;nextera energy;nextera energy;TRUE
+ft_id_1317;dbpedia_5349;1.0;brighthouse financial;brighthouse financial;TRUE
+ft_id_1860;dbpedia_68;1.0;qurate retail group;qurate retail group;TRUE
+ft_id_1194;dbpedia_811;1.0;suning.com;suning.com;TRUE
+ft_id_665;dbpedia_359;1.0;kyocera;kyocera;TRUE
+ft_id_1190;dbpedia_6235;1.0;voestalpine;voestalpine;TRUE
+ft_id_501;dbpedia_4877;1.0;sherwin-williams;sherwin-williams;TRUE
+ft_id_285;dbpedia_5616;1.0;posco;posco;TRUE
+ft_id_756;dbpedia_1171;1.0;omnicom group;omnicom group;TRUE
+ft_id_1935;dbpedia_241;1.0;ansys;ansys;TRUE
+ft_id_876;dbpedia_4725;1.0;commerzbank;commerzbank;TRUE
+ft_id_931;dbpedia_6211;1.0;snam;snam;TRUE
+ft_id_508;dbpedia_1360;1.0;dish network;dish network;TRUE
+ft_id_777;dbpedia_2975;1.0;amphenol;amphenol;TRUE
+ft_id_369;dbpedia_6091;1.0;fortescue metals group;fortescue metals group;TRUE
+ft_id_247;dbpedia_2412;1.0;exelon;exelon;TRUE
+ft_id_1747;dbpedia_5401;1.0;johnson matthey;johnson matthey;TRUE
+ft_id_525;dbpedia_2123;1.0;bouygues;bouygues;TRUE
+ft_id_920;dbpedia_845;1.0;m&g;m&g;TRUE
+ft_id_116;dbpedia_6740;1.0;bank of montreal;bank of montreal;TRUE
+ft_id_182;dbpedia_2674;1.0;accenture;accenture;TRUE
+ft_id_246;dbpedia_6511;1.0;natwest group;natwest group;TRUE
+ft_id_1006;dbpedia_6192;1.0;otp bank;otp bank;TRUE
+ft_id_124;dbpedia_6576;1.0;unilever;unilever;TRUE
+ft_id_1241;dbpedia_178;1.0;arkema;arkema;TRUE
+ft_id_565;dbpedia_352;1.0;kimberly-clark;kimberly-clark;TRUE
+ft_id_749;dbpedia_2779;1.0;nrg energy;nrg energy;TRUE
+ft_id_1685;dbpedia_1707;1.0;chang hwa bank;chang hwa bank;TRUE
+ft_id_531;dbpedia_924;1.0;vmware;vmware;TRUE
+ft_id_1968;dbpedia_6009;1.0;cadence bank;cadence bank;TRUE
+ft_id_313;dbpedia_786;1.0;eog resources;eog resources;TRUE
+ft_id_32;dbpedia_38;1.0;alibaba group;alibaba group;TRUE
+ft_id_1699;dbpedia_1172;1.0;resmed;resmed;TRUE
+ft_id_1096;dbpedia_5469;1.0;china southern airlines;china southern airlines;TRUE
+ft_id_589;dbpedia_1970;1.0;weichai power;weichai power;TRUE
+ft_id_579;dbpedia_6268;1.0;illinois tool works;illinois tool works;TRUE
+ft_id_282;dbpedia_6635;1.0;kia;kia;TRUE
+ft_id_361;dbpedia_6708;1.0;freddie mac;freddie mac;TRUE
+ft_id_61;dbpedia_3021;1.0;bank of communications;bank of communications;TRUE
+ft_id_526;dbpedia_471;1.0;banorte;banorte;TRUE
+ft_id_952;dbpedia_5896;1.0;braskem;braskem;TRUE
+ft_id_1943;dbpedia_1557;1.0;aristocrat leisure;aristocrat leisure;TRUE
+ft_id_1127;dbpedia_4610;1.0;lululemon athletica;lululemon athletica;TRUE
+ft_id_985;dbpedia_2932;1.0;tenet healthcare;tenet healthcare;TRUE
+ft_id_1000;dbpedia_1076;1.0;toray industries;toray industries;TRUE
+ft_id_1639;dbpedia_2949;1.0;world fuel services;world fuel services;TRUE
+ft_id_958;dbpedia_1553;1.0;aptiv;aptiv;TRUE
+ft_id_1459;dbpedia_4070;1.0;valeo;valeo;TRUE
+ft_id_1934;dbpedia_3390;1.0;genmab;genmab;TRUE
+ft_id_1854;dbpedia_4623;1.0;nanto bank;nanto bank;TRUE
+ft_id_11;dbpedia_3172;1.0;microsoft;microsoft;TRUE
+ft_id_201;dbpedia_1659;1.0;l'oréal;l'oréal;TRUE
+ft_id_1024;dbpedia_2251;1.0;continental resources;continental resources;TRUE
+ft_id_747;dbpedia_6579;1.0;norsk hydro;norsk hydro;TRUE
+ft_id_618;dbpedia_5845;1.0;heidelbergcement;heidelbergcement;TRUE
+ft_id_183;dbpedia_4319;1.0;ing group;ing group;TRUE
+ft_id_1242;dbpedia_3464;1.0;nippon paint;nippon paint;TRUE
+ft_id_1085;dbpedia_1013;1.0;kuwait finance house;kuwait finance house;TRUE
+ft_id_571;dbpedia_6429;1.0;devon energy;devon energy;TRUE
+ft_id_544;dbpedia_355;1.0;lg electronics;lg electronics;TRUE
+ft_id_275;dbpedia_6816;1.0;occidental petroleum;occidental petroleum;TRUE
+ft_id_609;dbpedia_5590;1.0;oneok;oneok;TRUE
+ft_id_142;dbpedia_1469;1.0;truist financial;truist financial;TRUE
+ft_id_778;dbpedia_1031;1.0;american airlines group;american airlines group;TRUE
+ft_id_1652;dbpedia_6582;1.0;usiminas;usiminas;TRUE
+ft_id_99;dbpedia_929;1.0;united parcel service;united parcel service;TRUE
+ft_id_1378;dbpedia_6773;1.0;extra space storage;extra space storage;TRUE
+ft_id_1684;dbpedia_4567;1.0;strabag;strabag;TRUE
+ft_id_1279;dbpedia_4045;1.0;yara international;yara international;TRUE
+ft_id_1209;dbpedia_4976;1.0;pge polska grupa energetyczna;pge polska grupa energetyczna;TRUE
+ft_id_200;dbpedia_2641;1.0;qualcomm;qualcomm;TRUE
+ft_id_79;dbpedia_3443;1.0;zurich insurance group;zurich insurance group;TRUE
+ft_id_1138;dbpedia_6409;1.0;au optronics;au optronics;TRUE
+ft_id_1474;dbpedia_3484;1.0;verisk analytics;verisk analytics;TRUE
+ft_id_497;dbpedia_6770;1.0;fast retailing;fast retailing;TRUE
+ft_id_520;dbpedia_2899;1.0;cummins;cummins;TRUE
+ft_id_1103;dbpedia_5613;1.0;ovintiv;ovintiv;TRUE
+ft_id_566;dbpedia_4107;1.0;cognizant;cognizant;TRUE
+ft_id_997;dbpedia_3316;1.0;dentsu;dentsu;TRUE
+ft_id_1349;dbpedia_1915;1.0;idexx laboratories;idexx laboratories;TRUE
+ft_id_969;dbpedia_3182;1.0;pembina pipeline;pembina pipeline;TRUE
+ft_id_326;dbpedia_4338;1.0;richemont;richemont;TRUE
+ft_id_1714;dbpedia_4021;1.0;ramsay health care;ramsay health care;TRUE
+ft_id_370;dbpedia_1642;1.0;danske bank;danske bank;TRUE
+ft_id_270;dbpedia_1062;1.0;freeport-mcmoran;freeport-mcmoran;TRUE
+ft_id_758;dbpedia_4806;1.0;cheniere energy;cheniere energy;TRUE
+ft_id_436;dbpedia_2047;1.0;adidas;adidas;TRUE
+ft_id_1801;dbpedia_4723;1.0;cloudflare;cloudflare;TRUE
+ft_id_75;dbpedia_5417;1.0;the home depot;the home depot;TRUE
+ft_id_314;dbpedia_5360;1.0;cnp assurances;cnp assurances;TRUE
+ft_id_1785;dbpedia_5096;1.0;atos;atos;TRUE
+ft_id_294;dbpedia_110;1.0;ecopetrol;ecopetrol;TRUE
+ft_id_12;dbpedia_1761;1.0;bank of china;bank of china;TRUE
+ft_id_1195;dbpedia_4006;1.0;national bank of greece;national bank of greece;TRUE
+ft_id_1509;dbpedia_1916;1.0;incyte;incyte;TRUE
+ft_id_1924;dbpedia_1213;1.0;palantir technologies;palantir technologies;TRUE
+ft_id_383;dbpedia_5080;1.0;eneos holdings;eneos holdings;TRUE
+ft_id_869;dbpedia_3574;1.0;ameren;ameren;TRUE
+ft_id_457;dbpedia_3962;1.0;synchrony financial;synchrony financial;TRUE
+ft_id_690;dbpedia_5825;1.0;ecolab;ecolab;TRUE
+ft_id_1654;dbpedia_1139;1.0;wacker chemie;wacker chemie;TRUE
+ft_id_686;dbpedia_3072;1.0;iqvia;iqvia;TRUE
+ft_id_874;dbpedia_5381;1.0;conagra brands;conagra brands;TRUE
+ft_id_1173;dbpedia_3552;1.0;textron;textron;TRUE
+ft_id_962;dbpedia_1992;1.0;equity residential;equity residential;TRUE
+ft_id_196;dbpedia_3812;1.0;telefónica;telefónica;TRUE
+ft_id_878;dbpedia_4166;1.0;lg display;lg display;TRUE
+ft_id_1100;dbpedia_4602;1.0;genworth financial;genworth financial;TRUE
+ft_id_1776;dbpedia_2838;1.0;foot locker;foot locker;TRUE
+ft_id_945;dbpedia_725;1.0;alexandria real estate equities;alexandria real estate equities;TRUE
+ft_id_41;dbpedia_301;1.0;cvs health;cvs health;TRUE
+ft_id_1613;dbpedia_907;1.0;nisource;nisource;TRUE
+ft_id_701;dbpedia_5515;1.0;bank leumi;bank leumi;TRUE
+ft_id_717;dbpedia_3839;1.0;weyerhaeuser;weyerhaeuser;TRUE
+ft_id_1449;dbpedia_4499;1.0;align technology;align technology;TRUE
+ft_id_1109;dbpedia_2532;1.0;mediobanca;mediobanca;TRUE
+ft_id_1301;dbpedia_2680;1.0;adyen;adyen;TRUE
+ft_id_793;dbpedia_6585;1.0;vertex pharmaceuticals;vertex pharmaceuticals;TRUE
+ft_id_602;dbpedia_20;1.0;entergy;entergy;TRUE
+ft_id_1174;dbpedia_311;1.0;cemex;cemex;TRUE
+ft_id_443;dbpedia_4136;0.9565217391304348;d.r. horton;d. r. horton;TRUE
+ft_id_1940;dbpedia_4015;0.9411764705882353;asm international;rsm international;FALSE
+ft_id_312;dbpedia_816;0.9411764705882353;swiss re ;swiss re;TRUE
+ft_id_1516;dbpedia_6107;0.9411764705882353;kghm polska miedz;kghm polska miedź;TRUE
+ft_id_549;dbpedia_3240;0.92;air products & chemicals;air products and chemicals;TRUE
+ft_id_1279;dbpedia_1999;0.9189189189189189;yara international;astra international;FALSE
+ft_id_1940;dbpedia_2453;0.9142857142857143;asm international;olam international;FALSE
+ft_id_1347;dbpedia_486;0.9090909090909091;indian bank;sidian bank;FALSE
+ft_id_563;dbpedia_2420;0.9090909090909091;markel;marel;FALSE
+ft_id_798;dbpedia_4270;0.9032258064516129;siemens energy;siemens energy ag;TRUE
+ft_id_808;dbpedia_4762;0.9032258064516129;hcl technologies;l3 technologies;FALSE
+ft_id_1391;dbpedia_463;0.9;bnk financial group;banif financial group;FALSE
+ft_id_225;dbpedia_2037;0.9;schneider electric;schneider electric dms;FALSE
+ft_id_307;dbpedia_236;0.9;boe technology group;web technology group;FALSE
+ft_id_1890;dbpedia_5622;0.8979591836734694;pennymac financial services;pnc financial services;FALSE
+ft_id_1021;dbpedia_5698;0.8979591836734694;ia financial corporation;tcf financial corporation;FALSE
+ft_id_1163;dbpedia_1389;0.896551724137931;cj corporation;smc corporation;FALSE
+ft_id_1391;dbpedia_80;0.8947368421052632;bnk financial group;fbl financial group;FALSE
+ft_id_1391;dbpedia_4092;0.8947368421052632;bnk financial group;cno financial group;FALSE
+ft_id_1690;dbpedia_6049;0.8888888888888888;sba communications;lsc communications;FALSE
+ft_id_1975;dbpedia_6179;0.8888888888888888;jb financial group;ia financial group;FALSE
+ft_id_1936;dbpedia_5691;0.8888888888888888;tmx group;tmf group;FALSE
+ft_id_943;dbpedia_6040;0.8888888888888888;jefferies financial ;jefferies financial group;TRUE
+ft_id_1940;dbpedia_1999;0.8888888888888888;asm international;astra international;FALSE
+ft_id_546;dbpedia_1047;0.8888888888888888;magna international;atn international;FALSE
+ft_id_1280;dbpedia_5587;0.8888888888888888;olam group;om group;FALSE
+ft_id_801;dbpedia_139;0.8888888888888888;us steel;u.s. steel;TRUE
+ft_id_58;dbpedia_3179;0.8888888888888888;mitsubishi ufj financial;mitsubishi ufj financial group;TRUE
+ft_id_1940;dbpedia_6719;0.8823529411764706;asm international;kmg international;FALSE
+ft_id_1988;dbpedia_1152;0.8823529411764706;efg international;icf international;FALSE
+ft_id_1926;dbpedia_1469;0.8823529411764706;wintrust financial;truist financial;FALSE
+ft_id_142;dbpedia_3561;0.8823529411764706;truist financial;wintrust financial;FALSE
+ft_id_1041;dbpedia_2749;0.8823529411764706;delta electronics;ultra electronics;FALSE
+ft_id_587;dbpedia_1167;0.8780487804878049;baxter international;charter international;FALSE
+ft_id_213;dbpedia_6650;0.8780487804878049;takeda pharmaceutical;teva pharmaceuticals;FALSE
+ft_id_1864;dbpedia_4395;875;inventec;investec;FALSE
+ft_id_1515;dbpedia_5127;875;boston properties;post properties;FALSE
+ft_id_459;dbpedia_3602;875;toyota industries;topy industries;FALSE
+ft_id_498;dbpedia_3397;875;london stock exchange;london stock exchange group;TRUE
+ft_id_1712;dbpedia_3080;875;sumec corporation;mpc corporation;FALSE
+ft_id_411;dbpedia_1239;875;bt group;bg group;FALSE
+ft_id_1118;dbpedia_1691;0.8695652173913043;meritz financial group;american financial group;FALSE
+ft_id_1588;dbpedia_3408;0.8695652173913043;metro group;petrol group;FALSE
+ft_id_1813;dbpedia_2568;0.8695652173913043;salzgitter;salzgitter ag;TRUE
+ft_id_1286;dbpedia_1739;0.8695652173913043;sg holdings;kcg holdings;FALSE
+ft_id_1288;dbpedia_4226;0.8679245283018868;frontier communications parent;frontier communications;TRUE
+ft_id_256;dbpedia_4092;0.8648648648648649;kb financial group;cno financial group;FALSE
+ft_id_1391;dbpedia_1836;0.8648648648648649;bnk financial group;op financial group;FALSE
+ft_id_1771;dbpedia_1836;0.8648648648648649;dgb financial group;op financial group;FALSE
+ft_id_546;dbpedia_4045;0.8648648648648649;magna international;yara international;FALSE
+ft_id_1940;dbpedia_2087;0.8648648648648649;asm international;harman international;FALSE
+ft_id_561;dbpedia_1836;0.8648648648648649;svb financial group;op financial group;FALSE
+ft_id_1659;dbpedia_6196;0.8648648648648649;cpi property group;opal property group;FALSE
+ft_id_1877;dbpedia_1338;0.8648648648648649;wesco international;endo international;FALSE
+ft_id_175;dbpedia_5021;0.8648648648648649;dell technologies;maxwell technologies;FALSE
+ft_id_1633;dbpedia_2518;0.8636363636363636;sino biopharmaceutical;inovio pharmaceuticals;FALSE
+ft_id_292;dbpedia_3559;0.8571428571428572;xiaomi  ;xiaomi;TRUE
+ft_id_175;dbpedia_1120;0.8571428571428572;dell technologies;exela technologies;FALSE
+ft_id_1587;dbpedia_3798;0.8571428571428572;dxc technology;tcl technology;FALSE
+ft_id_1679;dbpedia_1170;0.8571428571428572;singapore airlines;singapore airlines cargo;FALSE
+ft_id_1279;dbpedia_4015;0.8571428571428572;yara international;rsm international;FALSE
+ft_id_663;dbpedia_4422;0.8571428571428572;mitsubishi chemical;mitsui chemicals;FALSE
+ft_id_1196;dbpedia_3218;0.8571428571428572;targa resources;arc resources;FALSE
+ft_id_1163;dbpedia_4841;0.8571428571428572;cj corporation;kt corporation;FALSE
+ft_id_1587;dbpedia_4370;0.8571428571428572;dxc technology;pax technology;FALSE
+ft_id_194;dbpedia_937;0.8571428571428572;hca healthcare;vhi healthcare;FALSE
+ft_id_1279;dbpedia_3816;0.8571428571428572;yara international;asm international;FALSE
+ft_id_596;dbpedia_2898;0.8571428571428572;rogers communications;cogent communications;FALSE
+ft_id_1808;dbpedia_1691;0.851063829787234;american national group;american financial group;FALSE
+ft_id_1690;dbpedia_3926;0.85;sba communications;winstar communications;FALSE
+ft_id_1542;dbpedia_6179;0.85;mebuki financial group;ia financial group;FALSE
+ft_id_610;dbpedia_6662;0.85;marriott international;smit international;FALSE
+ft_id_546;dbpedia_2440;0.85;magna international;mantech international;FALSE
+ft_id_1051;dbpedia_5797;0.85;teva pharmaceutical;santen pharmaceutical;FALSE
+ft_id_1727;dbpedia_2079;0.85;shaw communications;hearst communications;FALSE
+ft_id_1771;dbpedia_463;0.85;dgb financial group;banif financial group;FALSE
+ft_id_1500;dbpedia_4658;0.8461538461538461;nu holdings;nomura holdings;FALSE
+ft_id_1534;dbpedia_4397;0.8461538461538461;crown holdings;qcr holdings;FALSE
+ft_id_367;dbpedia_1967;0.8461538461538461;valero energy;walter energy;FALSE
+ft_id_721;dbpedia_2646;0.8461538461538461;steel dynamics;snt dynamics;FALSE
+ft_id_125;dbpedia_4226;0.8444444444444444;charter communications;frontier communications;FALSE
+ft_id_600;dbpedia_3927;0.8421052631578947;edison international;aten international;FALSE
+ft_id_447;dbpedia_6590;0.8421052631578947;tc energy;cps energy;FALSE
+ft_id_1659;dbpedia_557;0.8421052631578947;cpi property group;simon property group;FALSE
+ft_id_822;dbpedia_3117;0.8421052631578947;absa group;psa group;FALSE
+ft_id_485;dbpedia_5988;0.8421052631578947;cme group;cbre group;FALSE
+ft_id_1279;dbpedia_2300;0.8421052631578947;yara international;wilmar international;FALSE
+ft_id_1690;dbpedia_4238;0.8421052631578947;sba communications;tokai communications;FALSE
+ft_id_462;dbpedia_712;0.8421052631578947;china evergrande group;evergrande group;FALSE
+ft_id_561;dbpedia_4092;0.8421052631578947;svb financial group;cno financial group;FALSE
+ft_id_481;dbpedia_1836;0.8421052631578947;hana financial group;op financial group;FALSE
+ft_id_1440;dbpedia_4319;0.8421052631578947;kion group;ing group;FALSE
+ft_id_587;dbpedia_4045;0.8421052631578947;baxter international;yara international;FALSE
+ft_id_1727;dbpedia_2011;0.8421052631578947;shaw communications;axis communications;FALSE
+ft_id_47;dbpedia_1370;0.8421052631578947;axa group;drax group;FALSE
+ft_id_1163;dbpedia_2689;0.8387096774193549;cj corporation;disco corporation;FALSE
+ft_id_1449;dbpedia_4502;0.8387096774193549;align technology;avid technology;FALSE
+ft_id_1041;dbpedia_355;0.8387096774193549;delta electronics;lg electronics;FALSE
+ft_id_998;dbpedia_1240;0.8387096774193549;molina healthcare;bmi healthcare;FALSE
+ft_id_1163;dbpedia_6051;0.8387096774193549;cj corporation;tesco corporation;FALSE
+ft_id_351;dbpedia_217;0.8372093023255813;standard chartered;standard chartered uganda;FALSE
+ft_id_439;dbpedia_6179;0.8372093023255813;principal financial group;ia financial group;FALSE
+ft_id_596;dbpedia_6690;0.8372093023255813;rogers communications;charter communications;FALSE
+ft_id_1302;dbpedia_5739;0.8333333333333334;air france-klm;air france;FALSE
+ft_id_1303;dbpedia_5168;0.8333333333333334;jacobs engineering;access engineering;FALSE
+ft_id_1031;dbpedia_2395;0.8333333333333334;invesco;iveco;FALSE
+ft_id_239;dbpedia_4562;0.8333333333333334;legal & general group;legal & general;TRUE
+ft_id_974;dbpedia_4928;0.8333333333333334;macy's;marc's;FALSE
+ft_id_732;dbpedia_71;0.8333333333333334;clp holdings;scm holdings;FALSE
+ft_id_588;dbpedia_1152;0.8333333333333334;fosun international;icf international;FALSE
+ft_id_1690;dbpedia_6103;0.8333333333333334;sba communications;gtt communications;FALSE
+ft_id_1392;dbpedia_771;0.8333333333333334;oji holdings;uti holdings;FALSE
+ft_id_1437;dbpedia_4402;0.8333333333333334;williams-sonoma;williams-sonoma, inc.;TRUE
+ft_id_861;dbpedia_454;0.8333333333333334;roper technologies;trane technologies;FALSE
+ft_id_1503;dbpedia_454;0.8333333333333334;zebra technologies;trane technologies;FALSE
+ft_id_976;dbpedia_6609;0.8333333333333334;cintas;cintra;FALSE
+ft_id_1279;dbpedia_3927;0.8333333333333334;yara international;aten international;FALSE
+ft_id_1154;dbpedia_2004;0.8333333333333334;davita;avista;FALSE
+ft_id_1675;dbpedia_1739;0.8333333333333334;wpg holdings;kcg holdings;FALSE
+ft_id_702;dbpedia_4783;0.8333333333333334;trane technologies;roper technologies;FALSE
+ft_id_1276;dbpedia_832;0.8333333333333334;universal health services;gentiva health services;FALSE
+ft_id_1038;dbpedia_1729;0.8333333333333334;kakao;kakao m;FALSE
+ft_id_444;dbpedia_4762;0.8333333333333334;l3harris technologies;l3 technologies;FALSE
+ft_id_883;dbpedia_3481;0.8333333333333334;isbank;iwbank;FALSE
+ft_id_1480;dbpedia_29;0.8333333333333334;atmos energy;atlas energy;FALSE
+ft_id_702;dbpedia_3959;0.8333333333333334;trane technologies;tyler technologies;FALSE
+ft_id_1257;dbpedia_6523;0.8333333333333334;raizen;raízen;TRUE
+ft_id_891;dbpedia_71;0.8333333333333334;sbi holdings;scm holdings;FALSE
+ft_id_1159;dbpedia_2921;0.8333333333333334;kingfisher;kingfisher plc;TRUE
+ft_id_1675;dbpedia_2784;0.8333333333333334;wpg holdings;nrw holdings;FALSE
+ft_id_262;dbpedia_3895;0.8333333333333334;salesforce.com;salesforce;TRUE
+ft_id_891;dbpedia_4620;0.8333333333333334;sbi holdings;nii holdings;FALSE
+ft_id_806;dbpedia_771;0.8333333333333334;t&d holdings;uti holdings;FALSE
+ft_id_588;dbpedia_6297;0.8333333333333334;fosun international;tfi international;FALSE
+ft_id_1075;dbpedia_1213;0.8292682926829268;agilent technologies;palantir technologies;FALSE
+ft_id_928;dbpedia_5134;0.8292682926829268;united microelectronics;stmicroelectronics;FALSE
+ft_id_1727;dbpedia_3926;0.8292682926829268;shaw communications;winstar communications;FALSE
+ft_id_587;dbpedia_6598;0.8292682926829268;baxter international;cameron international;FALSE
+ft_id_79;dbpedia_6526;0.8292682926829268;zurich insurance group;rsa insurance group;FALSE
+ft_id_622;dbpedia_1167;0.8292682926829268;hermès international;charter international;FALSE
+ft_id_1051;dbpedia_6585;0.8292682926829268;teva pharmaceutical;vertex pharmaceuticals;FALSE
+ft_id_1518;dbpedia_6179;0.8292682926829268;fukuoka financial group;ia financial group;FALSE
+ft_id_1762;dbpedia_1836;0.8292682926829268;juroku  financial group;op financial group;FALSE
+ft_id_587;dbpedia_2440;0.8292682926829268;baxter international;mantech international;FALSE
+ft_id_184;dbpedia_2133;0.8292682926829268;honeywell international;hill international;FALSE
+ft_id_1163;dbpedia_2143;0.8275862068965517;cj corporation;ntn corporation;FALSE
+ft_id_1163;dbpedia_5805;0.8275862068965517;cj corporation;avx corporation;FALSE
+ft_id_1341;dbpedia_3954;0.8275862068965517;stonex group;stonex group inc.;TRUE
+ft_id_1163;dbpedia_2364;0.8275862068965517;cj corporation;kla corporation;FALSE
+ft_id_199;dbpedia_5994;0.8275862068965517;cathay financial;cna financial;FALSE
+ft_id_1220;dbpedia_3495;0.8275862068965517;vici properties;cbl properties;FALSE
+ft_id_1196;dbpedia_4053;0.8275862068965517;targa resources;arch resources;FALSE
+ft_id_1587;dbpedia_4502;0.8275862068965517;dxc technology;avid technology;FALSE
+ft_id_1118;dbpedia_6020;0.8260869565217391;meritz financial group;citizens financial group;FALSE
+ft_id_1988;dbpedia_1047;0.8235294117647058;efg international;atn international;FALSE
+ft_id_335;dbpedia_3406;0.8235294117647058;nn group;ncc group;FALSE
+ft_id_861;dbpedia_6290;0.8235294117647058;roper technologies;toa technologies;FALSE
+ft_id_411;dbpedia_3191;0.8235294117647058;bt group;tmx group;FALSE
+ft_id_307;dbpedia_1359;0.8235294117647058;boe technology group;boe technology;TRUE
+ft_id_335;dbpedia_4319;0.8235294117647058;nn group;ing group;FALSE
+ft_id_1936;dbpedia_1150;0.8235294117647058;tmx group;m7 group;FALSE
+ft_id_306;dbpedia_2630;0.8235294117647058;kbc group;bt group;FALSE
+ft_id_63;dbpedia_4924;0.8235294117647058;bmw group;m2 group;FALSE
+ft_id_47;dbpedia_691;0.8235294117647058;axa group;af group;FALSE
+ft_id_411;dbpedia_4012;0.8235294117647058;bt group;rtl group;FALSE
+ft_id_335;dbpedia_855;0.8235294117647058;nn group;nex group;FALSE
+ft_id_63;dbpedia_1239;0.8235294117647058;bmw group;bg group;FALSE
+ft_id_846;dbpedia_5587;0.8235294117647058;mtn group;om group;FALSE
+ft_id_411;dbpedia_1828;0.8235294117647058;bt group;crt group;FALSE
+ft_id_1988;dbpedia_3816;0.8235294117647058;efg international;asm international;FALSE
+ft_id_1056;dbpedia_4478;0.8235294117647058;3i group;esi group;FALSE
+ft_id_183;dbpedia_1239;0.8235294117647058;ing group;bg group;FALSE
+ft_id_1503;dbpedia_6290;0.8235294117647058;zebra technologies;toa technologies;FALSE
+ft_id_74;dbpedia_2630;0.8235294117647058;bhp group;bt group;FALSE
+ft_id_485;dbpedia_3332;0.8235294117647058;cme group;ei group;FALSE
+ft_id_1157;dbpedia_2719;0.8235294117647058;penske automotive;hengst automotive;FALSE
+ft_id_386;dbpedia_4924;0.8235294117647058;omv group;m2 group;FALSE
+ft_id_108;dbpedia_1874;0.8205128205128205;raytheon technologies;ormat technologies;FALSE
+ft_id_861;dbpedia_1109;0.8205128205128205;roper technologies;shurtape technologies;FALSE
+ft_id_481;dbpedia_80;0.8205128205128205;hana financial group;fbl financial group;FALSE
+ft_id_729;dbpedia_6196;0.8205128205128205;simon property group;opal property group;FALSE
+ft_id_1219;dbpedia_1619;0.8205128205128205;carnival corporation;convera corporation;FALSE
+ft_id_1690;dbpedia_3454;0.8205128205128205;sba communications;fisher communications;FALSE
+ft_id_600;dbpedia_1130;0.8205128205128205;edison international;finca international;FALSE
+ft_id_16;dbpedia_2214;0.8181818181818181;ping an insurance group;uniqa insurance group;FALSE
+ft_id_183;dbpedia_170;0.8181818181818181;ing group;getinge group;FALSE
+ft_id_485;dbpedia_3500;0.8181818181818181;cme group;camelot group;FALSE
+ft_id_1286;dbpedia_333;0.8181818181818181;sg holdings;dl holdings;FALSE
+ft_id_1617;dbpedia_2548;0.8181818181818181;kyushu financial group;mizuho financial group;FALSE
+ft_id_125;dbpedia_5987;0.8181818181818181;charter communications;masergy communications;FALSE
+ft_id_1908;dbpedia_6294;0.8181818181818181;persimmon;persimmon plc;TRUE
+ft_id_535;dbpedia_6142;0.8181818181818181;cbre group;barnes group;FALSE
+ft_id_1135;dbpedia_3888;0.8181818181818181;j sainsbury;sainsbury's;TRUE
+ft_id_1500;dbpedia_333;0.8181818181818181;nu holdings;dl holdings;FALSE
+ft_id_603;dbpedia_143;0.8163265306122449;sumitomo mitsui trust;sumitomo mitsui construction;FALSE
+ft_id_332;dbpedia_5622;0.8163265306122449;discover financial services;pnc financial services;FALSE
+ft_id_1543;dbpedia_4031;0.8163265306122449;concordia financial group;stancorp financial group;FALSE
+ft_id_313;dbpedia_6569;0.8148148148148149;eog resources;niko resources;FALSE
+ft_id_1534;dbpedia_1385;0.8148148148148149;crown holdings;dowa holdings;FALSE
+ft_id_52;dbpedia_1195;0.8148148148148149;td bank group;softbank group;FALSE
+ft_id_544;dbpedia_469;0.8148148148148149;lg electronics;jj electronic;FALSE
+ft_id_1970;dbpedia_1039;0.8148148148148149;yamato holdings;aoc holdings;FALSE
+ft_id_1861;dbpedia_333;0.8148148148148149;kyndryl holdings;dl holdings;FALSE
+ft_id_1003;dbpedia_1281;0.8125;china mengniu dairy;mengniu dairy;FALSE
+ft_id_1134;dbpedia_3729;0.8125;east west bancorp;pacwest bancorp;FALSE
+ft_id_1724;dbpedia_5439;0.8125;aecom technology;amkor technology;FALSE
+ft_id_1344;dbpedia_355;0.8125;compal electronics;lg electronics;FALSE
+ft_id_808;dbpedia_6392;0.8125;hcl technologies;sys technologies;FALSE
+ft_id_983;dbpedia_940;0.8125;arrow electronics;abt electronics;FALSE
+ft_id_1763;dbpedia_1854;0.8108108108108107;akamai technologies;slack technologies;FALSE
+ft_id_1988;dbpedia_6443;0.8108108108108107;efg international;haynes international;FALSE
+ft_id_1051;dbpedia_1174;0.8108108108108107;teva pharmaceutical;ono pharmaceutical;FALSE
+ft_id_983;dbpedia_6030;0.8108108108108107;arrow electronics;crestron electronics;FALSE
+ft_id_1921;dbpedia_6138;0.8108108108108107;galaxy entertainment;jyp entertainment;FALSE
+ft_id_1988;dbpedia_5519;0.8108108108108107;efg international;baxter international;FALSE
+ft_id_1219;dbpedia_5522;0.8108108108108107;carnival corporation;banta corporation;FALSE
+ft_id_1219;dbpedia_4932;0.8108108108108107;carnival corporation;ohara corporation;FALSE
+ft_id_1051;dbpedia_4837;0.8108108108108107;teva pharmaceutical;gw pharmaceuticals;FALSE
+ft_id_1763;dbpedia_5659;0.8108108108108107;akamai technologies;maxar technologies;FALSE
+ft_id_1690;dbpedia_1458;0.8108108108108107;sba communications;chess communication;FALSE
+ft_id_1732;dbpedia_646;0.8108108108108107;mitsubishi motors;mitsubishi materials;FALSE
+ft_id_1279;dbpedia_6408;0.8108108108108107;yara international;tower international;FALSE
+ft_id_1940;dbpedia_6434;0.8108108108108107;asm international;edison international;FALSE
+ft_id_570;dbpedia_6179;0.8095238095238095;citizens financial group;ia financial group;FALSE
+ft_id_1051;dbpedia_2473;0.8095238095238095;teva pharmaceutical;optimer pharmaceuticals;FALSE
+ft_id_16;dbpedia_6526;0.8095238095238095;ping an insurance group;rsa insurance group;FALSE
+ft_id_57;dbpedia_851;0.8095238095238095;taiwan semiconductor;national semiconductor;FALSE
+ft_id_1633;dbpedia_2306;0.8095238095238095;sino biopharmaceutical;king pharmaceuticals;FALSE
+ft_id_212;dbpedia_2945;0.8095238095238095;dai-ichi life insurance;thai life insurance;FALSE
+ft_id_793;dbpedia_6748;0.8095238095238095;vertex pharmaceuticals;barr pharmaceuticals;FALSE
+ft_id_481;dbpedia_2548;0.8095238095238095;hana financial group;mizuho financial group;FALSE
+ft_id_610;dbpedia_2300;0.8095238095238095;marriott international;wilmar international;FALSE
+ft_id_622;dbpedia_6151;0.8095238095238095;hermès international;sherritt international;FALSE
+ft_id_1583;dbpedia_1836;0.8095238095238095;hokuhoku financial group;op financial group;FALSE
+ft_id_793;dbpedia_5507;0.8095238095238095;vertex pharmaceuticals;taro pharmaceuticals;FALSE
+ft_id_1762;dbpedia_4092;0.8095238095238095;juroku  financial group;cno financial group;FALSE
+ft_id_432;dbpedia_856;0.8085106382978724;national bank of canada;national bank of bahrain;FALSE
+ft_id_1016;dbpedia_2326;0.8085106382978724;shanghai pharmaceuticals;alnylam pharmaceuticals;FALSE
+ft_id_1543;dbpedia_1608;0.8085106382978724;concordia financial group;cetera financial group;FALSE
+ft_id_1028;dbpedia_403;0.8076923076923077;american financial group;american international group;FALSE
+ft_id_684;dbpedia_5800;0.2962962962962963;transneft;saur neptun gdańsk;FALSE
+ft_id_1774;dbpedia_4742;0.2962962962962963;toll brothers;dave's markets;FALSE
+ft_id_1309;dbpedia_4156;0.2941176470588235;arab national bank;kinetic concepts;FALSE
+ft_id_576;dbpedia_3659;0.2941176470588235;svenska handelsbanken;marvelous inc;FALSE
+ft_id_659;dbpedia_584;0.2941176470588235;first republic bank;vici properties;FALSE
+ft_id_1317;dbpedia_1596;0.2941176470588235;brighthouse financial;campari group;FALSE
+ft_id_1416;dbpedia_3648;0.29268292682926833;liberty broadband;expeditors international;FALSE
+ft_id_1640;dbpedia_2946;0.29268292682926833;akelius residential property;the body shop;FALSE
+ft_id_853;dbpedia_249;0.2909090909090909;kansai electric power;first alliance bank zambia limited;FALSE
+ft_id_1890;dbpedia_3073;0.2857142857142857;pennymac financial services;mafra (company);FALSE
+ft_id_1449;dbpedia_439;0.2857142857142857;align technology;kipco;FALSE
+ft_id_405;dbpedia_5110;0.2857142857142857;mitsubishi electric;bbva perú;FALSE
+ft_id_510;dbpedia_1278;0.2857142857142857;continental;key tronic;FALSE
+ft_id_994;dbpedia_4968;0.2857142857142857;first quantum minerals;southern copper corporation;FALSE
+ft_id_481;dbpedia_639;0.2857142857142857;hana financial group;mesta (company);FALSE
+ft_id_1231;dbpedia_5335;0.2857142857142857;alstom;unicharm;FALSE
+ft_id_1110;dbpedia_4127;0.2857142857142857;credicorp;cosan;FALSE
+ft_id_1893;dbpedia_3054;0.2857142857142857;aozora bank;fat lizard;FALSE
+ft_id_804;dbpedia_5426;0.2857142857142857;sk innovation ;ryanair;FALSE
+ft_id_1603;dbpedia_3110;0.2857142857142857;workday;southern water;FALSE
+ft_id_1995;dbpedia_5098;0.2857142857142857;shenzhen feima international supply chain;associated university presses;FALSE
+ft_id_1193;dbpedia_1428;0.2857142857142857;bbmg;emi;FALSE
+ft_id_849;dbpedia_2636;0.2857142857142857;moody's;procore;FALSE
+ft_id_608;dbpedia_3007;0.2857142857142857;stanley black & decker;sthree;FALSE
+ft_id_1950;dbpedia_422;0.2857142857142857;steris;frontera energy;FALSE
+ft_id_1888;dbpedia_4702;0.2857142857142857;sca;cablevision;FALSE
+ft_id_1805;dbpedia_248;0.2857142857142857;deutsche pfandbriefbank;armstrong world industries;FALSE
+ft_id_1219;dbpedia_1699;0.2857142857142857;carnival corporation;chedraui;FALSE
+ft_id_1758;dbpedia_268;0.2857142857142857;avenue supermarts;nomad foods;FALSE
+ft_id_1575;dbpedia_96;0.2857142857142857;oriental land;a place for mom;FALSE
+ft_id_520;dbpedia_4171;0.2857142857142857;cummins;tenaris;FALSE
+ft_id_1428;dbpedia_1977;0.2857142857142857;attijariwafa bank;emotion production;FALSE
+ft_id_1565;dbpedia_6269;0.28;bank of guizhou;interoil exploration and production;FALSE
+ft_id_1817;dbpedia_2278;0.2790697674418605;tsim sha tsui properties;belle international;FALSE
+ft_id_1419;dbpedia_5105;0.2790697674418605;china grand automotive services;bmc software;FALSE
+ft_id_1304;dbpedia_5987;0.2790697674418605;china resources power;masergy communications;FALSE
+ft_id_1954;dbpedia_4413;0.2790697674418605;hokkoku financial holdings;kenmare resources;FALSE
+ft_id_630;dbpedia_3343;0.2777777777777778;deutsche boerse;sulzer (manufacturer);FALSE
+ft_id_922;dbpedia_637;0.2777777777777778;shanghai construction ;medstar health;FALSE
+ft_id_1949;dbpedia_3094;0.2777777777777778;healthpeak properties;onto innovation;FALSE
+ft_id_1486;dbpedia_1454;0.2777777777777778;thai beverage;sucampo pharmaceuticals;FALSE
+ft_id_1288;dbpedia_1064;0.2777777777777778;frontier communications parent;frikom;FALSE
+ft_id_157;dbpedia_2218;0.2777777777777778;walgreens;umpqua holdings corporation;FALSE
+ft_id_1926;dbpedia_4673;0.27586206896551724;wintrust financial;norske skog;FALSE
+ft_id_1641;dbpedia_3478;0.27586206896551724;hong leong financial;vale s.a.;FALSE
+ft_id_764;dbpedia_4768;0.27586206896551724;great wall motor ;wilson, sons;FALSE
+ft_id_565;dbpedia_3271;0.27586206896551724;kimberly-clark;proekt-technika;FALSE
+ft_id_800;dbpedia_1782;0.27586206896551724;samsung fire & marine;marukome;FALSE
+ft_id_279;dbpedia_4387;0.27586206896551724;asml holding;golden west books;FALSE
+ft_id_479;dbpedia_2884;0.27586206896551724;vodafone;callaway golf company;FALSE
+ft_id_167;dbpedia_5563;0.27586206896551724;medtronic;hudson's bay company;FALSE
+ft_id_236;dbpedia_1819;0.27586206896551724;archer daniels midland;majorel;FALSE
+ft_id_1289;dbpedia_1639;0.27450980392156865;samhallsbyggnadsbolaget i norden;croda international;FALSE
+ft_id_1695;dbpedia_138;0.27450980392156865;shanghai commercial & savings bank;tupperware brands;FALSE
+ft_id_1465;dbpedia_4561;0.2727272727272727;covivio;lens technology;FALSE
+ft_id_1979;dbpedia_3563;0.2727272727272727;fertiglobe;thames water;FALSE
+ft_id_1007;dbpedia_6378;0.2727272727272727;sm investments;sgs s.a.;FALSE
+ft_id_297;dbpedia_3599;0.2727272727272727;unicredit;china railway;FALSE
+ft_id_891;dbpedia_3054;0.2727272727272727;sbi holdings;fat lizard;FALSE
+ft_id_812;dbpedia_2106;0.2727272727272727;united rentals;swedbank;FALSE
+ft_id_1716;dbpedia_4092;0.2727272727272727;live nation entertainment;cno financial group;FALSE
+ft_id_1927;dbpedia_1274;0.2702702702702703;banque centrale populaire;maxima group;FALSE
+ft_id_1435;dbpedia_6046;0.2702702702702703;osaka gas;kongsberg satellite services;FALSE
+ft_id_512;dbpedia_5433;0.2702702702702703;murata manufacturing;ineos styrolution;FALSE
+ft_id_529;dbpedia_1299;0.2702702702702703;kuehne & nagel international;tv azteca;FALSE
+ft_id_250;dbpedia_5713;0.2702702702702703;power corp of canada;telefônica brasil;FALSE
+ft_id_1251;dbpedia_3417;0.2666666666666667;china gas holdings;realnetworks;FALSE
+ft_id_567;dbpedia_5736;0.2666666666666667;swedbank;elscint;FALSE
+ft_id_658;dbpedia_1084;0.2666666666666667;aeon;toyo seikan;FALSE
+ft_id_185;dbpedia_4889;0.2666666666666667;mizuho financial;marcopolo s.a.;FALSE
+ft_id_736;dbpedia_5570;0.2666666666666667;centerpoint energy;list of assets owned by berkshire hathaway;FALSE
+ft_id_1941;dbpedia_247;0.2666666666666667;albemarle;apotex;FALSE
+ft_id_57;dbpedia_1534;0.2666666666666667;taiwan semiconductor;srbija voz;FALSE
+ft_id_1067;dbpedia_2636;0.2666666666666667;celanese;procore;FALSE
+ft_id_658;dbpedia_2211;0.2666666666666667;aeon;nippon soda;FALSE
+ft_id_984;dbpedia_4952;0.26315789473684215;shenzhen overseas;sims metal management;FALSE
+ft_id_1061;dbpedia_865;0.26315789473684215;uni-president;pioneer natural resources;FALSE
+ft_id_814;dbpedia_4243;0.26315789473684215;chongqing rural bank;trinity industries;FALSE
+ft_id_1060;dbpedia_2172;0.26315789473684215;risesun real estate development;zalando;FALSE
+ft_id_890;dbpedia_3447;0.26315789473684215;unipol gruppo;arthur j. gallagher & co.;FALSE
+ft_id_1821;dbpedia_2665;0.26315789473684215;crescent point energy;sanlorenzo s.p.a.;FALSE
+ft_id_489;dbpedia_409;0.26086956521739135;femsa;berkshire hathaway;FALSE
+ft_id_941;dbpedia_4506;0.26086956521739135;amcor;diários associados;FALSE
+ft_id_1461;dbpedia_2880;0.26086956521739135;ahli united bank;carvana;FALSE
+ft_id_91;dbpedia_90;0.26086956521739135;cisco systems;jinkosolar;FALSE
+ft_id_1456;dbpedia_6024;0.26086956521739135;unicharm;cincinnati bell;FALSE
+ft_id_281;dbpedia_3167;0.26086956521739135;investor ab;keller group;FALSE
+ft_id_1694;dbpedia_6144;0.26086956521739135;iveco group;beam suntory;FALSE
+ft_id_566;dbpedia_1685;0.26086956521739135;cognizant;rogers telecom;FALSE
+ft_id_289;dbpedia_4912;0.26086956521739135;kroger;mga entertainment;FALSE
+ft_id_1344;dbpedia_3958;0.25806451612903225;compal electronics;trønderenergi;FALSE
+ft_id_1659;dbpedia_5482;0.25806451612903225;cpi property group;kana software;FALSE
+ft_id_967;dbpedia_2526;0.25806451612903225;quest diagnostics;mclane company;FALSE
+ft_id_224;dbpedia_5573;0.25806451612903225;société générale;ihi corporation;FALSE
+ft_id_1310;dbpedia_5195;0.25806451612903225;marvell technology;editora abril;FALSE
+ft_id_475;dbpedia_1533;0.25806451612903225;new china life insurance;uninett;FALSE
+ft_id_577;dbpedia_1204;0.25806451612903225;raymond james financial;orthomol;FALSE
+ft_id_887;dbpedia_1384;0.25806451612903225;isuzu motors;prosper marketplace;FALSE
+ft_id_762;dbpedia_2711;0.25531914893617025;abu dhabi commercial bank;elektroprivreda srbije;FALSE
+ft_id_1170;dbpedia_1479;0.25531914893617025;steel authority of india;gaming innovation group;FALSE
+ft_id_810;dbpedia_5295;0.25;westlake chemical;sandahlsbolagen;FALSE
+ft_id_1177;dbpedia_6754;0.25;china national chemical;jaiz bank;FALSE
+ft_id_933;dbpedia_382;0.25;subaru;kier group;FALSE
+ft_id_1303;dbpedia_6798;0.25;jacobs engineering;hyundai glovis;FALSE
+ft_id_839;dbpedia_2014;0.25;nomura;bh telecom;FALSE
+ft_id_1991;dbpedia_2528;0.25;match group;kaslink foods;FALSE
+ft_id_444;dbpedia_4113;0.25;l3harris technologies;coop norden;FALSE
+ft_id_1249;dbpedia_1741;0.25;lundbergs;tokenex;FALSE
+ft_id_1979;dbpedia_659;0.25;fertiglobe;tadano limited;FALSE
+ft_id_812;dbpedia_6634;0.25;united rentals;jazzercise;FALSE
+ft_id_1534;dbpedia_4045;0.25;crown holdings;yara international;FALSE
+ft_id_926;dbpedia_4737;0.25;viatris;corporate office properties trust;FALSE
+ft_id_1921;dbpedia_4849;0.25;galaxy entertainment;balfin group;FALSE
+ft_id_228;dbpedia_679;0.25;oil & natural gas;upslope brewing company;FALSE
+ft_id_1838;dbpedia_3216;0.25;wayfair;a&p group;FALSE
+ft_id_822;dbpedia_3840;0.25;absa group;endava;FALSE
+ft_id_1398;dbpedia_3082;0.25;euronext;main street bank;FALSE
+ft_id_1724;dbpedia_155;0.25;aecom technology;menarini;FALSE
+ft_id_1046;dbpedia_4967;0.25;wan hai lines;sojaprotein;FALSE
+ft_id_1400;dbpedia_5285;0.25;mercadolibre;srbija kargo;FALSE
+ft_id_1017;dbpedia_2318;0.25;agc;alps electric;FALSE
+ft_id_832;dbpedia_154;0.25;quinenco;sparebanken vest;FALSE
+ft_id_1533;dbpedia_6696;0.25;keppel;bega group;FALSE
+ft_id_1072;dbpedia_6650;0.25;microchip technology;teva pharmaceuticals;FALSE
+ft_id_72;dbpedia_4929;0.25;aia group;cpt corporation;FALSE
+ft_id_1321;dbpedia_4252;0.25;didi global;bank pasargad;FALSE
+ft_id_1371;dbpedia_1187;0.25;sonic healthcare;heijmans;FALSE
+ft_id_869;dbpedia_6596;0.25;ameren;century international arms;FALSE
+ft_id_1156;dbpedia_4864;0.25;yum china holdings;bank of cyprus;FALSE
+ft_id_182;dbpedia_1193;0.25;accenture;snap-on;FALSE
+ft_id_690;dbpedia_840;0.25;ecolab;loma negra;FALSE
+ft_id_1842;dbpedia_6880;0.25;trade desk;karsan;FALSE
+ft_id_941;dbpedia_3868;0.25;amcor;bae systems;FALSE
+ft_id_985;dbpedia_6508;0.25;tenet healthcare;ncba bank rwanda;FALSE
+ft_id_242;dbpedia_4489;0.25;longfor group holdings;equity one;FALSE
+ft_id_64;dbpedia_4617;0.24489795918367352;petrobras;narita international airport corporation;FALSE
+ft_id_945;dbpedia_912;0.24390243902439024;alexandria real estate equities;nike, inc.;FALSE
+ft_id_1789;dbpedia_2383;0.24390243902439024;gjensidige forsikring;travel + leisure co.;FALSE
+ft_id_1470;dbpedia_2949;0.24390243902439024;charoen pokphand foods;world fuel services;FALSE
+ft_id_1630;dbpedia_5813;0.24242424242424243;clal insurance enterprises ;aercap;FALSE
+ft_id_36;dbpedia_3248;0.24242424242424243;goldman sachs group;air france–klm;FALSE
+ft_id_1890;dbpedia_3840;0.24242424242424243;pennymac financial services;endava;FALSE
+ft_id_623;dbpedia_6081;0.24;international paper;anicom;FALSE
+ft_id_930;dbpedia_3436;0.24;intuitive surgical;spirent;FALSE
+ft_id_784;dbpedia_6350;0.24;bank hapoalim;attica group;FALSE
+ft_id_54;dbpedia_6898;0.24;industrial bank ;tui group;FALSE
+ft_id_1301;dbpedia_2803;0.24;adyen;rackspace technology;FALSE
+ft_id_839;dbpedia_810;0.24;nomura;subway (restaurant);FALSE
+ft_id_387;dbpedia_1115;0.24;swiss life holding;covivio;FALSE
+ft_id_50;dbpedia_557;0.24;intel;simon property group;FALSE
+ft_id_281;dbpedia_3845;0.24;investor ab;air seychelles;FALSE
+ft_id_1532;dbpedia_4947;0.24;sonova holding;robert dyas;FALSE
+ft_id_1388;dbpedia_4363;0.24;bper banca;otis spunkmeyer;FALSE
+ft_id_1873;dbpedia_392;0.23728813559322037;vietnam technological & commercial joint stock bank;allergan;FALSE
+ft_id_1108;dbpedia_4899;0.23529411764705888;j.b. hunt transport services;mastek;FALSE
+ft_id_1778;dbpedia_2831;0.23529411764705888;hyundai engineering;appen (company);FALSE
+ft_id_994;dbpedia_295;0.23529411764705888;first quantum minerals;brown brothers harriman & co.;FALSE
+ft_id_94;dbpedia_71;0.23529411764705888;chubb;scm holdings;FALSE
+ft_id_218;dbpedia_1172;0.23529411764705888;midea group;resmed;FALSE
+ft_id_1757;dbpedia_1004;0.23529411764705888;shandong hualu-hengsheng chemical;kureha corporation;FALSE
+ft_id_857;dbpedia_5279;0.23529411764705888;signature bank;rei;FALSE
+ft_id_1623;dbpedia_3240;0.23529411764705888;investec;air products and chemicals;FALSE
+ft_id_18;dbpedia_354;0.23529411764705888;verizon communications;krispy kreme;FALSE
+ft_id_800;dbpedia_4029;0.2325581395348837;samsung fire & marine;renewable energy group;FALSE
+ft_id_1384;dbpedia_4532;0.2325581395348837;sdic power holdings;sarajevo tobacco factory;FALSE
+ft_id_1788;dbpedia_4505;0.2325581395348837;smoore international holdings;bsh hausgeräte;FALSE
+ft_id_695;dbpedia_737;0.2325581395348837;china energy engineering;don quijote (store);FALSE
+ft_id_1926;dbpedia_5924;0.23076923076923073;wintrust financial;plantaže;FALSE
+ft_id_1292;dbpedia_893;0.23076923076923073;nedbank;arotech corporation;FALSE
+ft_id_1165;dbpedia_3860;0.23076923076923073;capitaland investment;asics;FALSE
+ft_id_1392;dbpedia_5298;0.23076923076923073;oji holdings;superior essex;FALSE
+ft_id_1629;dbpedia_2648;0.23076923076923073;japan securities;saks, inc.;FALSE
+ft_id_1558;dbpedia_1062;0.23076923076923073;chiba bank;freeport-mcmoran;FALSE
+ft_id_393;dbpedia_2952;0.23076923076923073;sampo;yamasaki & associates;FALSE
+ft_id_1012;dbpedia_3495;0.23076923076923073;china jinmao;cbl properties;FALSE
+ft_id_1786;dbpedia_5800;0.23076923076923073;manpower;saur neptun gdańsk;FALSE
+ft_id_1414;dbpedia_2049;0.23076923076923073;faurecia;access bank rwanda;FALSE
+ft_id_1552;dbpedia_2003;0.22857142857142854;nippon express holdings;astoria bank;FALSE
+ft_id_975;dbpedia_5089;0.22857142857142854;bancolombia;airbus defence and space;FALSE
+ft_id_580;dbpedia_243;0.2272727272727273;pinduoduo;apple productivity experience group;FALSE
+ft_id_662;dbpedia_1210;0.2264150943396226;fidelity national information (fis);paradies lagardère;FALSE
+ft_id_1624;dbpedia_1870;0.2222222222222222;k+s;unisto;FALSE
+ft_id_1099;dbpedia_5629;0.2222222222222222;paychex;ascom group;FALSE
+ft_id_1844;dbpedia_2745;0.2222222222222222;jd sports fashion;true value;FALSE
+ft_id_1294;dbpedia_1513;0.2222222222222222;hopson development holdings;photocure;FALSE
+ft_id_1677;dbpedia_493;0.2222222222222222;zheshang development group;familymart;FALSE
+ft_id_1796;dbpedia_6086;0.2222222222222222;lear;chemring group;FALSE
+ft_id_1114;dbpedia_5086;0.2222222222222222;siam commercial bank;entanet;FALSE
+ft_id_1975;dbpedia_3366;0.2222222222222222;jb financial group;utstarcom;FALSE
+ft_id_1027;dbpedia_4897;0.2222222222222222;jones lang lasalle;gategroup;FALSE
+ft_id_553;dbpedia_5758;0.2222222222222222;telus;be&k;FALSE
+ft_id_190;dbpedia_2783;0.2222222222222222;micron technology;pfleiderer;FALSE
+ft_id_1628;dbpedia_680;0.2222222222222222;crowdstrike;teligent telecom;FALSE
+ft_id_745;dbpedia_111;0.2222222222222222;pkn orlen;etl group;FALSE
+ft_id_242;dbpedia_1951;0.2222222222222222;longfor group holdings;tarkett d.o.o.;FALSE
+ft_id_1085;dbpedia_2763;0.2222222222222222;kuwait finance house;gazprom germania;FALSE
+ft_id_124;dbpedia_4040;0.2222222222222222;unilever;yugorosgaz;FALSE
+ft_id_144;dbpedia_2310;0.21739130434782605;hitachi;sanitarium health and wellbeing company;FALSE
+ft_id_424;dbpedia_5048;0.21621621621621623;keurig dr pepper;sonoma cheese factory;FALSE
+ft_id_160;dbpedia_4640;0.21621621621621623;møller-maersk;anonima petroli italiana;FALSE
+ft_id_938;dbpedia_6690;0.21621621621621623;pko bank polski;charter communications;FALSE
+ft_id_1781;dbpedia_704;0.2142857142857143;avnet;western marine shipyard;FALSE
+ft_id_938;dbpedia_5904;0.2142857142857143;pko bank polski;lotte hi-mart;FALSE
+ft_id_1766;dbpedia_4704;0.2142857142857143;taiwan business bank;capsugel;FALSE
+ft_id_1748;dbpedia_2962;0.2142857142857143;bayan resources;towers perrin;FALSE
+ft_id_479;dbpedia_2808;0.2142857142857143;vodafone;speedway motorsports;FALSE
+ft_id_725;dbpedia_5855;0.2142857142857143;coal india;levi strauss & co.;FALSE
+ft_id_1031;dbpedia_5079;0.2142857142857143;invesco;enel generación chile;FALSE
+ft_id_1189;dbpedia_5975;0.2142857142857143;bank of changsha;veolia water;FALSE
+ft_id_505;dbpedia_3488;0.2142857142857143;erste group bank;cic holdings;FALSE
+ft_id_1191;dbpedia_6723;0.21276595744680848;china resources pharmaceutical group;toast, inc.;FALSE
+ft_id_548;dbpedia_2006;0.21052631578947367;kubota;avon products;FALSE
+ft_id_816;dbpedia_733;0.21052631578947367;ball;awilco offshore;FALSE
+ft_id_666;dbpedia_2593;0.21052631578947367;xiamen c&d;energizer;FALSE
+ft_id_975;dbpedia_1699;0.21052631578947367;bancolombia;chedraui;FALSE
+ft_id_1023;dbpedia_3794;0.21052631578947367;anta sports products;mnemonic (company);FALSE
+ft_id_213;dbpedia_3278;0.2068965517241379;takeda pharmaceutical;quiktrip;FALSE
+ft_id_1865;dbpedia_6690;0.2068965517241379;shimizu;charter communications;FALSE
+ft_id_1863;dbpedia_4760;0.2068965517241379;huaibei mining holdings;tereos;FALSE
+ft_id_1647;dbpedia_892;0.2068965517241379;yamaguchi financial;arup group;FALSE
+ft_id_408;dbpedia_2963;0.2068965517241379;heineken;mölnlycke health care;FALSE
+ft_id_1187;dbpedia_3658;0.2068965517241379;kirin holdings;mercury systems;FALSE
+ft_id_1505;dbpedia_2982;0.20512820512820518;verisign;bettys and taylors of harrogate;FALSE
+ft_id_126;dbpedia_2625;0.20512820512820518;sumitomo mitsui financial;axway software;FALSE
+ft_id_1060;dbpedia_4750;0.20512820512820518;risesun real estate development;kiwirail;FALSE
+ft_id_1956;dbpedia_4584;0.20408163265306123;adnoc drilling;j. h. hobbs, brockunier and company;FALSE
+ft_id_553;dbpedia_5199;0.19999999999999996;telus;heineken srbija;FALSE
+ft_id_961;dbpedia_468;0.19999999999999996;gerdau (cosigua);j. alexander's;FALSE
+ft_id_1794;dbpedia_1428;0.19999999999999996;service corp intl;emi;FALSE
+ft_id_295;dbpedia_1872;0.19999999999999996;lyondellbasell industries;orica;FALSE
+ft_id_400;dbpedia_5185;0.19999999999999996;saudi telecom;easyjet;FALSE
+ft_id_740;dbpedia_3552;0.19999999999999996;nec;textron;FALSE
+ft_id_189;dbpedia_2303;0.19999999999999996;poly developments & holdings group;rotork;FALSE
+ft_id_625;dbpedia_4070;0.19999999999999996;nidec;valeo;FALSE
+ft_id_1163;dbpedia_1464;0.19999999999999996;cj corporation;trumpf;FALSE
+ft_id_571;dbpedia_6364;0.19999999999999996;devon energy;azomureș;FALSE
+ft_id_1600;dbpedia_306;0.19999999999999996;zto express (cayman);ccb brasil;FALSE
+ft_id_1277;dbpedia_4300;0.19999999999999996;dongguan rural commercial bank;plumbworld;FALSE
+ft_id_1154;dbpedia_2741;0.19999999999999996;davita;suntrust banks;FALSE
+ft_id_286;dbpedia_1099;0.19999999999999996;diageo;bank of punjab;FALSE
+ft_id_612;dbpedia_920;0.19999999999999996;s.f. holding;unifirst;FALSE
+ft_id_543;dbpedia_5030;0.19999999999999996;tokyo electron;pathao;FALSE
+ft_id_41;dbpedia_2634;0.19999999999999996;cvs health;punch pubs;FALSE
+ft_id_1204;dbpedia_5342;0.19999999999999996;leidos;international coal group;FALSE
+ft_id_171;dbpedia_3751;0.19999999999999996;lockheed martin;haeco;FALSE
+ft_id_838;dbpedia_1729;0.19999999999999996;tdk;kakao m;FALSE
+ft_id_1968;dbpedia_2287;0.19999999999999996;cadence bank;lamprell;FALSE
+ft_id_1799;dbpedia_887;0.19999999999999996;tosoh;radet;FALSE
+ft_id_422;dbpedia_4337;0.196078431372549;bank of nanjing;chelmsford star co-operative society;FALSE
+ft_id_1253;dbpedia_3942;0.19512195121951215;hologic;electric power development company;FALSE
+ft_id_483;dbpedia_4518;0.19354838709677424;ntpc;quester tangent corporation;FALSE
+ft_id_1910;dbpedia_4512;0.19354838709677424;commercial metals;prestige group;FALSE
+ft_id_1332;dbpedia_3477;0.19354838709677424;huadian power international;veon;FALSE
+ft_id_1766;dbpedia_4200;0.19354838709677424;taiwan business bank;rollerblade;FALSE
+ft_id_1037;dbpedia_1985;0.19047619047619047;industries qatar;epson;FALSE
+ft_id_1047;dbpedia_5495;0.19047619047619047;equinix;transelectrica;FALSE
+ft_id_1555;dbpedia_813;0.19047619047619047;globalfoundries;sunoco;FALSE
+ft_id_196;dbpedia_1605;0.19047619047619047;telefónica;capriotti's;FALSE
+ft_id_1664;dbpedia_5514;0.19047619047619047;autodesk;bank hapoalim;FALSE
+ft_id_1568;dbpedia_6225;0.19047619047619047;kingdom holding;gunvor;FALSE
+ft_id_1604;dbpedia_6817;0.1875;check point software;oms lighting;FALSE
+ft_id_903;dbpedia_5938;0.1875;yuanta financial holding;sprinklr;FALSE
+ft_id_1757;dbpedia_425;0.18604651162790697;shandong hualu-hengsheng chemical;friuladria;FALSE
+ft_id_983;dbpedia_1414;0.18181818181818177;arrow electronics;abcam;FALSE
+ft_id_183;dbpedia_5251;0.18181818181818177;ing group;general mills;FALSE
+ft_id_573;dbpedia_4303;0.18181818181818177;jsw steel;velvet ice cream company;FALSE
+ft_id_19;dbpedia_182;0.18181818181818177;at&t;nakheel properties;FALSE
+ft_id_1531;dbpedia_3716;0.18181818181818177;nitori holdings;dradura;FALSE
+ft_id_1651;dbpedia_4023;0.18181818181818177;new york community bancorp;realogy;FALSE
+ft_id_757;dbpedia_1536;0.18181818181818177;sekisui house;standard bank malawi;FALSE
+ft_id_820;dbpedia_1768;0.18181818181818177;wipro;itaúsa;FALSE
+ft_id_1466;dbpedia_2542;0.18181818181818177;sgs;mindgeek;FALSE
+ft_id_1823;dbpedia_4511;0.18181818181818177;finecobank;pošte srpske;FALSE
+ft_id_1029;dbpedia_1441;0.18181818181818177;daiwa securities;elanco;FALSE
+ft_id_884;dbpedia_3709;0.18181818181818177;expeditors international;sotheby's;FALSE
+ft_id_1428;dbpedia_4127;0.18181818181818177;attijariwafa bank;cosan;FALSE
+ft_id_906;dbpedia_6797;0.18181818181818177;alleghany;hutchinson sa;FALSE
+ft_id_1564;dbpedia_4291;0.18181818181818177;nine dragons paper holdings;exetel;FALSE
+ft_id_682;dbpedia_3989;0.18181818181818177;riyad bank;lotte kolson;FALSE
+ft_id_373;dbpedia_5836;0.1777777777777778;woolworths;elektroprivreda bosne i hercegovine;FALSE
+ft_id_182;dbpedia_4585;0.17391304347826086;accenture;bloomberg l.p.;FALSE
+ft_id_1451;dbpedia_220;0.17391304347826086;ss&c technologies;zappos;FALSE
+ft_id_1479;dbpedia_5824;0.17391304347826086;slm;ezchip semiconductor;FALSE
+ft_id_341;dbpedia_637;0.17391304347826086;panasonic;medstar health;FALSE
+ft_id_387;dbpedia_2128;0.17391304347826086;swiss life holding;líder;FALSE
+ft_id_169;dbpedia_2428;0.17391304347826086;sk hynix;house of fraser;FALSE
+ft_id_669;dbpedia_6172;0.17391304347826086;picc;frontier california;FALSE
+ft_id_1212;dbpedia_1756;0.17391304347826086;experian;banco de bogotá;FALSE
+ft_id_1873;dbpedia_6540;0.1724137931034483;vietnam technological & commercial joint stock bank;stemcor;FALSE
+ft_id_376;dbpedia_6808;0.17142857142857137;hartford financial services;maconomy;FALSE
+ft_id_478;dbpedia_3079;0.17142857142857137;talanx;live nation (events promoter);FALSE
+ft_id_1010;dbpedia_5868;0.17142857142857137;taiwan cooperative financial;ubm plc;FALSE
+ft_id_411;dbpedia_2348;0.16666666666666663;bt group;fosen trafikklag;FALSE
+ft_id_147;dbpedia_1782;0.16666666666666663;visa;marukome;FALSE
+ft_id_1873;dbpedia_534;0.16666666666666663;vietnam technological & commercial joint stock bank;man group;FALSE
+ft_id_606;dbpedia_4867;0.16666666666666663;hikvision;jvc;FALSE
+ft_id_461;dbpedia_5816;0.16666666666666663;sunac china holdings;dena;FALSE
+ft_id_885;dbpedia_1255;0.16666666666666663;ternium;inpex;FALSE
+ft_id_521;dbpedia_5388;0.16666666666666663;williams;dfds;FALSE
+ft_id_289;dbpedia_5565;0.16666666666666663;kroger;hy-vee;FALSE
+ft_id_1251;dbpedia_998;0.16666666666666663;china gas holdings;kroger;FALSE
+ft_id_1702;dbpedia_5879;0.16666666666666663;pvh;gfi group;FALSE
+ft_id_1471;dbpedia_765;0.16666666666666663;indusind bank;scholarbuys;FALSE
+ft_id_269;dbpedia_4415;0.16666666666666663;hdfc;michelin;FALSE
+ft_id_973;dbpedia_387;0.16666666666666663;molson coors brewing;iqms;FALSE
+ft_id_1119;dbpedia_5683;0.16666666666666663;tbea;mind cti;FALSE
+ft_id_965;dbpedia_5701;0.16666666666666663;shenwan hongyuan group;tapestry, inc.;FALSE
+ft_id_1027;dbpedia_843;0.16666666666666663;jones lang lasalle;lonrho;FALSE
+ft_id_795;dbpedia_5182;0.16666666666666663;cifi holdings group;aflac;FALSE
+ft_id_1300;dbpedia_5426;0.16216216216216217;china fortune land development;ryanair;FALSE
+ft_id_655;dbpedia_3011;0.16000000000000003;nxp semiconductors;trellix;FALSE
+ft_id_1119;dbpedia_2210;0.16000000000000003;tbea;newmarket corporation;FALSE
+ft_id_466;dbpedia_1983;0.16000000000000003;jd.com;enterprise products;FALSE
+ft_id_1373;dbpedia_5980;0.16000000000000003;wolters kluwer;valhi, inc.;FALSE
+ft_id_448;dbpedia_1821;0.16000000000000003;norilsk nickel;mrm//mccann;FALSE
+ft_id_949;dbpedia_6483;0.15625;joint stock commercial bank for foreign trade of vietnam;gap inc.;FALSE
+ft_id_1806;dbpedia_4652;0.15384615384615385;nio;first data;FALSE
+ft_id_906;dbpedia_665;0.15384615384615385;alleghany;tsys;FALSE
+ft_id_1898;dbpedia_64;0.15384615384615385;azrieli group;ssq insurance;FALSE
+ft_id_470;dbpedia_3937;0.15384615384615385;firstrand;deva holding a.s.;FALSE
+ft_id_895;dbpedia_3962;0.15384615384615385;e-mart ;synchrony financial;FALSE
+ft_id_631;dbpedia_609;0.15384615384615385;labcorp;gordon food service;FALSE
+ft_id_565;dbpedia_2193;0.14814814814814814;kimberly-clark;aon (company);FALSE
+ft_id_1287;dbpedia_1253;0.14814814814814814;goertek;improbable (company);FALSE
+ft_id_1957;dbpedia_3536;0.14814814814814814;far eastern new century;kone;FALSE
+ft_id_718;dbpedia_889;0.14814814814814814;korea electric power;uniadex;FALSE
+ft_id_1665;dbpedia_753;0.1428571428571429;ceconomy;qualys;FALSE
+ft_id_923;dbpedia_2759;0.1428571428571429;essity;nic inc.;FALSE
+ft_id_1832;dbpedia_2747;0.1428571428571429;wsp;sumitomo dainippon pharma;FALSE
+ft_id_1984;dbpedia_2213;0.1428571428571429;li auto;verbund;FALSE
+ft_id_252;dbpedia_6029;0.1428571428571429;bayer ;coresite;FALSE
+ft_id_118;dbpedia_3152;0.1428571428571429;edf ;grünenthal;FALSE
+ft_id_1406;dbpedia_4872;0.1428571428571429;perkinelmer;jamnica (company);FALSE
+ft_id_1730;dbpedia_4417;0.1428571428571429;var energi asa;michel cluizel;FALSE
+ft_id_94;dbpedia_52;0.1428571428571429;chubb;poundland;FALSE
+ft_id_1740;dbpedia_177;0.1428571428571429;beigene;logista;FALSE
+ft_id_562;dbpedia_3546;0.1428571428571429;advanced micro devices;tennet;FALSE
+ft_id_551;dbpedia_2528;0.1428571428571429;te connectivity;kaslink foods;FALSE
+ft_id_375;dbpedia_6467;0.1428571428571429;adobe;klépierre;FALSE
+ft_id_1915;dbpedia_6780;0.1428571428571429;cencosud;masimo;FALSE
+ft_id_439;dbpedia_3614;0.13793103448275867;principal financial group;wika;FALSE
+ft_id_58;dbpedia_3227;0.13793103448275867;mitsubishi ufj financial;emcor;FALSE
+ft_id_797;dbpedia_5266;0.1333333333333333;whirlpool;neogen;FALSE
+ft_id_1194;dbpedia_5419;0.1333333333333333;suning.com;yahoo (2017–present);FALSE
+ft_id_1471;dbpedia_1120;0.12903225806451613;indusind bank;exela technologies;FALSE
+ft_id_1401;dbpedia_2465;0.12903225806451613;packaging corp of america;smarsh;FALSE
+ft_id_606;dbpedia_4439;125;hikvision;talbots;FALSE
+ft_id_871;dbpedia_2281;125;assa abloy;komori;FALSE
+ft_id_46;dbpedia_6177;125;rbc;hypera pharma;FALSE
+ft_id_5;dbpedia_2097;125;amazon;hellofresh;FALSE
+ft_id_1164;dbpedia_4693;125;falabella;cma cgm;FALSE
+ft_id_838;dbpedia_4611;0.11764705882352944;tdk;german pellets;FALSE
+ft_id_1482;dbpedia_200;0.11764705882352944;lotte shopping;rai;FALSE
+ft_id_775;dbpedia_6720;0.11428571428571432;gallagher;kmw+nexter defense systems;FALSE
+ft_id_1574;dbpedia_3214;0.11111111111111116;hna technology;mowi;FALSE
+ft_id_1840;dbpedia_3455;0.11111111111111116;ricoh;flygprestanda;FALSE
+ft_id_109;dbpedia_1238;0.11111111111111116;enel;gyoza no ohsho;FALSE
+ft_id_995;dbpedia_4576;0.11111111111111116;aercap holdings;uhu;FALSE
+ft_id_1042;dbpedia_2637;0.11111111111111116;alcon;purdue pharma;FALSE
+ft_id_1793;dbpedia_3701;0.11111111111111116;ford otosan;chattem;FALSE
+ft_id_1354;dbpedia_2071;0.11111111111111116;swatch group;edenor;FALSE
+ft_id_689;dbpedia_2121;0.10526315789473684;legend holding;gasum;FALSE
+ft_id_1256;dbpedia_5330;0.10526315789473684;metro;united devices;FALSE
+ft_id_377;dbpedia_844;0.09999999999999998;state street;lundbeck;FALSE
+ft_id_1357;dbpedia_1045;0.09999999999999998;tokyo century;biovail;FALSE
+ft_id_931;dbpedia_5196;0.09999999999999998;snam;el paso electric;FALSE
+ft_id_1928;dbpedia_616;0.09999999999999998;costar group;invensys;FALSE
+ft_id_1077;dbpedia_4870;0.09523809523809523;rosseti;itaú corpbanca;FALSE
+ft_id_1008;dbpedia_6107;0.09523809523809523;ebay;kghm polska miedź;FALSE
+ft_id_1228;dbpedia_859;0.09523809523809523;zimmer biomet;podravka;FALSE
+ft_id_110;dbpedia_2678;0.09523809523809523;eni;kongsberg spacetec;FALSE
+ft_id_1284;dbpedia_6088;0.09090909090909094;hydro one;fukui railway;FALSE
+ft_id_1012;dbpedia_5236;0.09090909090909094;china jinmao;sweetgreen;FALSE
+ft_id_688;dbpedia_5100;0.09090909090909094;ppg ;attock oil company;FALSE
+ft_id_1993;dbpedia_635;0.09090909090909094;wingtech technology;kfw;FALSE
+ft_id_605;dbpedia_3884;0.08695652173913049;enbw-energie baden;quikr;FALSE
+ft_id_973;dbpedia_1355;0.08695652173913049;molson coors brewing;b&q;FALSE
+ft_id_578;dbpedia_538;0.08333333333333337;byd;oki electric industry;FALSE
+ft_id_511;dbpedia_219;0.07999999999999996;vtb bank;yokogawa electric;FALSE
+ft_id_564;dbpedia_2160;0.07999999999999996;muyuan foodstuff;spire inc;FALSE
+ft_id_1957;dbpedia_3394;0.07692307692307687;far eastern new century;gfk;FALSE
+ft_id_133;dbpedia_4025;0.07407407407407407;cnooc;sprouts farmers market;FALSE
+ft_id_1401;dbpedia_3486;0.0714285714285714;packaging corp of america;okd;FALSE
+ft_id_500;dbpedia_782;0.0714285714285714;aviva;descartes systems group;FALSE
+ft_id_119;dbpedia_822;0.0714285714285714;thermo fisher scientific;blom;FALSE
+ft_id_399;dbpedia_2226;0.06451612903225812;jbs;brunello cucinelli (company);FALSE
+ft_id_1538;dbpedia_3866;0.0;b3;dniproenergo;FALSE
+ft_id_691;dbpedia_1117;0.0;sinopharm group;fedex;FALSE
+ft_id_483;dbpedia_5937;0.0;ntpc;remo;FALSE
+ft_id_1875;dbpedia_4798;0.0;kinnevik;amstrad;FALSE
+ft_id_1053;dbpedia_3931;0.0;verbund;agility logistics;FALSE
+ft_id_1380;dbpedia_1623;0.0;vakifbank;cogeco;FALSE
+ft_id_248;dbpedia_6619;0.0;humana;corecivic;FALSE
+ft_id_1229;dbpedia_5490;0.0;alcoa;kpn;FALSE
+ft_id_1621;dbpedia_942;0.0;snap;brembo;FALSE
+ft_id_484;dbpedia_4675;0.0;maybank;veeco;FALSE
+ft_id_780;dbpedia_1945;0.0;kla;perrigo;FALSE
+ft_id_258;dbpedia_1693;0.0;hp;allied telesis;FALSE
+ft_id_1934;dbpedia_6209;0.0;genmab;kworld;FALSE
+ft_id_1624;dbpedia_4634;0.0;k+s;redrow plc;FALSE
