@@ -60,19 +60,19 @@ public class IR_using_machine_learning_ft_sevM {
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);		
-		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
+		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/mapforce/7.1M_Output.xml"), "/companies/company", dataSevM);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_db_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_sevm_train.csv"));
 
 		// create a matching rule
 		// 1) logistic regression
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic";
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_sevm.csv", 1000, gsTraining);
 		
 		// 2) tree classfier
 		/*
@@ -101,7 +101,7 @@ public class IR_using_machine_learning_ft_sevM {
 		logger.info("*\tLearning matching rule\t*");
 		//RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
 		RuleLearner<Company, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataFt, dataDBpedia, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(dataFt, dataSevM, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
@@ -109,7 +109,7 @@ public class IR_using_machine_learning_ft_sevM {
 		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
 		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_db.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_sevM.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();
@@ -117,7 +117,7 @@ public class IR_using_machine_learning_ft_sevM {
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
-				dataFt, dataDBpedia, null, matchingRule,
+				dataFt, dataSevM, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
@@ -136,7 +136,7 @@ public class IR_using_machine_learning_ft_sevM {
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("FT <-> DBpedia");
+		logger.info("FT <-> SevM");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(

@@ -74,8 +74,8 @@ public class IR_using_linear_combination_ft_sevM
 		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
 		
-		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
+		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/mapforce/7.1M_Output.xml"), "/companies/company", dataSevM);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -85,7 +85,7 @@ public class IR_using_linear_combination_ft_sevM
 		
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_ft_db_lower.csv"));
+				"data/goldstandard/gs_ft_sevm_lower.csv"));
 
 		// create a matching rule
 		//LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -95,7 +95,7 @@ public class IR_using_linear_combination_ft_sevM
 		
 		// create debug report in csv
 		// matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_ft_db_test.csv", 1000, gsTest);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_ft_sevm_test.csv", 1000, gsTest);
 		
 		// add comparators
 		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
@@ -119,7 +119,7 @@ public class IR_using_linear_combination_ft_sevM
 		// Blocker<Movie, Attribute> blocker2 = new StandardBlocker<DBpedia, Attribute>((m) -> Integer.toString(m.getDate().getYear() / 10));
 		
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking_ft_db.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_ft_sevm.csv", 100);
 		
 		
 		// Initialize Matching Engine
@@ -133,7 +133,7 @@ public class IR_using_linear_combination_ft_sevM
 		//		blocker);
 		
 		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
-				dataFt, dataDBpedia, null, matchingRule,
+				dataFt, dataSevM, null, matchingRule,
 				blocker);
 		
 		
@@ -147,7 +147,7 @@ public class IR_using_linear_combination_ft_sevM
 
 		// write the correspondences to the output file
 		// new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
-		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_dbpedia_correspondences.csv"), correspondences);		
+		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_sevM_correspondences.csv"), correspondences);		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
 		MatchingEvaluator<Company, Attribute> evaluator = new MatchingEvaluator<Company, Attribute>();
@@ -156,7 +156,7 @@ public class IR_using_linear_combination_ft_sevM
 				gsTest);
 
 		// print the evaluation result
-		logger.info("DBpedia <-> FT");
+		logger.info("SevM <-> FT");
 		logger.info(String.format(
 				"Precision: %.10f",perfTest.getPrecision()));
 		logger.info(String.format(
