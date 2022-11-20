@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.IndustryComparatorLevenshteinSimilarity;
 // import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
@@ -102,19 +103,20 @@ public class IR_using_linear_combination
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.7);
-		// matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.3);
-		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.3);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.8);
+		//matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.3);
+		//matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.3);
+		matchingRule.addComparator(new IndustryComparatorLevenshteinSimilarity(), 0.2);
 //		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
 		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
 		
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
-		// NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 
-		blocker.setMeasureBlockSizes(true);
+		// blocker.setMeasureBlockSizes(true);
 		
 		// Blocker<Movie, Attribute> blocker2 = new StandardBlocker<DBpedia, Attribute>((m) -> Integer.toString(m.getDate().getYear() / 10));
 		
