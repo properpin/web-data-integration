@@ -36,7 +36,7 @@ import org.apache.commons.math3.util.CombinatoricsUtils;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class IndustryComparatorLevenshteinSimilarity implements Comparator<Company, Attribute> {
+public class CeoNameComparatorJaroSimilarity implements Comparator<Company, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
