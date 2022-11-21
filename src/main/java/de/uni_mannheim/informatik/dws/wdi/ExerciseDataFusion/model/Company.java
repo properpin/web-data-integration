@@ -131,22 +131,42 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute NUMBEROFEMPLOYEES = new Attribute("NumberOfEmployees");
 	public static final Attribute INDUSTRIES = new Attribute("Industries");
 	public static final Attribute CITY = new Attribute("City");
+	public static final Attribute FOUNDINGYEAR = new Attribute("FoundingYear");
+	public static final Attribute COUNTRY = new Attribute("Country");
+	public static final Attribute CEONAMES = new Attribute("CeoNames");
+	public static final Attribute WEBSITE = new Attribute("Website");
 	
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)
 	 */
 	
 	public boolean hasValue(Attribute attribute) {
-		if(attribute==NAME)
+		if(attribute==NAME) {
 			return getName() != null && !getName().isEmpty();
-		else if(attribute==REVENUE)
-			return getRevenue() != null && Double.isNaN(getRevenue());
-		else if(attribute==NUMBEROFEMPLOYEES)
+		}
+		else if(attribute==REVENUE) {
+			return getRevenue() != null && !Double.isNaN(getRevenue());
+		}
+		else if(attribute==NUMBEROFEMPLOYEES) {
 			return getNumberOfEmployees() != null;
-		else if(attribute==INDUSTRIES)
+		}
+		else if(attribute==INDUSTRIES) {
 			return getIndustries() != null && getIndustries().size() > 0;
+			}
 		else if(attribute==CITY) {
-			return getCity() != null && getCity().isEmpty();
+			return getCity() != null && !getCity().isEmpty();
+			}
+		else if(attribute==FOUNDINGYEAR) {
+			return getFoundingYear() != null;
+			}
+		else if(attribute==COUNTRY) {
+			return getCountry() != null && !getCountry().isEmpty();
+			}
+		else if(attribute==CEONAMES) {
+			return getCeoNames() != null && getCeoNames().size() > 0;
+			}
+		else if(attribute==WEBSITE) {
+			return getWebsite() != null && !getWebsite().isEmpty();
 			}
 		else {
 			return false;

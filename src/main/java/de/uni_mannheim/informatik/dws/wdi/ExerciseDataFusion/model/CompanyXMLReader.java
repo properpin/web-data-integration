@@ -51,6 +51,10 @@ dataset.addAttribute(Company.REVENUE);
 dataset.addAttribute(Company.NUMBEROFEMPLOYEES);
 dataset.addAttribute(Company.INDUSTRIES);
 dataset.addAttribute(Company.CITY);
+dataset.addAttribute(Company.FOUNDINGYEAR);
+dataset.addAttribute(Company.COUNTRY);
+dataset.addAttribute(Company.CEONAMES);
+dataset.addAttribute(Company.WEBSITE);
 
 }
 
