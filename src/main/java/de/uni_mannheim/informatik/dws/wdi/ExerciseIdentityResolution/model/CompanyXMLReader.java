@@ -61,7 +61,7 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 			if(getValueFromChildElement(node, "city") != null) {
 				company.setCity(getValueFromChildElement(node, "city"));
 			} else {
-				company.setFoundingYear(-99);
+				company.setCity("-99");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -71,7 +71,7 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 			if(getValueFromChildElement(node, "country") != null) {
 				company.setCountry(getValueFromChildElement(node, "country"));
 			} else {
-				company.setFoundingYear(-99);
+				company.setCountry("-99");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

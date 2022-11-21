@@ -65,11 +65,18 @@ String id = getValueFromChildElement(node, "id");
 	company.setName(getValueFromChildElement(node, "name"));
 	company.setRevenue((long)Double.parseDouble(getValueFromChildElement(node, "revenue")));
 	company.setNumberOfEmployees(Long.parseLong(getValueFromChildElement(node, "numberOfEmployees")));
+	company.setCity(getValueFromChildElement(node, "city"));
+	company.setFoundingYear(Integer.parseInt(getValueFromChildElement(node, "foundingYear")));
+	company.setCountry(getValueFromChildElement(node, "country"));
 	
 	// load the list of actors
 	List<String> industries = getListFromChildElement(node, "industries");
 	
 	company.setIndustries(industries);
+	
+	// load list of ceo names
+	List<String> ceoNames = getListFromChildElement(node, "ceoNames");
+	company.setCeoNames(ceoNames);
 	
 	// convert the date string into a DateTime object
 	try {
