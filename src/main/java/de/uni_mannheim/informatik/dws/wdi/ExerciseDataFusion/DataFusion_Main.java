@@ -11,11 +11,16 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEv
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CityEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NumberOfEmployeesEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CeoNamesEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.IndustriesEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CountryEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.RevenueEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.FoundingYearEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WebsiteEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleMovieFactory;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLFormatter;
@@ -119,7 +124,17 @@ public class DataFusion_Main
 		// strategy.addAttributeFuser(Movie.DIRECTOR,new DirectorFuserLongestString(), new DirectorEvaluationRule());
 		// strategy.addAttributeFuser(Movie.DATE, new DateFuserFavourSource(),new DateEvaluationRule());
 		// strategy.addAttributeFuser(Movie.ACTORS,new ActorsFuserUnion(),new ActorsEvaluationRule());
-		
+		strategy.addAttributeFuser(Company.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Company.REVENUE, new RevenueFuserMostRecent(),new RevenueEvaluationRule());
+		strategy.addAttributeFuser(Company.NUMBEROFEMPLOYEES, new NumberOfEmployeesFuserMostRecent(), new NumberOfEmployeesEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserUnion(), new IndustriesEvaluationRule());
+		strategy.addAttributeFuser(Company.CITY, new CityFuserShortestString() , new CityEvaluationRule());
+		strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserVoting() ,new FoundingYearEvaluationRule());
+		strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserShortestString() , new CountryEvaluationRule());
+		strategy.addAttributeFuser(Company.CEONAMES, new CeoNamesFuserUnion(), new CeoNamesEvaluationRule());
+		strategy.addAttributeFuser(Company.WEBSITE, new WebsiteFuserLongestString(), new WebsiteEvaluationRule());
+
+
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<>(strategy);
 
