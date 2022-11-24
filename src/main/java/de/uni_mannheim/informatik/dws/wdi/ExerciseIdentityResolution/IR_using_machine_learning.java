@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
@@ -14,8 +15,12 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CeoNameComparatorJaroSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.IndustryComparatorLevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorDeviationSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
@@ -69,24 +74,31 @@ public class IR_using_machine_learning {
 
 		// create a matching rule
 		// 1) logistic regression
+		/* 
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic";
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
+		*/
 		
 		// 2) tree classfier
-		/*
+		
 		String options[] = new String[1];
 		options[0] = "-U";
 		String modelType = "J48"; 
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
-		*/
+		
 
 		// add comparators
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
-		//matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity());
-		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity());
+		//matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
+		//matchingRule.addComparator(new NumberOfEmployeesComparatorDeviationSimilarity());
+		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity());
+		matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity());
+		//matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity());
+		//matchingRule.addComparator(new CeoNameComparatorJaroSimilarity());
+		//matchingRule.addComparator(new IndustryComparatorLevenshteinSimilarity());
+		
 		//matchingRule.addComparator(new MovieTitleComparatorEqual());
 		//matchingRule.addComparator(new MovieDateComparator2Years());
 		//matchingRule.addComparator(new MovieDateComparator10Years());
@@ -105,11 +117,12 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
 		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
-		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
 		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_db.csv", 100);
+		
+		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
 		
 		// Initialize Matching Engine
 		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();
