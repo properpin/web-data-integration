@@ -26,7 +26,7 @@ public class JaroSimilarity {
 			int hash_s1[]= new int[s1.length()];
 			int hash_s2[] = new int[s2.length()];
 
-			for (int i; i< len1; i++){
+			for (int i=0; i< len1; i++){
 				int start= Integer.max(0,i-max_dist),
 						end = Integer.min(len2,i+max_dist+1);
 				//if there is a match

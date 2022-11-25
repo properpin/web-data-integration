@@ -2,14 +2,17 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 
-
+import org.apache.xpath.functions.FuncString;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNumberOfEmployeesGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByRevenueGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CeoNameComparatorJaroSimilarity;
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
@@ -17,6 +20,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 // import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.NumberOfEmployeesComparatorPercentageSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.RevenueComparatorPercentageSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
@@ -103,17 +107,22 @@ public class IR_using_linear_combination
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.8);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.2);
 		//matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.3);
-		//matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.3);
-		matchingRule.addComparator(new IndustryComparatorLevenshteinSimilarity(), 0.2);
+		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
+		// matchingRule.addComparator(new RevenueComparatorPercentageSimilarity(), 0.2);
+		
+		//matchingRule.addComparator(new CeoNameComparatorJaroSimilarity(), 0.2);
+		// matchingRule.addComparator(new IndustryComparatorLevenshteinSimilarity(), 0.2);
 //		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
 		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
 		
 
 		// create a blocker (blocking strategy)
-		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
-		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByRevenueGenerator());
+		//SortedNeighbourhoodBlocker<Company,Company, Attribute> blocker = new SortedNeighbourhoodBlocker<Company, Company, Attribute>(new CompanyBlockingKeyByNumberOfEmployeesGenerator(), 5);
 		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 
 		// blocker.setMeasureBlockSizes(true);

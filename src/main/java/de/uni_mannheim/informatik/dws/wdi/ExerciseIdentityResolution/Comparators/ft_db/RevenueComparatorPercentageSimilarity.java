@@ -16,18 +16,12 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.DBpedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Ft;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
-import org.apache.commons.math3.util.CombinatoricsUtils;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
@@ -36,10 +30,10 @@ import org.apache.commons.math3.util.CombinatoricsUtils;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CeoNameComparatorJaroSimilarity implements Comparator<Company, Attribute> {
+public class RevenueComparatorPercentageSimilarity implements Comparator<Company, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
-	private JaroSimilarity sim = new JaroSimilarity();
+	private PercentageSimilarity sim = new PercentageSimilarity(5);
 	
 	private ComparatorLogger comparisonLog;
 
@@ -49,69 +43,21 @@ public class CeoNameComparatorJaroSimilarity implements Comparator<Company, Attr
 			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		List<Double> combinationsSimilarity = new ArrayList<>();
-		double meanSimilarity = 0;
-		List<String> s1 = record1.getIndustries();
-		List<String> s2 = record2.getIndustries();
+		double s1 = record1.getRevenue();
+		double s2 = record2.getRevenue();
 		
-		
-		// for each industry in list s1
-		for (int i=0; i < s1.size(); i++) {
-			String name1 = s1.get(i); // get industry
-			
-			
-			if (name1 == null) {
-				continue;
-			} else {
-				
-				// for each ceo name in list s2
-				for (int j=0; j < s2.size(); j++) {
-					String name2 = s2.get(j); // get name
-					
-					if (name2 == null) {
-						continue;
-					} else {
-						double similarity = sim.calculate(name1, name2); // calc similarity
-						
-						if (Double.isNaN(similarity)) {
-							continue;
-						} else {
-							combinationsSimilarity.add(similarity); // add to sim list
-						}
-						
-						
-					}
-					
-					
-				}
-				
-			}
-			
-		}
-		
-		double sumOfSimilarities = 0;
-		
-		for (int i=0; i < combinationsSimilarity.size(); i++) {
-			double sumToAdd= combinationsSimilarity.get(i);
-			
-			sumOfSimilarities += sumToAdd;
-			
-		}
-		
-		meanSimilarity = sumOfSimilarities / 
-				combinationsSimilarity.size();
-
+		double similarity = sim.calculate(s1, s2);
 		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value("CeoNameListRecord1");
-			this.comparisonLog.setRecord2Value("CeoNameListRecord2");
+			this.comparisonLog.setRecord1Value(Double.toString(s1));
+			this.comparisonLog.setRecord2Value(Double.toString(s2));
     	
-			this.comparisonLog.setSimilarity(Double.toString(meanSimilarity));
+			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
 		
-		return meanSimilarity;
+		return similarity;
 		
 	}
 
