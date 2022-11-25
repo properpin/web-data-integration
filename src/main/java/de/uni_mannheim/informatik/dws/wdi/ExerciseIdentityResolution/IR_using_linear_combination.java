@@ -121,7 +121,7 @@ public class IR_using_linear_combination
 		// create a blocker (blocking strategy)
 		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
-		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByRevenueGenerator());
+		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNumberOfEmployeesGenerator());
 		//SortedNeighbourhoodBlocker<Company,Company, Attribute> blocker = new SortedNeighbourhoodBlocker<Company, Company, Attribute>(new CompanyBlockingKeyByNumberOfEmployeesGenerator(), 5);
 		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 

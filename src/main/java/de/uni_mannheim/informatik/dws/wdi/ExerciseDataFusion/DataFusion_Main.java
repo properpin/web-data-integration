@@ -99,7 +99,7 @@ public class DataFusion_Main
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/output/ft_2_dbpedia_correspondences.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/output/learning_ft_2_dbpedia_correspondences.csv"),ds1, ds2);
 		//correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"),ds2, ds3);
 
 		// write group size distribution
