@@ -13639,3 +13639,200 @@ Class 1 :
 [INFO ] 2022-11-25 16:37:55.686 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0.4836065574
 [INFO ] 2022-11-25 16:37:55.686 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 1.0000000000
 [INFO ] 2022-11-25 16:37:55.686 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0.6519337017
+[INFO ] 2022-11-25 19:22:39.446 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - *	Loading datasets	*
+[INFO ] 2022-11-25 19:22:39.537 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-11-25 19:22:39.632 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6918 elements from dbpedia_OUTPUT_26102022_V2.xml
+[INFO ] 2022-11-25 19:22:39.661 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 801 examples
+[INFO ] 2022-11-25 19:22:39.662 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	181 positive examples (22.60%)
+[INFO ] 2022-11-25 19:22:39.663 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	620 negative examples (77.40%)
+[INFO ] 2022-11-25 19:22:39.714 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - *	Learning matching rule	*
+[WARN ] 2022-11-25 19:22:39.719 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard is imbalanced!
+[INFO ] 2022-11-25 19:22:39.719 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - Starting GenerateFeatures
+[INFO ] 2022-11-25 19:22:39.802 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - GenerateFeatures finished after 0:00:00.083; created 800 examples.
+[INFO ] 2022-11-25 19:22:39.894 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-11-25 19:22:39.894 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Results
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Correctly Classified Instances         785               98.125  %
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Incorrectly Classified Instances        15                1.875  %
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Kappa statistic                          0.9457
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Mean absolute error                      0.0295
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root mean squared error                  0.13  
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Relative absolute error                  8.4016 %
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root relative squared error             31.0707 %
+[INFO ] 2022-11-25 19:22:39.895 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Total Number of Instances              800     
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Detailed Accuracy By Class ===
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.939    0.006    0.977      0.939    0.958      0.946    0.960     0.951     1
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.994    0.061    0.982      0.994    0.988      0.946    0.960     0.973     0
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Weighted Avg.    0.981    0.048    0.981      0.981    0.981      0.946    0.960     0.968     
+[INFO ] 2022-11-25 19:22:39.899 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Confusion Matrix ===
+[INFO ] 2022-11-25 19:22:39.900 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-11-25 19:22:39.900 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    a   b   <-- classified as
+[INFO ] 2022-11-25 19:22:39.900 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -  170  11 |   a = 1
+[INFO ] 2022-11-25 19:22:39.900 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    4 615 |   b = 0
+[INFO ] 2022-11-25 19:22:39.903 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - Matching rule is:
+J48 unpruned tree
+------------------
+
+[1] CompanyNameComparatorTokenizingJaccardSimilarity <= 0.6: 0 (620.0/8.0)
+[1] CompanyNameComparatorTokenizingJaccardSimilarity > 0.6
+|   [1] CompanyNameComparatorTokenizingJaccardSimilarity <= 0.75
+|   |   [0] NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity <= 0.978598: 0 (6.0/1.0)
+|   |   [0] NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity > 0.978598: 1 (11.0/2.0)
+|   [1] CompanyNameComparatorTokenizingJaccardSimilarity > 0.75: 1 (163.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+[INFO ] 2022-11-25 19:22:39.904 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - *	Running identity resolution	*
+[INFO ] 2022-11-25 19:22:39.905 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Starting Identity Resolution
+[INFO ] 2022-11-25 19:22:39.905 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Blocking 2,000 x 6,918 elements
+[TRACE] 2022-11-25 19:22:39.905 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset1: 2000 records
+[TRACE] 2022-11-25 19:22:39.916 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset2: 6918 records
+[INFO ] 2022-11-25 19:22:39.925 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocking keys for first dataset
+[INFO ] 2022-11-25 19:22:39.925 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocking keys for second dataset
+[TRACE] 2022-11-25 19:22:39.925 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Joining blocking key values: 1 x 1 blocks
+[INFO ] 2022-11-25 19:22:39.926 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocks from blocking keys
+[TRACE] 2022-11-25 19:22:39.926 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Block size distribution:
+[TRACE] 2022-11-25 19:22:39.926 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Frequency         Element
+1                 13836000
+
+[TRACE] 2022-11-25 19:22:39.928 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Blocking key values:
+[TRACE] 2022-11-25 19:22:39.928 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BlockingKeyValue	Frequency
+[TRACE] 2022-11-25 19:22:39.928 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AAA			13836000
+[TRACE] 2022-11-25 19:22:39.928 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating candidate record pairs from 1 blocks
+[INFO ] 2022-11-25 19:22:44.578 [de.uni_mannheim.informatik.dws.winter.matching.blockers.AbstractBlocker] - Debug results written to file: data/output/debugResultsBlocking_learning_ft_db.csv
+[INFO ] 2022-11-25 19:22:44.578 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Matching 2,000 x 6,918 elements after 0:00:04.673; 13,836,000 blocked pairs (reduction ratio: 0.0)
+[INFO ] 2022-11-25 19:23:38.681 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Identity Resolution finished after 0:00:58.775; found 745 correspondences.
+[INFO ] 2022-11-25 19:23:38.695 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_learning_ft_db.csv
+[INFO ] 2022-11-25 19:23:38.703 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_learning_ft_db.csv_short
+[INFO ] 2022-11-25 19:23:38.704 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - *	Loading gold standard	*
+[INFO ] 2022-11-25 19:23:38.705 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 501 examples
+[INFO ] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	118 positive examples (23.55%)
+[INFO ] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	383 negative examples (76.45%)
+[INFO ] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - *	Evaluating result	*
+[TRACE] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1723,dbpedia_6741,1.0
+[TRACE] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1342,dbpedia_5103,1.0
+[TRACE] 2022-11-25 19:23:38.706 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_273,dbpedia_1604,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1407,dbpedia_5269,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1506,dbpedia_6798,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1395,dbpedia_5356,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1536,dbpedia_6675,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1949,dbpedia_805,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1238,dbpedia_135,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_800,dbpedia_5150,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1224,dbpedia_6456,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1204,dbpedia_6444,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_842,dbpedia_5353,1.0
+[TRACE] 2022-11-25 19:23:38.707 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1902,dbpedia_2253,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_155,dbpedia_6330,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_320,dbpedia_5256,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_640,dbpedia_6554,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1705,dbpedia_1990,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1376,dbpedia_1570,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_22,dbpedia_6243,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_620,dbpedia_6345,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1336,dbpedia_1731,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_428,dbpedia_3161,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_119,dbpedia_4267,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_554,dbpedia_3260,1.0
+[TRACE] 2022-11-25 19:23:38.708 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1664,dbpedia_1353,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_390,dbpedia_865,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1053,dbpedia_2213,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1169,dbpedia_2360,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_362,dbpedia_5902,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1285,dbpedia_3715,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_599,dbpedia_3385,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_466,dbpedia_3025,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1281,dbpedia_2387,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_885,dbpedia_3547,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1247,dbpedia_2304,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_0,dbpedia_409,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1781,dbpedia_2620,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1503,dbpedia_2820,1.0
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_309,dbpedia_4796,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.709 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_112,dbpedia_4090,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1632,dbpedia_1261,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_594,dbpedia_4582,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_164,dbpedia_5622,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1343,dbpedia_1490,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1428,dbpedia_1350,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1266,dbpedia_3535,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_85,dbpedia_5696,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_163,dbpedia_3321,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_972,dbpedia_2662,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1599,dbpedia_3766,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_667,dbpedia_727,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1020,dbpedia_1246,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_613,dbpedia_781,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1634,dbpedia_1009,1.0
+[TRACE] 2022-11-25 19:23:38.710 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1627,dbpedia_2447,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_683,dbpedia_4271,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_617,dbpedia_4330,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_752,dbpedia_521,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_729,dbpedia_557,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_225,dbpedia_72,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_447,dbpedia_651,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1706,dbpedia_2172,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_439,dbpedia_742,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1793,dbpedia_2192,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_266,dbpedia_3062,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1106,dbpedia_2622,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_83,dbpedia_4114,1.0
+[TRACE] 2022-11-25 19:23:38.711 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_492,dbpedia_5677,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_89,dbpedia_403,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_76,dbpedia_402,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_484,dbpedia_636,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_288,dbpedia_3867,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1507,dbpedia_3211,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_411,dbpedia_2630,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1727,dbpedia_4873,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_598,dbpedia_2777,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_35,dbpedia_1325,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1273,dbpedia_5821,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1529,dbpedia_4571,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1316,dbpedia_3162,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1011,dbpedia_322,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1284,dbpedia_524,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_300,dbpedia_1254,1.0
+[TRACE] 2022-11-25 19:23:38.712 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1763,dbpedia_3253,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_66,dbpedia_3928,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1901,dbpedia_6259,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1555,dbpedia_3131,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1231,dbpedia_5446,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_98,dbpedia_2660,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1534,dbpedia_4728,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1362,dbpedia_3494,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_831,dbpedia_5990,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_745,dbpedia_2480,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1063,dbpedia_3209,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1716,dbpedia_4311,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_221,dbpedia_6,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_329,dbpedia_3532,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1050,dbpedia_3027,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_811,dbpedia_900,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_185,dbpedia_2548,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_162,dbpedia_1117,1.0
+[TRACE] 2022-11-25 19:23:38.713 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1121,dbpedia_4474,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_409,dbpedia_3868,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1928,dbpedia_5378,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1910,dbpedia_5384,0.8181818181818182
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1950,dbpedia_224,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_206,dbpedia_1236,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_168,dbpedia_2642,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1464,dbpedia_5757,1.0
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1051,dbpedia_6650
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1002,dbpedia_5837
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_630,dbpedia_514
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_56,dbpedia_3907
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1816,dbpedia_2661
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_38,dbpedia_4507
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_214,dbpedia_4626
+[TRACE] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_138,dbpedia_5371
+[INFO ] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - FT <-> DBpedia
+[INFO ] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - Precision: 1.0000
+[INFO ] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - Recall: 0.9322
+[INFO ] 2022-11-25 19:23:38.714 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - F1: 0.9649
