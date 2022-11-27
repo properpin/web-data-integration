@@ -68,9 +68,31 @@ String id = getValueFromChildElement(node, "id");
 	// fill the attributes
 	company.setName(getValueFromChildElement(node, "name"));
 	company.setRevenue((long)Double.parseDouble(getValueFromChildElement(node, "revenue")));
-	company.setNumberOfEmployees(Long.parseLong(getValueFromChildElement(node, "numberOfEmployees")));
+	
+	
+	try {
+		if(getValueFromChildElement(node, "numberOfEmployees") != null) {
+			company.setNumberOfEmployees(Long.parseLong(getValueFromChildElement(node, "numberOfEmployees")));
+		} else {
+			company.setNumberOfEmployees(null);
+		}
+	} catch (Exception e) {
+		e.printStackTrace();	
+	}
+	
 	company.setCity(getValueFromChildElement(node, "city"));
-	company.setFoundingYear(Integer.parseInt(getValueFromChildElement(node, "foundingYear")));
+	
+	try {
+		if(getValueFromChildElement(node, "foundingYear") != null) {
+			company.setFoundingYear(Integer.parseInt(getValueFromChildElement(node, "foundingYear")));
+		} else {
+			company.setFoundingYear(null);
+		}
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	
 	company.setCountry(getValueFromChildElement(node, "country"));
 	
 	// load the list of actors

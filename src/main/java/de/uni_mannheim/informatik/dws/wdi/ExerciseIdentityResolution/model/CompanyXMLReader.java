@@ -84,7 +84,7 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 				company.setNumberOfEmployees(-99);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace();	
 		}
 		
 		try {
