@@ -53,9 +53,9 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		//company.appendChild(createTextElementWithProvenance("ceoNames",
 		//		record.getCeoNames(),
 		//		record.getMergedAttributeProvenance(Company.CEONAMES), doc));
-		company.appendChild(createTextElementWithProvenance("date", record
-			.getDate().toString(), record
-				.getMergedAttributeProvenance(Company.DATE), doc));
+		//company.appendChild(createTextElementWithProvenance("date", record
+		//	.getDate().toString(), record
+		//		.getMergedAttributeProvenance(Company.DATE), doc));
 
 		return company;
 	}

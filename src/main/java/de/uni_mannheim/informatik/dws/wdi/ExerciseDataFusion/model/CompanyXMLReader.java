@@ -55,7 +55,7 @@ dataset.addAttribute(Company.FOUNDINGYEAR);
 dataset.addAttribute(Company.COUNTRY);
 dataset.addAttribute(Company.CEONAMES);
 dataset.addAttribute(Company.WEBSITE);
-dataset.addAttribute(Company.DATE);
+//dataset.addAttribute(Company.DATE);
 
 }
 
@@ -115,22 +115,20 @@ public Company createModelFromElement(Node node, String provenanceInfo) {
 	company.setCeoNames(ceoNames);
 	
 	// convert the date string into a DateTime object
-	try {
-		String date = getValueFromChildElement(node, "date");
-		if (date != null && !date.isEmpty()) {
-			DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-			        .appendPattern("yyyy-MM-dd['T'HH:mm:ss.SSS]")
-			        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-			        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-					.parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-					.optionalStart().appendOffset("+HH:MM", "+00:00").optionalEnd()
-			        .toFormatter(Locale.ENGLISH);
-			LocalDateTime dt = LocalDateTime.parse(date, formatter);
-			company.setDate(dt);
-		}
-	} catch (Exception e) {
-		e.printStackTrace();
-	}
+	//try {
+	//	String date = getValueFromChildElement(node, "date");
+	//	if (date != null && !date.isEmpty()) {
+	/*
+	 * DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+	 * .appendPattern("yyyy-MM-dd['T'HH:mm:ss.SSS]")
+	 * .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
+	 * .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
+	 * .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
+	 * .optionalStart().appendOffset("+HH:MM", "+00:00").optionalEnd()
+	 * .toFormatter(Locale.ENGLISH); LocalDateTime dt = LocalDateTime.parse(date,
+	 * formatter); company.setDate(dt); } } catch (Exception e) {
+	 * e.printStackTrace(); }
+	 */
 	
 	return company;
 	}
