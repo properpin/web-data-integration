@@ -55,6 +55,7 @@ dataset.addAttribute(Company.FOUNDINGYEAR);
 dataset.addAttribute(Company.COUNTRY);
 dataset.addAttribute(Company.CEONAMES);
 dataset.addAttribute(Company.WEBSITE);
+dataset.addAttribute(Company.DATE);
 
 }
 

@@ -135,6 +135,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute COUNTRY = new Attribute("Country");
 	public static final Attribute CEONAMES = new Attribute("CeoNames");
 	public static final Attribute WEBSITE = new Attribute("Website");
+	public static final Attribute DATE = new Attribute("Date");
 	
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)
@@ -167,6 +168,9 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 			}
 		else if(attribute==WEBSITE) {
 			return getWebsite() != null && !getWebsite().isEmpty();
+			}
+		else if(attribute==DATE) {
+			return getDate() != null;
 			}
 		else {
 			return false;
