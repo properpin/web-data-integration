@@ -60,7 +60,7 @@ dataset.addAttribute(Company.WEBSITE);
 
 @Override
 public Company createModelFromElement(Node node, String provenanceInfo) {
-String id = getValueFromChildElement(node, "id");
+	String id = getValueFromChildElement(node, "id").toLowerCase();
 
 	// create the object with id and provenance information
 	Company company = new Company(id, provenanceInfo);

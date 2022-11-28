@@ -104,7 +104,7 @@ public class DataFusion_Main
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_db_correspondences2.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/ft_2_sevM_correspondences.csv"),ds2, ds3);
+		correspondences.loadCorrespondences(new File("data/correspondences/ft_2_sevM_correspondences.csv"),ds1, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -121,7 +121,7 @@ public class DataFusion_Main
 		// define the fusion strategy
 		DataFusionStrategy<Company, Attribute> strategy = new DataFusionStrategy<>(new CompanyXMLReader());
 		// write debug results to file
-		strategy.activateDebugReport("data/output/debugResultsDatafusion_ft_dbpedia.csv", -1, gs);
+		strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 		
 		// add attribute fusers --> TODO!!!
 		// strategy.addAttributeFuser(Movie.TITLE, new TitleFuserShortestString(),new TitleEvaluationRule());
