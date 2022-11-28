@@ -68,6 +68,10 @@ public class DataFusion_Main
 		FusibleDataSet<Company, Attribute> ds2 = new FusibleHashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", ds2);
 		ds2.printDataSetDensityReport();
+		
+		FusibleDataSet<Company, Attribute> ds3 = new FusibleHashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st.xml"), "/companies/company", ds3);
+		ds3.printDataSetDensityReport();
 
 
 		//FusibleDataSet<Movie, Attribute> ds2 = new FusibleHashedDataSet<>();
@@ -82,7 +86,7 @@ public class DataFusion_Main
 		// Scores (e.g. from rating)
 		ds1.setScore(1.0);
 		ds2.setScore(2.0);
-		// ds3.setScore(3.0);
+		ds3.setScore(3.0);
 
 		// Date (e.g. last update)
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -94,13 +98,13 @@ public class DataFusion_Main
 		
 		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
 		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		// ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
 
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/output/learning_ft_dbpedia_correspondences.csv"),ds1, ds2);
-		//correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"),ds2, ds3);
+		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_db_correspondences2.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/ft_2_sevM_correspondences.csv"),ds2, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();

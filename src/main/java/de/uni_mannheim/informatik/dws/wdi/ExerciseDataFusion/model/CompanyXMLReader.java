@@ -67,7 +67,16 @@ String id = getValueFromChildElement(node, "id");
 	
 	// fill the attributes
 	company.setName(getValueFromChildElement(node, "name"));
-	company.setRevenue((long)Double.parseDouble(getValueFromChildElement(node, "revenue")));
+	
+	try {
+		if(getValueFromChildElement(node, "revenue") != null && !getValueFromChildElement(node, "revenue").isEmpty()) {
+			company.setRevenue((long)Double.parseDouble(getValueFromChildElement(node, "revenue")));
+		} else {
+			company.setNumberOfEmployees(null);
+		}
+	} catch (Exception e) {
+		e.printStackTrace();	
+	}
 	
 	
 	try {
