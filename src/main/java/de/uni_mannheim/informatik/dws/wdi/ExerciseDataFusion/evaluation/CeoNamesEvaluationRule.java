@@ -46,7 +46,7 @@ public class CeoNamesEvaluationRule extends EvaluationRule<Company, Attribute> {
 		}
 
 		Set<String> CeoName2 = new HashSet<>();
-		List<String> s2=  record1.getIndustries();
+		List<String> s2=  record1.getCeoNames();
 		for (int j = 0; j< s2.size();j++) {
 			CeoName2.add(s2.get(j));
 		}
