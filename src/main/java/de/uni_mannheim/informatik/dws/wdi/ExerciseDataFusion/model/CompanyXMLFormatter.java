@@ -96,22 +96,28 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 				record.getMergedAttributeProvenance(Company.INDUSTRIES));
 
 		for (String a : record.getIndustries()) {
-			industriesRoot.appendChild(createTextElement("industry", a, doc));
+			if (!a.isEmpty()) {
+				industriesRoot.appendChild(createTextElement("industry", a, doc));
+			}
+			
 		}
 
 		return industriesRoot;
 	}
 	
 	protected Element createCEONamesElement(Company record, Document doc) {
-		Element industriesRoot = doc.createElement("industries");
+		Element ceosRoot = doc.createElement("ceoNames");
 		
-		industriesRoot.setAttribute("provenance",
+		ceosRoot.setAttribute("provenance",
 				record.getMergedAttributeProvenance(Company.CEONAMES));
 
 		for (String a : record.getCeoNames()) {
-			industriesRoot.appendChild(createTextElement("industry", a, doc));
+			if (!a.isEmpty()) {
+				ceosRoot.appendChild(createTextElement("ceoName", a, doc));
+			}
+			
 		}
 
-		return industriesRoot;
+		return ceosRoot;
 	}
 }

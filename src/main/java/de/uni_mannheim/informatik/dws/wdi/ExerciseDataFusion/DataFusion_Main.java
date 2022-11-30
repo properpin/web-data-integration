@@ -131,9 +131,11 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Company.NAME, new NameFuserShortestString(),new NameEvaluationRule());
 		strategy.addAttributeFuser(Company.REVENUE, new RevenueFuserMostRecent(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.NUMBEROFEMPLOYEES, new NumberOfEmployeesFuserMostRecent(), new NumberOfEmployeesEvaluationRule());
-		strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserUnion(), new IndustriesEvaluationRule());
+		//strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserUnion(), new IndustriesEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserIntersection(), new IndustriesEvaluationRule());
 		strategy.addAttributeFuser(Company.CITY, new CityFuserShortestString() , new CityEvaluationRule());
 		strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserVoting() ,new FoundingYearEvaluationRule());
+		//strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserFavourSource() ,new FoundingYearEvaluationRule());
 		strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserShortestString() , new CountryEvaluationRule());
 		strategy.addAttributeFuser(Company.CEONAMES, new CeoNamesFuserVoting(), new CeoNamesEvaluationRule());
 		strategy.addAttributeFuser(Company.WEBSITE, new WebsiteFuserLongestString(), new WebsiteEvaluationRule());
