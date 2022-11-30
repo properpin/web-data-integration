@@ -84,9 +84,9 @@ public class DataFusion_Main
 
 		// Maintain Provenance
 		// Scores (e.g. from rating)
-		ds1.setScore(1.0);
-		ds2.setScore(2.0);
-		ds3.setScore(3.0);
+		ds1.setScore(3.0);
+		ds2.setScore(1.0);
+		ds3.setScore(2.0);
 
 		// Date (e.g. last update)
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -96,9 +96,9 @@ public class DataFusion_Main
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
-		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		ds1.setDate(LocalDateTime.parse("2022-04-22", formatter));
+		ds2.setDate(LocalDateTime.parse("2022-10-20", formatter));
+		ds3.setDate(LocalDateTime.parse("2019-10-23", formatter));
 
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
@@ -123,7 +123,7 @@ public class DataFusion_Main
 		// write debug results to file
 		strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 		
-		// add attribute fusers --> TODO!!!
+		// add attribute fusers
 		// strategy.addAttributeFuser(Movie.TITLE, new TitleFuserShortestString(),new TitleEvaluationRule());
 		// strategy.addAttributeFuser(Movie.DIRECTOR,new DirectorFuserLongestString(), new DirectorEvaluationRule());
 		// strategy.addAttributeFuser(Movie.DATE, new DateFuserFavourSource(),new DateEvaluationRule());
@@ -135,7 +135,7 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Company.CITY, new CityFuserShortestString() , new CityEvaluationRule());
 		strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserVoting() ,new FoundingYearEvaluationRule());
 		strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserShortestString() , new CountryEvaluationRule());
-		strategy.addAttributeFuser(Company.CEONAMES, new CeoNamesFuserUnion(), new CeoNamesEvaluationRule());
+		strategy.addAttributeFuser(Company.CEONAMES, new CeoNamesFuserVoting(), new CeoNamesEvaluationRule());
 		strategy.addAttributeFuser(Company.WEBSITE, new WebsiteFuserLongestString(), new WebsiteEvaluationRule());
 
 

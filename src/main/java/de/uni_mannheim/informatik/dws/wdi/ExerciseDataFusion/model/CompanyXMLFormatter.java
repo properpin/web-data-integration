@@ -1,7 +1,10 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model;
 
+import java.util.List;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
@@ -30,35 +33,53 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		company.appendChild(createTextElementWithProvenance("revenue",
 				Long.toString(record.getRevenue()),
 				record.getMergedAttributeProvenance(Company.REVENUE), doc));
+		
 		company.appendChild(createTextElementWithProvenance("numberOfEmployees",
 				Long.toString(record.getNumberOfEmployees()),
 				record.getMergedAttributeProvenance(Company.NUMBEROFEMPLOYEES), doc));
+		
+		//if (record.getNumberOfEmployees() != null) {
+		//company.appendChild(createTextElementWithProvenance("numberOfEmployees",
+			//	Long.toString(record.getNumberOfEmployees()),
+				//record.getMergedAttributeProvenance(Company.NUMBEROFEMPLOYEES), doc));
+		//} else {
+			//company.appendChild(createTextElementWithProvenance("numberOfEmployees", "null", record.getMergedAttributeProvenance(Company.NUMBEROFEMPLOYEES), doc));
+		//}
+		
+		//industries
+		company.appendChild(createIndustriesElement(record, doc));
+		
 		company.appendChild(createTextElementWithProvenance("city",
 				record.getCity(),
 				record.getMergedAttributeProvenance(Company.CITY), doc));
+		
+		//company.appendChild(createTextElementWithProvenance("foundingYear",
+			//	Integer.toString(record.getFoundingYear()),
+				//record.getMergedAttributeProvenance(Company.FOUNDINGYEAR), doc));
 
 			if (record.getFoundingYear() != null) {
 				company.appendChild(createTextElementWithProvenance("foundingYear",
 						Integer.toString(record.getFoundingYear()),
 						record.getMergedAttributeProvenance(Company.FOUNDINGYEAR), doc));
 			} else {
-				company.appendChild(createTextElementWithProvenance("foundingYear", "null", record.getMergedAttributeProvenance(Company.FOUNDINGYEAR), doc));
+				company.appendChild(createTextElementWithProvenance("foundingYear", "", record.getMergedAttributeProvenance(Company.FOUNDINGYEAR), doc));
 			}
-
 		
-
 		company.appendChild(createTextElementWithProvenance("country",
 				record.getCountry(),
 				record.getMergedAttributeProvenance(Company.COUNTRY), doc));
-		//company.appendChild(createTextElementWithProvenance("ceoNames",
-		//		record.getCeoNames(),
-		//		record.getMergedAttributeProvenance(Company.CEONAMES), doc));
-		//company.appendChild(createTextElementWithProvenance("date", record
-		//	.getDate().toString(), record
-		//		.getMergedAttributeProvenance(Company.DATE), doc));
+		
+		company.appendChild(createCEONamesElement(record, doc));
+		
+		company.appendChild(createTextElementWithProvenance("website",
+				record.getWebsite(),
+				record.getMergedAttributeProvenance(Company.WEBSITE), doc));
+		
+	
 
 		return company;
 	}
+
 
 	protected Element createTextElementWithProvenance(String name,
 			String value, String provenance, Document doc) {
@@ -66,5 +87,31 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		elem.setAttribute("provenance", provenance);
 		return elem;
 	}
+	
 
+	protected Element createIndustriesElement(Company record, Document doc) {
+		Element industriesRoot = doc.createElement("industries");
+		
+		industriesRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Company.INDUSTRIES));
+
+		for (String a : record.getIndustries()) {
+			industriesRoot.appendChild(createTextElement("industry", a, doc));
+		}
+
+		return industriesRoot;
+	}
+	
+	protected Element createCEONamesElement(Company record, Document doc) {
+		Element industriesRoot = doc.createElement("industries");
+		
+		industriesRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Company.CEONAMES));
+
+		for (String a : record.getCeoNames()) {
+			industriesRoot.appendChild(createTextElement("industry", a, doc));
+		}
+
+		return industriesRoot;
+	}
 }
