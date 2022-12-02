@@ -61,7 +61,7 @@ public class IR_using_machine_learning_ft_sevM {
 		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);		
 		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st.xml"), "/companies/company", dataSevM);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", dataSevM);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
@@ -107,9 +107,9 @@ public class IR_using_machine_learning_ft_sevM {
 		
 		// create a blocker (blocking strategy)
 		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
-		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
-		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_sevM.csv", 100);
 		
 		// Initialize Matching Engine
@@ -122,7 +122,7 @@ public class IR_using_machine_learning_ft_sevM {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_sevm_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_sevm_correspondences_new.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

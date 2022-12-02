@@ -75,7 +75,7 @@ public class IR_using_linear_combination_ft_sevM
 		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
 		
 		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/mapforce/7.1M_Output.xml"), "/companies/company", dataSevM);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", dataSevM);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -147,7 +147,7 @@ public class IR_using_linear_combination_ft_sevM
 
 		// write the correspondences to the output file
 		// new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
-		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_sevM_correspondences.csv"), correspondences);		
+		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_sevM_correspondences_new.csv"), correspondences);		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
 		MatchingEvaluator<Company, Attribute> evaluator = new MatchingEvaluator<Company, Attribute>();

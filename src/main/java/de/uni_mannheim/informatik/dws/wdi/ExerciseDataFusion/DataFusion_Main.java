@@ -7,9 +7,7 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
 import java.util.Locale;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CityEvaluationRule;
@@ -70,7 +68,7 @@ public class DataFusion_Main
 		ds2.printDataSetDensityReport();
 		
 		FusibleDataSet<Company, Attribute> ds3 = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st.xml"), "/companies/company", ds3);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", ds3);
 		ds3.printDataSetDensityReport();
 
 
@@ -104,7 +102,7 @@ public class DataFusion_Main
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_db_correspondences2.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_sevm_correspondences.csv"),ds1, ds3);
+		correspondences.loadCorrespondences(new File("data/correspondences/NEW_ft_2_sevM_correspondences .csv"),ds1, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();

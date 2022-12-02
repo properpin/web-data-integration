@@ -15085,3 +15085,880 @@ Size of the tree : 	3
 [INFO ] 2022-12-02 08:35:41.604 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - Precision: 0.9611
 [INFO ] 2022-12-02 08:35:41.604 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - Recall: 0.9558
 [INFO ] 2022-12-02 08:35:41.604 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning] - F1: 0.9584
+[INFO ] 2022-12-02 13:49:59.609 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Loading datasets	*
+[INFO ] 2022-12-02 13:49:59.714 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-12-02 13:49:59.913 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20001 elements from 7.1M_Output_1st_updated.xml
+[INFO ] 2022-12-02 13:50:00.766 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 801 examples
+[INFO ] 2022-12-02 13:50:00.768 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	173 positive examples (21.60%)
+[INFO ] 2022-12-02 13:50:00.768 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	628 negative examples (78.40%)
+[INFO ] 2022-12-02 13:50:00.821 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Learning matching rule	*
+[WARN ] 2022-12-02 13:50:00.829 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard is imbalanced!
+[INFO ] 2022-12-02 13:50:00.829 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - Starting GenerateFeatures
+[INFO ] 2022-12-02 13:50:00.905 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - GenerateFeatures finished after 0:00:00.077; created 800 examples.
+[INFO ] 2022-12-02 13:50:01.011 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:50:01.011 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Results
+[INFO ] 2022-12-02 13:50:01.011 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Correctly Classified Instances         788               98.5    %
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Incorrectly Classified Instances        12                1.5    %
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Kappa statistic                          0.9548
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Mean absolute error                      0.025 
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root mean squared error                  0.122 
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Relative absolute error                  7.3677 %
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root relative squared error             29.6421 %
+[INFO ] 2022-12-02 13:50:01.012 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Total Number of Instances              800     
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Detailed Accuracy By Class ===
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.936    0.002    0.994      0.936    0.964      0.955    0.975     0.958     1
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.998    0.064    0.983      0.998    0.991      0.955    0.975     0.989     0
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Weighted Avg.    0.985    0.050    0.985      0.985    0.985      0.955    0.975     0.983     
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Confusion Matrix ===
+[INFO ] 2022-12-02 13:50:01.016 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:50:01.017 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    a   b   <-- classified as
+[INFO ] 2022-12-02 13:50:01.017 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -  162  11 |   a = 1
+[INFO ] 2022-12-02 13:50:01.017 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    1 626 |   b = 0
+[INFO ] 2022-12-02 13:50:01.019 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - Matching rule is:
+J48 unpruned tree
+------------------
+
+[1] CompanyNameComparatorLevenshteinSimilarity <= 0.894737
+|   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.611111: 0 (419.0)
+|   [1] CompanyNameComparatorLevenshteinSimilarity > 0.611111
+|   |   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.647059
+|   |   |   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.619048
+|   |   |   |   [0] NumberOfEmployeesComparatorPercentageSimilarity <= 0.848837: 1 (3.0)
+|   |   |   |   [0] NumberOfEmployeesComparatorPercentageSimilarity > 0.848837: 0 (4.0/1.0)
+|   |   |   [1] CompanyNameComparatorLevenshteinSimilarity > 0.619048: 0 (23.0/4.0)
+|   |   [1] CompanyNameComparatorLevenshteinSimilarity > 0.647059: 0 (189.0/3.0)
+[1] CompanyNameComparatorLevenshteinSimilarity > 0.894737: 1 (162.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+[INFO ] 2022-12-02 13:50:01.021 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Running identity resolution	*
+[INFO ] 2022-12-02 13:50:01.022 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Starting Identity Resolution
+[INFO ] 2022-12-02 13:50:01.022 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Blocking 2,000 x 20,001 elements
+[TRACE] 2022-12-02 13:50:01.022 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset1: 2000 records
+[TRACE] 2022-12-02 13:50:01.031 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset2: 20001 records
+[INFO ] 2022-12-02 13:50:01.057 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocking keys for first dataset
+[INFO ] 2022-12-02 13:50:01.057 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocking keys for second dataset
+[TRACE] 2022-12-02 13:50:01.057 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Joining blocking key values: 1 x 1 blocks
+[INFO ] 2022-12-02 13:50:01.058 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1 blocks from blocking keys
+[TRACE] 2022-12-02 13:50:01.058 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Block size distribution:
+[TRACE] 2022-12-02 13:50:01.059 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Frequency         Element
+1                 40002000
+
+[TRACE] 2022-12-02 13:50:01.060 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Blocking key values:
+[TRACE] 2022-12-02 13:50:01.060 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BlockingKeyValue	Frequency
+[TRACE] 2022-12-02 13:50:01.060 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AAA			40002000
+[TRACE] 2022-12-02 13:50:01.060 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating candidate record pairs from 1 blocks
+[INFO ] 2022-12-02 13:51:15.196 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Loading datasets	*
+[INFO ] 2022-12-02 13:51:15.282 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-12-02 13:51:15.555 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20001 elements from 7.1M_Output_1st_updated.xml
+[INFO ] 2022-12-02 13:51:16.655 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 801 examples
+[INFO ] 2022-12-02 13:51:16.656 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	173 positive examples (21.60%)
+[INFO ] 2022-12-02 13:51:16.657 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	628 negative examples (78.40%)
+[INFO ] 2022-12-02 13:51:16.713 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Learning matching rule	*
+[WARN ] 2022-12-02 13:51:16.720 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard is imbalanced!
+[INFO ] 2022-12-02 13:51:16.721 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - Starting GenerateFeatures
+[INFO ] 2022-12-02 13:51:16.820 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner] - GenerateFeatures finished after 0:00:00.098; created 800 examples.
+[INFO ] 2022-12-02 13:51:16.919 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:51:16.919 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Results
+[INFO ] 2022-12-02 13:51:16.919 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Correctly Classified Instances         788               98.5    %
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Incorrectly Classified Instances        12                1.5    %
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Kappa statistic                          0.9548
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Mean absolute error                      0.025 
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root mean squared error                  0.122 
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Relative absolute error                  7.358  %
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Root relative squared error             29.6417 %
+[INFO ] 2022-12-02 13:51:16.920 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Total Number of Instances              800     
+[INFO ] 2022-12-02 13:51:16.924 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Detailed Accuracy By Class ===
+[INFO ] 2022-12-02 13:51:16.924 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:51:16.924 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+[INFO ] 2022-12-02 13:51:16.924 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.936    0.002    0.994      0.936    0.964      0.955    0.975     0.958     1
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -                  0.998    0.064    0.983      0.998    0.991      0.955    0.975     0.990     0
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - Weighted Avg.    0.985    0.050    0.985      0.985    0.985      0.955    0.975     0.983     
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - === Confusion Matrix ===
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] - 
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    a   b   <-- classified as
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -  162  11 |   a = 1
+[INFO ] 2022-12-02 13:51:16.925 [de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule] -    1 626 |   b = 0
+[INFO ] 2022-12-02 13:51:16.927 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - Matching rule is:
+J48 unpruned tree
+------------------
+
+[1] CompanyNameComparatorLevenshteinSimilarity <= 0.894737
+|   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.611111: 0 (419.0)
+|   [1] CompanyNameComparatorLevenshteinSimilarity > 0.611111
+|   |   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.647059
+|   |   |   [1] CompanyNameComparatorLevenshteinSimilarity <= 0.619048
+|   |   |   |   [0] NumberOfEmployeesComparatorPercentageSimilarity <= 0.848837: 1 (3.0)
+|   |   |   |   [0] NumberOfEmployeesComparatorPercentageSimilarity > 0.848837: 0 (4.0/1.0)
+|   |   |   [1] CompanyNameComparatorLevenshteinSimilarity > 0.619048: 0 (23.0/4.0)
+|   |   [1] CompanyNameComparatorLevenshteinSimilarity > 0.647059: 0 (189.0/3.0)
+[1] CompanyNameComparatorLevenshteinSimilarity > 0.894737: 1 (162.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+[INFO ] 2022-12-02 13:51:16.929 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Running identity resolution	*
+[INFO ] 2022-12-02 13:51:16.930 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Starting Identity Resolution
+[INFO ] 2022-12-02 13:51:16.930 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Blocking 2,000 x 20,001 elements
+[TRACE] 2022-12-02 13:51:16.930 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset1: 2000 records
+[TRACE] 2022-12-02 13:51:16.948 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset2: 20001 records
+[INFO ] 2022-12-02 13:51:16.989 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1526 blocking keys for first dataset
+[INFO ] 2022-12-02 13:51:16.989 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 12362 blocking keys for second dataset
+[TRACE] 2022-12-02 13:51:16.989 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Joining blocking key values: 1526 x 12362 blocks
+[INFO ] 2022-12-02 13:51:16.994 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 748 blocks from blocking keys
+[TRACE] 2022-12-02 13:51:16.996 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Block size distribution:
+[TRACE] 2022-12-02 13:51:16.997 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Frequency     Element
+374           1
+91            2
+44            3
+29            4
+19            6
+15            8
+9             5
+8             7
+7             10
+5             12
+5             24
+5             30
+4             9
+4             14
+4             20
+4             26
+4             28
+3             11
+3             15
+3             16
+3             18
+3             36
+3             60
+3             70
+3             96
+2             13
+2             17
+2             21
+2             23
+2             31
+2             42
+2             48
+2             51
+2             72
+2             74
+2             76
+2             92
+2             104
+2             120
+2             124
+2             130
+2             150
+2             168
+1             22
+1             25
+1             32
+1             33
+1             45
+1             52
+1             54
+1             57
+1             62
+1             63
+1             64
+1             69
+1             75
+1             80
+1             81
+1             84
+1             90
+1             102
+1             105
+1             112
+1             114
+1             125
+1             132
+1             135
+1             138
+1             140
+1             145
+1             162
+1             190
+1             192
+1             198
+1             205
+1             210
+1             212
+1             216
+1             222
+1             228
+1             230
+1             232
+1             250
+1             252
+1             259
+1             308
+1             336
+1             351
+1             378
+1             462
+1             468
+1             486
+1             504
+1             546
+1             600
+1             770
+1             1245
+1             1288
+1             1419
+1             2000
+
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Blocking key values:
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BlockingKeyValue	Frequency
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CO			2000
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - IN			1419
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SA			1288
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TE			1245
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MA			770
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CA			600
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ME			546
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SE			504
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BA			486
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AL			468
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - UN			462
+[TRACE] 2022-12-02 13:51:17.001 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NE			378
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AM			351
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SO			336
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ST			308
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CE			259
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PA			252
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - RE			250
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AR			232
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MO			230
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PR			228
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - HE			222
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PE			216
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - DE			212
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BR			210
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SI			205
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AD			198
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AU			192
+[TRACE] 2022-12-02 13:51:17.002 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EN			190
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SH,WE			168
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TA			162
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FI,NO			150
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FA			145
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CI			140
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MI			138
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SC			135
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NA			132
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GA,SU			130
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - LE			125
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GE,VI			124
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AN,HA			120
+[TRACE] 2022-12-02 13:51:17.003 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - KE			114
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PO			112
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VA			105
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AP,FO			104
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TR			102
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AS,BO,DA			96
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AT,DO			92
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - HO			90
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FE			84
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CH			81
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VE			80
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CR,EX			76
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - KA			75
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AC,BE			74
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SY,WA			72
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NI,OR,TO			70
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FR			69
+[TRACE] 2022-12-02 13:51:17.004 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - WI			64
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AV			63
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - RA			62
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AE,ES,IT			60
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CL			57
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AB			54
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AG			52
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - QU,RI			51
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EM,KI			48
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VO			45
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AI,CS			42
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BL,HI,RO			36
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MC			33
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GL			32
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - LA,LI			31
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BU,GO,KO,ON,WO			30
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EC,GR,HU,LO			28
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EL,IB,SW,MAIN			26
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - DI			25
+[TRACE] 2022-12-02 13:51:17.005 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EQ,EU,LU,SK,NABAOF			24
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BI,COCO			23
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PH			22
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - IS,TEIN			21
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NU,SN,US,COEN			20
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ALGR,MOIN,COIN			18
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CACO,SM			17
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PI,MAGR,COBA			16
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CN,TH,INBA			15
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ED,ER,ET,TECO			14
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EP,PU			13
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BC,IC,KR,REIN,ROCO			12
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EV,FL,UC			11
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EA,TOIN,SHCO,OL,UB,UM,MEGR			10
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GI,TRGR,HOIN,COGR			9
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AF,CU,DS,CEEN,CABA,KP,CAIN,SB,REHO,TD,UP,ZA,CHMO,BAOFCH,DETE			8
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CD,EB,KL,ANIN,STBAOF,SS,TC,SOCO			7
+[TRACE] 2022-12-02 13:51:17.006 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BB,BP,EI,FU,HM,KN,MS,NV,PG,PP,LARE,SUCO,TW,GRIN,ALTE,INGR,MITE,CHUN,INTE			6
+[TRACE] 2022-12-02 13:51:17.007 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - WACO,CAHE,MOHE,UNPA,CHCO,MEHO,COBAOF,MATE,WIIN			5
+[TRACE] 2022-12-02 13:51:17.007 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - STST,PRFIGR,HP,SASD,JD,VOGR,UNGR,KU,SHBA,MT,ALBA,OV,PT,SQ,WH,SUGR,GAEN,VECO,ZIBA,CEBAOF,CHTE,SIGR,BAME,INRA,COME,SAEL,THRE,SAGR,ATCO			4
+[TRACE] 2022-12-02 13:51:17.007 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AK,BY,CG,SETE,DC,WACH,JO&JO,HD,IL,IQ,CAEN,CAFI,NM,NT,PF,YAIN,SG,GEGR,TB,VM,KIHO,YP,GAIN,MECOOF,FOIN,BAPODI,KEGR,ALUS,DEBA,BABP,TAMO,BAOFAM,BAFI,ASPH,BAIN,BAMA,LOMA,DAIN,BRRE,HEIN,HABA,STEN,AGIN,WEDI			3
+[TRACE] 2022-12-02 13:51:17.007 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AKTE,FARE,A2,AJ,AO,ARCO,SAMO,JIST&,PIGR,TOGR,EMPR,WISE,ROMA,UNBA,SASE,NABA,UNBAOF,CISE,KK,KY,MSIN,SPTE,NEMI,CPEN,WAMA,NAGR,GEFI,CHSTCO,ALEN,VIBA,RB,REEL,HYMO,DOEN,SL,SUCH,SUPAE,MA&MA,UG,CAON,PR&GA,VIEN,CNIN,HUIN,XI,LE&GE,ZO,FINAFI,CHBA,KIMO,MOST,LA&TO,DIEN,CHEN,UNMUGR,TEMA,BILA,RESE,MIIN,ASCO,ASGR,MEIN,BACA,ASIN,SIAI,SMIN,WITOWA,PUBA,TARE,BAGR,COBR,JOMA,NOBA,INPA,AVBUGR,CHCOBA,NOGR,DEPO,BADOBR,MAPE,BARE,HEHO,AIFR,SKTE,ZETE,PUST,UNOVBA,THHODE,NONO,RAHECA,GOFI			2
+[TRACE] 2022-12-02 13:51:17.007 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ATEN,LEGR,BARAIN,SIPRGR,WEFA,COWH,TOBR,HESC,JEMA,B3,BLST,FIABDH,KOELPO,TOEL,NECO,BUFI,KOMABA,DEAILI,OLMU,NEBR,AISE,OWCO,EMNB,EORE,DB,GRWAMO,AREL,E-,E.,HCTE,RIBA,TACOSE,PAALNE,CVHE,KOAI,RIAI,FC,FM,CRAG,CEGR,BRASMA,LOSTEX,WITE,CHPOSO,HB,VOCA,ADAUPA,TMGR,ANAM,AGTE,CHEVIN,VOFI,SATE,BOALHA,CRPOEN,STJAPL,CHPEEN,EXIN,JB,EVEN,ULBE,PECH,CADE,LINAEN,CREM,NREN,L',WEPO,KT,ANDE,ROST,M&,LK,SYFI,AGBAOF,QUDI,BA&BO,ARMA,FIQUMI,CRHO,ARNE,QUCO,NXSE,CNAS,NEREIN,BOTEGR,BOFI,GEDY,JYBA,FUFI,EXSPST,SULIFI,HDBA,TIHO,APMA,SHELGR,ALFI,FUHO,GRBI,PRFI,MUUS,SWGR,BMGR,ALHO,GRAC,MIOSLI,MA&MC,S&GL,WEPHSE,DOGE,CANARE,HYON,GISC,PH66,CHPOFO,MOMEHO,DURE,KIGRPL,UNRE,SUEN,UNNAFO,BRAMTO,PERA,PERI,RITI,VIHO,WOFUSE,WP,GEMI,WS,SBCO,SWMA,ABDHIS,KIGR,ALNIAI,XP,ICBA,TEHE,LLBAGR,MAGLFO,GEMO,CHLIIN,WOFIGR,PIANIN,CLHO,CAPARA,GUJUSE,VEAN,ELAR,ZS,ZT,FOMEGR,WECICO,BOSC,CATI,ENHO,ANST,LYIN,EAWEBA,MOSO,LUAT,CHCIBA,CH&DW,SAHEIN,FIREBA,MIES,REGROF,ARNABA,USBA,TEIT,BJWHCL,ZIBI,J.HUTR,SOAI,STBL&,SUMO,WUAP,SWRE,USFO,TENA,BEBU,ASAB,C.RO,NECHLI,GRME,SALIIN,REST,ELGR,MIAPCO,BASAFR,CHMEGR,PATE,FOMO,SUPHIN,CHDEBA,TEPH,MIMA,BEDI,MIMO,FOLO,CIFIGR,HOFO,PINARE,CHHO,TERE,VELI,SOHO,YUBR,FOOT,MEGE,ZIINSH,INEDIN,BEHA,LUHO,DIFISE,THESLA,SOHE,PACOOF,TETE,STAUOF,SOGÉ,BABA,PHMOIN,FOPL,SHPUDE,POCOCO,BAAU,OTBA,SICOBA,VEPH,ABGR,RHBA,PHHO,DINE,GLIN,MABA,INFL&,DEEN,MTGR,DEEL,SSTE,XCEN,ZOVICO,TAPH,ARDAMI,BRFI,BPBA,DTEN,BAOFCO,STBAGR,SIBA,NEYOCO,ABDHCO,BAOFBE,JSST,BAOFBA,SKHY,DABA,SKGR,BAHA,KETE,CHSC,DAAV,VESY,DACE,GUBA,LOGR,PUGR,BAOFHA,BAOFIN,BAOFIR,TAST,THFISC,GLPA,ASPA,KUFIHO,SIFI,AMEX,HIIN,MESE,DELU,CHCOCO,PUNABA,BALE,AMFI,THHECO,MIHEIN,FICIBA,WOKL,INSA,COED,ALRABA,FABA,DUISBA,EDIN,DXTE,TYFO,LI&SP,JDSPFA,PKBAPO,DISPGO,MAOI,TUAI,INSU,BAPE,SECOIN,EDLI,AEDEPA,PEFOGR,APGLMA,SEGR,STCH,BAOFQU,FIAMFI,AXBA,CHMIBA,NOHY,STFI,AMITGR,CMGR,CHPAIN,SCEL,OLDOFR,AZGR,BASY,LIGL,LGCH,HAININ,SIST,ROAU,CHSOAI,SCGR,BNPA,MEKGDA,STGR,KRTHBA,WEENGR,FRMA,LGEL,AMMÓ,AVCA,POIT,GFSE,GR1AU,M&BA,BR&BR,LGDI,AVDE,FITHBA,SCHO,AVCO,X5REGR,CORE,EMHO,DASE,WECH,ATBA,OLGR,FAMA,AMTO,AILI,DASY,CHMEBA,LINA,ESPRTR,TOBA,PIBA,GUSE,IDLA,SAHO,RABAIN,NOSP,LIMO,EQRE			1
+[TRACE] 2022-12-02 13:51:17.009 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating candidate record pairs from 748 blocks
+[INFO ] 2022-12-02 13:51:17.020 [de.uni_mannheim.informatik.dws.winter.matching.blockers.AbstractBlocker] - Debug results written to file: data/output/debugResultsBlocking_learning_ft_sevM.csv
+[INFO ] 2022-12-02 13:51:17.020 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Matching 2,000 x 20,001 elements after 0:00:00.089; 22,260 blocked pairs (reduction ratio: 0.9994435278236088)
+[INFO ] 2022-12-02 13:51:17.224 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Identity Resolution finished after 0:00:00.294; found 740 correspondences.
+[INFO ] 2022-12-02 13:51:17.236 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_learning_ft_sevm.csv
+[INFO ] 2022-12-02 13:51:17.243 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_learning_ft_sevm.csv_short
+[INFO ] 2022-12-02 13:51:17.244 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Loading gold standard	*
+[INFO ] 2022-12-02 13:51:17.245 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 501 examples
+[INFO ] 2022-12-02 13:51:17.246 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	140 positive examples (27.94%)
+[INFO ] 2022-12-02 13:51:17.246 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	361 negative examples (72.06%)
+[INFO ] 2022-12-02 13:51:17.247 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - *	Evaluating result	*
+[TRACE] 2022-12-02 13:51:17.247 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_227,7.1m_246,1.0
+[TRACE] 2022-12-02 13:51:17.247 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1174,7.1m_755,1.0
+[TRACE] 2022-12-02 13:51:17.247 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1231,7.1m_307,1.0
+[TRACE] 2022-12-02 13:51:17.247 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_267,7.1m_288,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_504,7.1m_1922,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_252,7.1m_283,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_15,7.1m_43,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_221,7.1m_168,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_423,7.1m_75,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_204,7.1m_139,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_364,7.1m_576,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_5,7.1m_19,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_598,7.1m_623,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1591,7.1m_1908,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_129,7.1m_488,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_532,7.1m_1405,1.0
+[TRACE] 2022-12-02 13:51:17.248 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_224,7.1m_189,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_215,7.1m_583,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_118,7.1m_220,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_171,7.1m_56,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_39,7.1m_66,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_631,7.1m_903,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_322,7.1m_642,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_538,7.1m_13,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1097,7.1m_1046,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_211,7.1m_145,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_316,7.1m_1511,1.0
+[TRACE] 2022-12-02 13:51:17.249 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_446,7.1m_249,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_277,7.1m_562,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_655,7.1m_684,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_141,7.1m_645,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1363,7.1m_1174,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_544,7.1m_240,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_547,7.1m_1242,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_968,7.1m_667,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_35,7.1m_62,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1124,7.1m_1551,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_613,7.1m_164,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_467,7.1m_1931,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_165,7.1m_994,1.0
+[TRACE] 2022-12-02 13:51:17.250 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_187,7.1m_320,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_510,7.1m_157,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1838,7.1m_1958,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_300,7.1m_428,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_312,7.1m_966,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_25,7.1m_104,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_711,7.1m_194,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1734,7.1m_552,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1234,7.1m_1770,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_524,7.1m_214,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_759,7.1m_816,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1009,7.1m_1909,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_213,7.1m_933,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_150,7.1m_461,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_779,7.1m_1731,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_500,7.1m_420,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1051,7.1m_506,1.0
+[TRACE] 2022-12-02 13:51:17.251 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_98,7.1m_86,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_553,7.1m_550,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1064,7.1m_1326,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_258,7.1m_191,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1496,7.1m_1698,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_94,7.1m_434,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1229,7.1m_985,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1710,7.1m_326,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_503,7.1m_983,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_789,7.1m_1969,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1326,7.1m_415,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_552,7.1m_142,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_546,7.1m_422,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1786,7.1m_1042,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_743,7.1m_988,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_191,7.1m_171,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1664,7.1m_1035,1.0
+[TRACE] 2022-12-02 13:51:17.252 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_283,7.1m_620,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_214,7.1m_306,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_64,7.1m_127,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_28,7.1m_176,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_127,7.1m_508,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_120,7.1m_843,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1464,7.1m_1100,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_85,7.1m_41,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_951,7.1m_803,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_114,7.1m_22,1.0
+[TRACE] 2022-12-02 13:51:17.253 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_471,7.1m_165,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_310,7.1m_693,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_318,7.1m_814,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_21,7.1m_49,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_460,7.1m_144,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_31,7.1m_184,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_842,7.1m_1284,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_653,7.1m_1700,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_595,7.1m_254,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1290,7.1m_1241,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_341,7.1m_1324,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1062,7.1m_750,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1145,7.1m_474,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_455,7.1m_1374,1.0
+[TRACE] 2022-12-02 13:51:17.254 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_219,7.1m_232,1.0
+[TRACE] 2022-12-02 13:51:17.255 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_66,7.1m_319,1.0
+[TRACE] 2022-12-02 13:51:17.255 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1882,7.1m_1947,1.0
+[TRACE] 2022-12-02 13:51:17.255 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1667,7.1m_1715,1.0
+[TRACE] 2022-12-02 13:51:17.255 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_332,7.1m_1150,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_956,7.1m_1184,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1372,7.1m_808,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_12,7.1m_1280,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_377,7.1m_235,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_266,7.1m_659,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_272,7.1m_58,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_615,7.1m_114,1.0
+[TRACE] 2022-12-02 13:51:17.256 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_858,7.1m_1633
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_112,7.1m_259
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1066,7.1m_317
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_583,7.1m_458
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_501,7.1m_431
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_591,7.1m_647
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_433,7.1m_735
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_359,7.1m_762
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1281,7.1m_1794
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_382,7.1m_1954
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_587,7.1m_377
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_198,7.1m_295
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_608,7.1m_888
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_876,7.1m_1245
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_351,7.1m_133
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1288,7.1m_1209
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1314,7.1m_947
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1170,7.1m_1814
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1750,7.1m_1738
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_778,7.1m_149
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1218,7.1m_1370
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_925,7.1m_794
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_262,7.1m_219
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_120,7.1m_1210
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_3,7.1m_17
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_835,7.1m_1497
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_36,7.1m_137
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1952,7.1m_1767
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1350,7.1m_1987
+[TRACE] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_328,7.1m_1575
+[INFO ] 2022-12-02 13:51:17.257 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - FT <-> SevM
+[INFO ] 2022-12-02 13:51:17.258 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - Precision: 1.0000
+[INFO ] 2022-12-02 13:51:17.258 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - Recall: 0.7857
+[INFO ] 2022-12-02 13:51:17.258 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_ft_sevM] - F1: 0.8800
+[INFO ] 2022-12-02 13:53:19.428 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Loading datasets	*
+[INFO ] 2022-12-02 13:53:19.526 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-12-02 13:53:46.769 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Loading datasets	*
+[INFO ] 2022-12-02 13:53:46.865 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-12-02 13:54:07.302 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Loading datasets	*
+[INFO ] 2022-12-02 13:54:07.395 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 2000 elements from FT_ASS_02.xml
+[INFO ] 2022-12-02 13:54:07.597 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 20001 elements from 7.1M_Output_1st_updated.xml
+[INFO ] 2022-12-02 13:54:08.255 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Loading gold standard	*
+[INFO ] 2022-12-02 13:54:08.259 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - The gold standard has 501 examples
+[INFO ] 2022-12-02 13:54:08.260 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	140 positive examples (27.94%)
+[INFO ] 2022-12-02 13:54:08.260 [de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard] - 	361 negative examples (72.06%)
+[INFO ] 2022-12-02 13:54:08.263 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Running identity resolution	*
+[INFO ] 2022-12-02 13:54:08.268 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Starting Identity Resolution
+[INFO ] 2022-12-02 13:54:08.268 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Blocking 2,000 x 20,001 elements
+[TRACE] 2022-12-02 13:54:08.268 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset1: 2000 records
+[TRACE] 2022-12-02 13:54:08.283 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating blocking key values for dataset2: 20001 records
+[INFO ] 2022-12-02 13:54:08.321 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 1526 blocking keys for first dataset
+[INFO ] 2022-12-02 13:54:08.321 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 12362 blocking keys for second dataset
+[TRACE] 2022-12-02 13:54:08.321 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Joining blocking key values: 1526 x 12362 blocks
+[INFO ] 2022-12-02 13:54:08.327 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - created 748 blocks from blocking keys
+[TRACE] 2022-12-02 13:54:08.329 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Block size distribution:
+[TRACE] 2022-12-02 13:54:08.330 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Frequency     Element
+374           1
+91            2
+44            3
+29            4
+19            6
+15            8
+9             5
+8             7
+7             10
+5             12
+5             24
+5             30
+4             9
+4             14
+4             20
+4             26
+4             28
+3             11
+3             15
+3             16
+3             18
+3             36
+3             60
+3             70
+3             96
+2             13
+2             17
+2             21
+2             23
+2             31
+2             42
+2             48
+2             51
+2             72
+2             74
+2             76
+2             92
+2             104
+2             120
+2             124
+2             130
+2             150
+2             168
+1             22
+1             25
+1             32
+1             33
+1             45
+1             52
+1             54
+1             57
+1             62
+1             63
+1             64
+1             69
+1             75
+1             80
+1             81
+1             84
+1             90
+1             102
+1             105
+1             112
+1             114
+1             125
+1             132
+1             135
+1             138
+1             140
+1             145
+1             162
+1             190
+1             192
+1             198
+1             205
+1             210
+1             212
+1             216
+1             222
+1             228
+1             230
+1             232
+1             250
+1             252
+1             259
+1             308
+1             336
+1             351
+1             378
+1             462
+1             468
+1             486
+1             504
+1             546
+1             600
+1             770
+1             1245
+1             1288
+1             1419
+1             2000
+
+[TRACE] 2022-12-02 13:54:08.334 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Blocking key values:
+[TRACE] 2022-12-02 13:54:08.334 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BlockingKeyValue	Frequency
+[TRACE] 2022-12-02 13:54:08.334 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CO			2000
+[TRACE] 2022-12-02 13:54:08.334 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - IN			1419
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SA			1288
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TE			1245
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MA			770
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CA			600
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ME			546
+[TRACE] 2022-12-02 13:54:08.335 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SE			504
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BA			486
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AL			468
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - UN			462
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NE			378
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AM			351
+[TRACE] 2022-12-02 13:54:08.336 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SO			336
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ST			308
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CE			259
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PA			252
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - RE			250
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AR			232
+[TRACE] 2022-12-02 13:54:08.337 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MO			230
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PR			228
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - HE			222
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PE			216
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - DE			212
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BR			210
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SI			205
+[TRACE] 2022-12-02 13:54:08.338 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AD			198
+[TRACE] 2022-12-02 13:54:08.339 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AU			192
+[TRACE] 2022-12-02 13:54:08.339 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EN			190
+[TRACE] 2022-12-02 13:54:08.339 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SH,WE			168
+[TRACE] 2022-12-02 13:54:08.339 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TA			162
+[TRACE] 2022-12-02 13:54:08.339 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FI,NO			150
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FA			145
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CI			140
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MI			138
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SC			135
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NA			132
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GA,SU			130
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - LE			125
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GE,VI			124
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AN,HA			120
+[TRACE] 2022-12-02 13:54:08.340 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - KE			114
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PO			112
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VA			105
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AP,FO			104
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - TR			102
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AS,BO,DA			96
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AT,DO			92
+[TRACE] 2022-12-02 13:54:08.341 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - HO			90
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FE			84
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CH			81
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VE			80
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CR,EX			76
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - KA			75
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AC,BE			74
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - SY,WA			72
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NI,OR,TO			70
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - FR			69
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - WI			64
+[TRACE] 2022-12-02 13:54:08.342 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AV			63
+[TRACE] 2022-12-02 13:54:08.343 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - RA			62
+[TRACE] 2022-12-02 13:54:08.343 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AE,ES,IT			60
+[TRACE] 2022-12-02 13:54:08.343 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CL			57
+[TRACE] 2022-12-02 13:54:08.343 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AB			54
+[TRACE] 2022-12-02 13:54:08.343 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AG			52
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - QU,RI			51
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EM,KI			48
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - VO			45
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AI,CS			42
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BL,HI,RO			36
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - MC			33
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GL			32
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - LA,LI			31
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BU,GO,KO,ON,WO			30
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EC,GR,HU,LO			28
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EL,IB,SW,MAIN			26
+[TRACE] 2022-12-02 13:54:08.344 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - DI			25
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EQ,EU,LU,SK,NABAOF			24
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BI,COCO			23
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PH			22
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - IS,TEIN			21
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - NU,SN,US,COEN			20
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ALGR,MOIN,COIN			18
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CACO,SM			17
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - PI,MAGR,COBA			16
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CN,TH,INBA			15
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ED,ER,ET,TECO			14
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EP,PU			13
+[TRACE] 2022-12-02 13:54:08.345 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BC,IC,KR,REIN,ROCO			12
+[TRACE] 2022-12-02 13:54:08.346 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EV,FL,UC			11
+[TRACE] 2022-12-02 13:54:08.346 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - EA,TOIN,SHCO,OL,UB,UM,MEGR			10
+[TRACE] 2022-12-02 13:54:08.346 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - GI,TRGR,HOIN,COGR			9
+[TRACE] 2022-12-02 13:54:08.346 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AF,CU,DS,CEEN,CABA,KP,CAIN,SB,REHO,TD,UP,ZA,CHMO,BAOFCH,DETE			8
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - CD,EB,KL,ANIN,STBAOF,SS,TC,SOCO			7
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - BB,BP,EI,FU,HM,KN,MS,NV,PG,PP,LARE,SUCO,TW,GRIN,ALTE,INGR,MITE,CHUN,INTE			6
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - WACO,CAHE,MOHE,UNPA,CHCO,MEHO,COBAOF,MATE,WIIN			5
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - STST,PRFIGR,HP,SASD,JD,VOGR,UNGR,KU,SHBA,MT,ALBA,OV,PT,SQ,WH,SUGR,GAEN,VECO,ZIBA,CEBAOF,CHTE,SIGR,BAME,INRA,COME,SAEL,THRE,SAGR,ATCO			4
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AK,BY,CG,SETE,DC,WACH,JO&JO,HD,IL,IQ,CAEN,CAFI,NM,NT,PF,YAIN,SG,GEGR,TB,VM,KIHO,YP,GAIN,MECOOF,FOIN,BAPODI,KEGR,ALUS,DEBA,BABP,TAMO,BAOFAM,BAFI,ASPH,BAIN,BAMA,LOMA,DAIN,BRRE,HEIN,HABA,STEN,AGIN,WEDI			3
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - AKTE,FARE,A2,AJ,AO,ARCO,SAMO,JIST&,PIGR,TOGR,EMPR,WISE,ROMA,UNBA,SASE,NABA,UNBAOF,CISE,KK,KY,MSIN,SPTE,NEMI,CPEN,WAMA,NAGR,GEFI,CHSTCO,ALEN,VIBA,RB,REEL,HYMO,DOEN,SL,SUCH,SUPAE,MA&MA,UG,CAON,PR&GA,VIEN,CNIN,HUIN,XI,LE&GE,ZO,FINAFI,CHBA,KIMO,MOST,LA&TO,DIEN,CHEN,UNMUGR,TEMA,BILA,RESE,MIIN,ASCO,ASGR,MEIN,BACA,ASIN,SIAI,SMIN,WITOWA,PUBA,TARE,BAGR,COBR,JOMA,NOBA,INPA,AVBUGR,CHCOBA,NOGR,DEPO,BADOBR,MAPE,BARE,HEHO,AIFR,SKTE,ZETE,PUST,UNOVBA,THHODE,NONO,RAHECA,GOFI			2
+[TRACE] 2022-12-02 13:54:08.347 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - ATEN,LEGR,BARAIN,SIPRGR,WEFA,COWH,TOBR,HESC,JEMA,B3,BLST,FIABDH,KOELPO,TOEL,NECO,BUFI,KOMABA,DEAILI,OLMU,NEBR,AISE,OWCO,EMNB,EORE,DB,GRWAMO,AREL,E-,E.,HCTE,RIBA,TACOSE,PAALNE,CVHE,KOAI,RIAI,FC,FM,CRAG,CEGR,BRASMA,LOSTEX,WITE,CHPOSO,HB,VOCA,ADAUPA,TMGR,ANAM,AGTE,CHEVIN,VOFI,SATE,BOALHA,CRPOEN,STJAPL,CHPEEN,EXIN,JB,EVEN,ULBE,PECH,CADE,LINAEN,CREM,NREN,L',WEPO,KT,ANDE,ROST,M&,LK,SYFI,AGBAOF,QUDI,BA&BO,ARMA,FIQUMI,CRHO,ARNE,QUCO,NXSE,CNAS,NEREIN,BOTEGR,BOFI,GEDY,JYBA,FUFI,EXSPST,SULIFI,HDBA,TIHO,APMA,SHELGR,ALFI,FUHO,GRBI,PRFI,MUUS,SWGR,BMGR,ALHO,GRAC,MIOSLI,MA&MC,S&GL,WEPHSE,DOGE,CANARE,HYON,GISC,PH66,CHPOFO,MOMEHO,DURE,KIGRPL,UNRE,SUEN,UNNAFO,BRAMTO,PERA,PERI,RITI,VIHO,WOFUSE,WP,GEMI,WS,SBCO,SWMA,ABDHIS,KIGR,ALNIAI,XP,ICBA,TEHE,LLBAGR,MAGLFO,GEMO,CHLIIN,WOFIGR,PIANIN,CLHO,CAPARA,GUJUSE,VEAN,ELAR,ZS,ZT,FOMEGR,WECICO,BOSC,CATI,ENHO,ANST,LYIN,EAWEBA,MOSO,LUAT,CHCIBA,CH&DW,SAHEIN,FIREBA,MIES,REGROF,ARNABA,USBA,TEIT,BJWHCL,ZIBI,J.HUTR,SOAI,STBL&,SUMO,WUAP,SWRE,USFO,TENA,BEBU,ASAB,C.RO,NECHLI,GRME,SALIIN,REST,ELGR,MIAPCO,BASAFR,CHMEGR,PATE,FOMO,SUPHIN,CHDEBA,TEPH,MIMA,BEDI,MIMO,FOLO,CIFIGR,HOFO,PINARE,CHHO,TERE,VELI,SOHO,YUBR,FOOT,MEGE,ZIINSH,INEDIN,BEHA,LUHO,DIFISE,THESLA,SOHE,PACOOF,TETE,STAUOF,SOGÉ,BABA,PHMOIN,FOPL,SHPUDE,POCOCO,BAAU,OTBA,SICOBA,VEPH,ABGR,RHBA,PHHO,DINE,GLIN,MABA,INFL&,DEEN,MTGR,DEEL,SSTE,XCEN,ZOVICO,TAPH,ARDAMI,BRFI,BPBA,DTEN,BAOFCO,STBAGR,SIBA,NEYOCO,ABDHCO,BAOFBE,JSST,BAOFBA,SKHY,DABA,SKGR,BAHA,KETE,CHSC,DAAV,VESY,DACE,GUBA,LOGR,PUGR,BAOFHA,BAOFIN,BAOFIR,TAST,THFISC,GLPA,ASPA,KUFIHO,SIFI,AMEX,HIIN,MESE,DELU,CHCOCO,PUNABA,BALE,AMFI,THHECO,MIHEIN,FICIBA,WOKL,INSA,COED,ALRABA,FABA,DUISBA,EDIN,DXTE,TYFO,LI&SP,JDSPFA,PKBAPO,DISPGO,MAOI,TUAI,INSU,BAPE,SECOIN,EDLI,AEDEPA,PEFOGR,APGLMA,SEGR,STCH,BAOFQU,FIAMFI,AXBA,CHMIBA,NOHY,STFI,AMITGR,CMGR,CHPAIN,SCEL,OLDOFR,AZGR,BASY,LIGL,LGCH,HAININ,SIST,ROAU,CHSOAI,SCGR,BNPA,MEKGDA,STGR,KRTHBA,WEENGR,FRMA,LGEL,AMMÓ,AVCA,POIT,GFSE,GR1AU,M&BA,BR&BR,LGDI,AVDE,FITHBA,SCHO,AVCO,X5REGR,CORE,EMHO,DASE,WECH,ATBA,OLGR,FAMA,AMTO,AILI,DASY,CHMEBA,LINA,ESPRTR,TOBA,PIBA,GUSE,IDLA,SAHO,RABAIN,NOSP,LIMO,EQRE			1
+[TRACE] 2022-12-02 13:54:08.348 [de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker] - Creating candidate record pairs from 748 blocks
+[INFO ] 2022-12-02 13:54:08.359 [de.uni_mannheim.informatik.dws.winter.matching.blockers.AbstractBlocker] - Debug results written to file: data/output/debugResultsBlocking_ft_sevm.csv
+[INFO ] 2022-12-02 13:54:08.362 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Matching 2,000 x 20,001 elements after 0:00:00.091; 22,260 blocked pairs (reduction ratio: 0.9994435278236088)
+[INFO ] 2022-12-02 13:54:08.495 [de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleBasedMatchingAlgorithm] - Identity Resolution finished after 0:00:00.227; found 8,120 correspondences.
+[INFO ] 2022-12-02 13:54:08.508 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_ft_sevm_test.csv
+[INFO ] 2022-12-02 13:54:08.516 [de.uni_mannheim.informatik.dws.winter.matching.rules.MatchingRule] - Debug results written to file: data/output/debugResultsMatchingRule_ft_sevm_test.csv_short
+[INFO ] 2022-12-02 13:54:08.522 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - *	Evaluating result	*
+[TRACE] 2022-12-02 13:54:08.523 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_1598,7.1m_107,0.8094999935289321
+[TRACE] 2022-12-02 13:54:08.523 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_1827,7.1m_252,0.8500972346098977
+[TRACE] 2022-12-02 13:54:08.523 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_227,7.1m_246,0.906448981767779
+[TRACE] 2022-12-02 13:54:08.523 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1174,7.1m_755,0.9272336925940354
+[TRACE] 2022-12-02 13:54:08.523 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1231,7.1m_307,0.9394495899124029
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_267,7.1m_288,0.9175691809402224
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_504,7.1m_1922,0.9370695035460992
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_252,7.1m_283,0.9183678753876572
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_15,7.1m_43,0.937616864765459
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_221,7.1m_168,0.9714066743383198
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_433,7.1m_735,0.8685545161290322
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_423,7.1m_75,0.9546393463882765
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_204,7.1m_139,0.9629889620253165
+[TRACE] 2022-12-02 13:54:08.524 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_364,7.1m_576,0.8592571152918476
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_5,7.1m_19,0.8740928109452737
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_598,7.1m_623,0.9926319762739282
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1591,7.1m_1908,0.9360899999999999
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_129,7.1m_488,0.8845744749775553
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_532,7.1m_1405,0.8591899947402255
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_224,7.1m_189,0.9339091435185185
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_215,7.1m_583,0.9639805825242718
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_95,7.1m_15,0.7999535166062427
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_118,7.1m_220,0.8596745562130177
+[TRACE] 2022-12-02 13:54:08.525 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_608,7.1m_888,0.8277630935684233
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_171,7.1m_56,0.9959895025647143
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_39,7.1m_66,0.9766564573041636
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_631,7.1m_903,0.8880908609271523
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_69,7.1m_1646,0.8969241692700938
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_322,7.1m_642,0.9834074074074073
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_538,7.1m_13,0.8599357494506716
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1097,7.1m_1046,0.9397368209578914
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_211,7.1m_145,0.9999407912687583
+[TRACE] 2022-12-02 13:54:08.526 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_316,7.1m_1511,0.9418199999999999
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_446,7.1m_249,0.9665927189988623
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_277,7.1m_562,0.9091528947368421
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_655,7.1m_684,0.9698232258064516
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_141,7.1m_645,0.9628161676646707
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1363,7.1m_1174,0.9982769230769231
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_544,7.1m_240,0.9667980604439241
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_547,7.1m_1242,0.9284979757085019
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_968,7.1m_667,0.984915961181086
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_569,7.1m_388,0.8443253210592113
+[TRACE] 2022-12-02 13:54:08.527 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_35,7.1m_62,0.933919573164707
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1124,7.1m_1551,0.9545469659185368
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_613,7.1m_164,0.9362780722891566
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_1503,7.1m_1440,0.9181944011371044
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_467,7.1m_1931,0.9623705954981479
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_165,7.1m_994,0.9844599999999999
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_187,7.1m_320,0.8921742269281674
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_510,7.1m_157,0.8993554944335298
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1838,7.1m_1958,0.9260931598825011
+[TRACE] 2022-12-02 13:54:08.528 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_300,7.1m_428,0.8987574072054385
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_312,7.1m_966,0.9827061920280771
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_25,7.1m_104,0.94302540898016
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1170,7.1m_1814,0.7945841952992007
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_711,7.1m_194,0.9712648167738085
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1734,7.1m_552,0.8595521954056411
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_734,7.1m_717,0.7739259385614904
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1234,7.1m_1770,0.929864769933263
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_524,7.1m_214,0.9532913265431946
+[TRACE] 2022-12-02 13:54:08.529 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_759,7.1m_816,0.9213509165477081
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1009,7.1m_1909,0.9366165605095542
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_213,7.1m_933,0.9002900466908196
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_150,7.1m_461,0.889242219760298
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_779,7.1m_1731,0.9479223552248461
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_500,7.1m_420,0.9374066462833943
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1051,7.1m_506,0.9455812931241174
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_98,7.1m_86,0.9936990194116471
+[TRACE] 2022-12-02 13:54:08.530 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_553,7.1m_550,0.9005799559471366
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1064,7.1m_1326,0.9398600746268657
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_258,7.1m_191,0.9584162428152008
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1496,7.1m_1698,0.8587611726850195
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_94,7.1m_434,0.9949464516129032
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1229,7.1m_985,0.9290966463044621
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1710,7.1m_326,0.8861934756343133
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_503,7.1m_983,0.9519663276726194
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_789,7.1m_1969,0.9455735537190082
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1326,7.1m_415,0.8761654192796517
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_552,7.1m_142,0.9407251424222156
+[TRACE] 2022-12-02 13:54:08.531 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_546,7.1m_422,0.8869181012658227
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1786,7.1m_1042,0.9802506666666666
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_743,7.1m_988,0.987224459219028
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_191,7.1m_171,0.9506461687057308
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_906,7.1m_675,0.8412157392478974
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1664,7.1m_1035,0.9577881257275902
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_283,7.1m_620,0.8837852171425846
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_64,7.1m_652,0.8467081027262877
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_109,7.1m_1624,0.8241032604595724
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_214,7.1m_306,0.9466350574712643
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [wrong] ft_id_1475,7.1m_854,0.8133329676357651
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_64,7.1m_127,0.9827774032627747
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_28,7.1m_176,0.9485528432814458
+[TRACE] 2022-12-02 13:54:08.532 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_127,7.1m_508,0.9022986541337321
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_120,7.1m_843,0.8934679606658524
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1464,7.1m_1100,0.9291172222222221
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_85,7.1m_41,0.9265203883495146
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_951,7.1m_803,0.9602604166666666
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_114,7.1m_22,0.9496169457497416
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_471,7.1m_165,0.8598401586880557
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_310,7.1m_693,0.9384348832459664
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_318,7.1m_814,0.9748644351464435
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_21,7.1m_49,0.9013171999999998
+[TRACE] 2022-12-02 13:54:08.533 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_460,7.1m_144,0.9936991576413958
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_31,7.1m_184,0.8970607407407407
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_262,7.1m_219,0.8358913492376459
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_842,7.1m_1284,0.9918719424460432
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_653,7.1m_1700,0.9800330097087377
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_595,7.1m_254,0.9368735136893025
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1290,7.1m_1241,0.8807837938805267
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_341,7.1m_1324,0.8688981686786563
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1062,7.1m_750,0.9067367081586375
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1145,7.1m_474,0.9247166405490648
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_455,7.1m_1374,0.9827365073756735
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_219,7.1m_232,0.9686200816162023
+[TRACE] 2022-12-02 13:54:08.534 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_66,7.1m_319,0.9291684
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1882,7.1m_1947,0.8788783098591548
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1667,7.1m_1715,0.9768614357262104
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_332,7.1m_1150,0.984080239520958
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_956,7.1m_1184,0.9775954720736411
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_1372,7.1m_808,0.9329512079583135
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_12,7.1m_1280,0.8677115584254478
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_377,7.1m_235,0.959958762886598
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_266,7.1m_659,0.9702500000000001
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_272,7.1m_58,0.9962334689489634
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [correct] ft_id_615,7.1m_114,0.9337433993073387
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_858,7.1m_1633
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_112,7.1m_259
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1066,7.1m_317
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_583,7.1m_458
+[TRACE] 2022-12-02 13:54:08.535 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_501,7.1m_431
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_591,7.1m_647
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_359,7.1m_762
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1281,7.1m_1794
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_382,7.1m_1954
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_587,7.1m_377
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_198,7.1m_295
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_876,7.1m_1245
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_351,7.1m_133
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1288,7.1m_1209
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1314,7.1m_947
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1750,7.1m_1738
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_778,7.1m_149
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1218,7.1m_1370
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_925,7.1m_794
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_120,7.1m_1210
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_3,7.1m_17
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_835,7.1m_1497
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_36,7.1m_137
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1952,7.1m_1767
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_1350,7.1m_1987
+[TRACE] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator] - [missing] ft_id_328,7.1m_1575
+[INFO ] 2022-12-02 13:54:08.536 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - SevM <-> FT
+[INFO ] 2022-12-02 13:54:08.537 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - Precision: 0.9120000000
+[INFO ] 2022-12-02 13:54:08.537 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - Recall: 0.8142857143
+[INFO ] 2022-12-02 13:54:08.537 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination_ft_sevM] - F1: 0.8603773585
