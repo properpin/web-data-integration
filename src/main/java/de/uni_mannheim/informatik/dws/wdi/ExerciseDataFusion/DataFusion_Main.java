@@ -126,15 +126,22 @@ public class DataFusion_Main
 		// strategy.addAttributeFuser(Movie.DIRECTOR,new DirectorFuserLongestString(), new DirectorEvaluationRule());
 		// strategy.addAttributeFuser(Movie.DATE, new DateFuserFavourSource(),new DateEvaluationRule());
 		// strategy.addAttributeFuser(Movie.ACTORS,new ActorsFuserUnion(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		//strategy.addAttributeFuser(Company.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Company.NAME, new NameFuserVoting(),new NameEvaluationRule());
+		//strategy.addAttributeFuser(Company.NAME, new NameFuserFavourSource(),new NameEvaluationRule());
+
 		strategy.addAttributeFuser(Company.REVENUE, new RevenueFuserMostRecent(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.NUMBEROFEMPLOYEES, new NumberOfEmployeesFuserMostRecent(), new NumberOfEmployeesEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserIntersection(), new IndustriesEvaluationRule());
 		//strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserUnion(), new IndustriesEvaluationRule());
-		strategy.addAttributeFuser(Company.INDUSTRIES, new IndustriesFuserUnion(), new IndustriesEvaluationRule());
 		strategy.addAttributeFuser(Company.CITY, new CityFuserFavourSource() , new CityEvaluationRule());
+		//strategy.addAttributeFuser(Company.CITY, new CityFuserVoting() , new CityEvaluationRule());
+		//strategy.addAttributeFuser(Company.CITY, new CityFuserShortestString() , new CityEvaluationRule());
 		strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserVoting() ,new FoundingYearEvaluationRule());
 		//strategy.addAttributeFuser(Company.FOUNDINGYEAR, new FoundingYearFuserFavourSource() ,new FoundingYearEvaluationRule());
+		//strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserShortestString() , new CountryEvaluationRule());
 		strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserFavourSource() , new CountryEvaluationRule());
+		//strategy.addAttributeFuser(Company.COUNTRY, new CountryFuserVoting() , new CountryEvaluationRule());
 		strategy.addAttributeFuser(Company.CEONAMES, new CeoNamesFuserVoting(), new CeoNamesEvaluationRule());
 		strategy.addAttributeFuser(Company.WEBSITE, new WebsiteFuserLongestString(), new WebsiteEvaluationRule());
 
@@ -151,7 +158,8 @@ public class DataFusion_Main
 		// run the fusion
 		logger.info("*\tRunning data fusion\t*");
 		FusibleDataSet<Company, Attribute> fusedDataSet = engine.run(correspondences, null);
-
+		
+		
 		// write the result
 		new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
@@ -161,5 +169,8 @@ public class DataFusion_Main
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("*\tAccuracy: %.2f", accuracy));
+		
+		logger.info(String.format("*\tDensities:"));
+		fusedDataSet.printDataSetDensityReport();
     }
 }

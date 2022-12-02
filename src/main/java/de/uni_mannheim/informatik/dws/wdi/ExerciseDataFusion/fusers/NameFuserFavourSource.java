@@ -23,30 +23,29 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-import java.time.LocalDateTime;
 
 
-public class FoundingYearFuserVoting extends AttributeValueFuser<Integer, Company, Attribute> {
+public class NameFuserFavourSource extends AttributeValueFuser<String, Company, Attribute> {
 
-	public FoundingYearFuserVoting() {
-		super(new Voting<Integer, Company, Attribute>());
+    public NameFuserFavourSource() {
+		super(new FavourSources<String, Company, Attribute>());
 	}
 	
 	@Override
 	public boolean hasValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Company.FOUNDINGYEAR);
+		return record.hasValue(Company.NAME);
 	}
 	
 	@Override
-	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getFoundingYear();
+	public String getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getName();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<Integer, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setFoundingYear(fused.getValue());
-		fusedRecord.setAttributeProvenance(Company.FOUNDINGYEAR, fused.getOriginalIds());
+		FusedValue<String, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setName(fused.getValue());
+		fusedRecord.setAttributeProvenance(Company.NAME, fused.getOriginalIds());
 	}
 
 }

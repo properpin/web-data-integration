@@ -15,6 +15,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -28,7 +29,7 @@ import java.time.LocalDateTime;
 public class FoundingYearFuserFavourSource extends AttributeValueFuser<Integer, Company, Attribute> {
 
 	public FoundingYearFuserFavourSource() {
-		super(new Voting<Integer, Company, Attribute>());
+		super(new FavourSources<Integer, Company, Attribute>());
 	}
 	
 	@Override

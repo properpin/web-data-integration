@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Actor;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;

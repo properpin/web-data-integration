@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByYearGenerator;
+
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorLevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ft_db.CompanyNameComparatorTokenizingJaccardSimilarity;
@@ -37,7 +38,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-public class IR_using_linear_combination_ft_sevM 
+public class IR_using_linear_combination_db_sevM 
 {
 	/*
 	 * Logging Options:
@@ -66,11 +67,11 @@ public class IR_using_linear_combination_ft_sevM
 		//HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
 		//new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
 		
-		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);
+		HashedDataSet<Company, Attribute> data7M = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_200000.xml"), "/companies/company", data7M);
 		
-		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", dataSevM);
+		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -80,7 +81,7 @@ public class IR_using_linear_combination_ft_sevM
 		
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_ft_sevm_lower.csv"));
+				"data/goldstandard/gs_db_sevm.csv"));
 
 		// create a matching rule
 		//LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -90,16 +91,16 @@ public class IR_using_linear_combination_ft_sevM
 		
 		// create debug report in csv
 		// matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_test.csv", 1000, gsTest);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_ft_sevm_test.csv", 1000, gsTest);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_db_sevm_linear_test.csv", 1000, gsTest);
 		
 		// add comparators
 		// matchingRule.addComparator(new MovieDateComparator2Years(), 0.3);
 		//matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.7);
+		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity(), 0.5);
 		// matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity(), 0.3);
-		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.3);
+		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.5);
 //		matchingRule.addComparator(new NumberOfEmployeesComparatorAbsoluteDifferenceSimilarity(), 0.2);
 		// matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity(), 0.8);
 		
@@ -107,14 +108,14 @@ public class IR_using_linear_combination_ft_sevM
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		// StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByYearGenerator());
-		// NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 
 		blocker.setMeasureBlockSizes(true);
 		
 		// Blocker<Movie, Attribute> blocker2 = new StandardBlocker<DBpedia, Attribute>((m) -> Integer.toString(m.getDate().getYear() / 10));
 		
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking_ft_sevm.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_db_sevm_linear.csv", 100);
 		
 		
 		// Initialize Matching Engine
@@ -128,7 +129,7 @@ public class IR_using_linear_combination_ft_sevM
 		//		blocker);
 		
 		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
-				dataFt, dataSevM, null, matchingRule,
+				dataDBpedia,data7M, null, matchingRule,
 				blocker);
 		
 		
@@ -142,7 +143,7 @@ public class IR_using_linear_combination_ft_sevM
 
 		// write the correspondences to the output file
 		// new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);		
-		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ft_2_sevM_correspondences_new.csv"), correspondences);		
+		 new CSVCorrespondenceFormatter().writeCSV(new File("data/output/db_2_sevm_correspondences_linear.csv"), correspondences);		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
 		MatchingEvaluator<Company, Attribute> evaluator = new MatchingEvaluator<Company, Attribute>();
