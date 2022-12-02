@@ -44,7 +44,7 @@ public class CountryFuserFavourSource extends AttributeValueFuser<String, Compan
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		fusedRecord.setCountry(fused.getValue());
-		fusedRecord.setAttributeProvenance(Company.CITY, fused.getOriginalIds());
+		fusedRecord.setAttributeProvenance(Company.COUNTRY, fused.getOriginalIds());
 	}
 
 }
