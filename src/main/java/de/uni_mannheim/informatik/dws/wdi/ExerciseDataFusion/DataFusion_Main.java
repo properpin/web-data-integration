@@ -53,7 +53,7 @@ public class DataFusion_Main
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	private static final Logger logger = WinterLogManager.activateLogger("trace");
 	
 	public static void main( String[] args ) throws Exception
     {
@@ -68,7 +68,7 @@ public class DataFusion_Main
 		ds2.printDataSetDensityReport();
 		
 		FusibleDataSet<Company, Attribute> ds3 = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", ds3);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_200000.xml"), "/companies/company", ds3);
 		ds3.printDataSetDensityReport();
 
 
@@ -102,7 +102,7 @@ public class DataFusion_Main
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_db_correspondences2.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/NEW_ft_2_sevM_correspondences .csv"),ds1, ds3);
+		correspondences.loadCorrespondences(new File("data/correspondences/180000_ft_2_sevM_correspondences.csv"),ds1, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
