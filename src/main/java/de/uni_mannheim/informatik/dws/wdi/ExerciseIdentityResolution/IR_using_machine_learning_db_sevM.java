@@ -37,7 +37,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-public class IR_using_machine_learning_ft_sevM {
+public class IR_using_machine_learning_db_sevM {
 	
 	/*
 	 * Logging Options:
@@ -58,14 +58,14 @@ public class IR_using_machine_learning_ft_sevM {
     {
 		// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);		
+		HashedDataSet<Company, Attribute> dataDBpedia = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("mapping/dbpedia/mapforce/dbpedia_OUTPUT_26102022_V2.xml"), "/companies/company", dataDBpedia);		
 		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st_updated.xml"), "/companies/company", dataSevM);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_200000.xml"), "/companies/company", dataSevM);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_sevm_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_db_sevm_train.csv"));
 
 		// create a matching rule
 		// 1) logistic regression
@@ -81,11 +81,11 @@ public class IR_using_machine_learning_ft_sevM {
 		options[0] = "-U";
 		String modelType = "J48"; 
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_sevm.csv", 1000, gsTraining);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_db_sevm.csv", 1000, gsTraining);
 		
 
 		// add comparators
-		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
+		//matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
 		//matchingRule.addComparator(new CompanyNameComparatorTokenizingJaccardSimilarity());
 		matchingRule.addComparator(new CompanyNameComparatorLevenshteinSimilarity());
 		//matchingRule.addComparator(new MovieTitleComparatorEqual());
@@ -102,7 +102,7 @@ public class IR_using_machine_learning_ft_sevM {
 		logger.info("*\tLearning matching rule\t*");
 		//RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
 		RuleLearner<Company, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataFt, dataSevM, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(dataDBpedia, dataSevM, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
@@ -110,7 +110,7 @@ public class IR_using_machine_learning_ft_sevM {
 		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
 		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
 		//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_ft_sevM.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_learning_db_sevM.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();
@@ -118,17 +118,17 @@ public class IR_using_machine_learning_ft_sevM {
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
-				dataFt, dataSevM, null, matchingRule,
+			dataDBpedia, dataSevM, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_sevm_correspondences_new.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_db_sevm_correspondences_new.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_ft_sevm_lower.csv"));
+				"data/goldstandard/gs_db_sevm.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
@@ -137,7 +137,7 @@ public class IR_using_machine_learning_ft_sevM {
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("FT <-> SevM");
+		logger.info("DB <-> SevM");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(

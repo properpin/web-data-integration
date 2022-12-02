@@ -102,8 +102,8 @@ public class DataFusion_Main
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		correspondences.loadCorrespondences(new File("data/correspondences/learning_ft_db_correspondences2.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/180000_ft_2_sevM_correspondences.csv"),ds1, ds3);
-
+		//correspondences.loadCorrespondences(new File("data/correspondences/180000_ft_2_sevM_correspondences.csv"),ds1, ds3);
+		correspondences.loadCorrespondences(new File("data/output/learning_db_sevm_correspondences_new.csv"),ds2, ds3);
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 
