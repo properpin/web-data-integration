@@ -91,6 +91,7 @@ public Company createModelFromElement(Node node, String provenanceInfo) {
 	}
 	
 	company.setCity(getValueFromChildElement(node, "city"));
+	company.setWebsite(getValueFromChildElement(node, "website"));
 	
 	try {
 		if(getValueFromChildElement(node, "foundingYear") != null) {

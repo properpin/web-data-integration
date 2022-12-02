@@ -70,7 +70,7 @@ public class IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_db_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_ft_db_lower.csv"));
 
 		// create a matching rule
 		// 1) logistic regression
@@ -140,7 +140,7 @@ public class IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_ft_db_lower.csv"));
+				"data/goldstandard/gs_ft_db_train.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

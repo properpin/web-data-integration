@@ -61,7 +61,7 @@ public class IR_using_machine_learning_ft_sevM {
 		HashedDataSet<Company, Attribute> dataFt = new HashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("mapping/ft/mapforce/FT_ASS_02.xml"), "/companies/company", dataFt);		
 		HashedDataSet<Company, Attribute> dataSevM = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/mapforce/7.1M_Output.xml"), "/companies/company", dataSevM);
+		new CompanyXMLReader().loadFromXML(new File("mapping/sevM/7.1M_Output_1st.xml"), "/companies/company", dataSevM);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
@@ -69,19 +69,20 @@ public class IR_using_machine_learning_ft_sevM {
 
 		// create a matching rule
 		// 1) logistic regression
+		/* 
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic";
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_sevm.csv", 1000, gsTraining);
-		
+		*/
 		// 2) tree classfier
-		/*
+		
 		String options[] = new String[1];
 		options[0] = "-U";
 		String modelType = "J48"; 
 		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_db.csv", 1000, gsTraining);
-		*/
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_learning_ft_sevm.csv", 1000, gsTraining);
+		
 
 		// add comparators
 		matchingRule.addComparator(new NumberOfEmployeesComparatorPercentageSimilarity());
@@ -121,13 +122,13 @@ public class IR_using_machine_learning_ft_sevM {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_db_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/learning_ft_sevm_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_ft_db_lower.csv"));
+				"data/goldstandard/gs_ft_sevm_lower.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
