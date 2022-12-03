@@ -180,7 +180,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	
 	@Override
 	public String toString() {
-		return String.format("[Actor: %s]", getName());
+		return String.format("[Company: %s]", getName());
 	}
 
 	public List<String> getIndustries() {
