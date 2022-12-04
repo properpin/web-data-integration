@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2022r2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="37" kind="2">
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="337" lty="-62" rbx="404" rby="-46"/>
+					<data>
+						<constant value="7.1M_" datatype="string"/>
+					</data>
+				</component>
+				<component name="Replace character" library="user" uid="30" kind="19" visible="0" blackbox="0">
+					<view ltx="441" lty="62" rbx="746" rby="90"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="value" inpkey="31" componentid="29"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="target_schema" componentid="28" expanded="1">
+								<entry name="company" outkey="32"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="Extract City" library="user" uid="12" kind="19" visible="0" blackbox="0">
+					<view ltx="390" lty="192" rbx="479" rby="209"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="19" componentid="10"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="city" outkey="20" componentid="11"/>
+						</root>
+					</data>
+				</component>
+				<component name="parse-number" library="core" uid="14" kind="5">
+					<sources>
+						<datapoint pos="0" key="29"/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="492" lty="266" rbx="646" rby="350"/>
+				</component>
+				<component name="companies_sorted" library="text" uid="2" kind="16">
+					<properties/>
+					<view rbx="233" rby="292"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="5" expanded="1">
+										<entry name="name" outkey="6"/>
+										<entry name="year founded" outkey="17"/>
+										<entry name="industry" outkey="7"/>
+										<entry name="locality" outkey="14"/>
+										<entry name="country" outkey="8"/>
+										<entry name="total employee estimate" outkey="18"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="companies_sorted.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="companies_sorted" block="Rows">
+									<field0 name="Field1" type="string"/>
+									<field1 name="name" type="string"/>
+									<field2 name="domain" type="string"/>
+									<field3 name="year founded" type="string"/>
+									<field4 name="industry" type="string"/>
+									<field5 name="size range" type="string"/>
+									<field6 name="locality" type="string"/>
+									<field7 name="country" type="string"/>
+									<field8 name="linkedin url" type="string"/>
+									<field9 name="current employee estimate" type="string"/>
+									<field10 name="total employee estimate" type="integer"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="36" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="33"/>
+						<datapoint pos="1" key="34"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="493" lty="-12" rbx="565" rby="42"/>
+				</component>
+				<component name="target_schema" library="xml" uid="39" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="918" lty="18" rbx="1117" rby="314"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="companies" expanded="1">
+										<entry name="company" inpkey="45" expanded="1">
+											<entry name="id" inpkey="46"/>
+											<entry name="name" inpkey="47"/>
+											<entry name="industries">
+												<entry name="industry">
+													<entry name="name" inpkey="48"/>
+												</entry>
+											</entry>
+											<entry name="foundingYear" inpkey="49"/>
+											<entry name="country" inpkey="50"/>
+											<entry name="city" inpkey="51"/>
+											<entry name="numberOfEmployees" inpkey="52"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="target_schema.xsd" instanceroot="{}companies" inputinstance="target_schema.xml" outputinstance="target_schema.xml"/>
+					</data>
+				</component>
+				<component name="auto-number" library="core" uid="34" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="54"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="36"/>
+					</targets>
+					<view ltx="312" lty="-24" rbx="439" rby="60"/>
+				</component>
+				<component name="constant" library="core" uid="40" kind="2">
+					<targets>
+						<datapoint pos="0" key="55"/>
+					</targets>
+					<view ltx="234" lty="-24" rbx="271" rby="-8"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="46"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Extract City" library="user" uid="7" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="300" lty="36" rbx="342" rby="52"/>
+					<data>
+						<constant value="," datatype="string"/>
+					</data>
+				</component>
+				<component name="substring-before" library="core" uid="9" kind="5">
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="365" rbx="469" rby="52"/>
+				</component>
+				<component name="string" library="core" uid="10" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view rbx="76" rby="36"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+				<component name="city" library="core" uid="11" kind="7">
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<view ltx="569" rbx="610" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="city"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Replace character" library="user" uid="23" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="25" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="300" lty="74" rbx="358" rby="90"/>
+					<data>
+						<constant value="and" datatype="string"/>
+					</data>
+				</component>
+				<component name="replace" library="lang" uid="26" kind="5">
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="5"/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="625" rbx="714" rby="69"/>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="300" lty="1" rbx="351" rby="17"/>
+					<data>
+						<constant value="38" datatype="string"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="28" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="813" rbx="963" rby="200"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="company" inpkey="11" expanded="1"/>
+						</root>
+						<document schema="target_schema.xsd" instanceroot="{}companies/{}company"/>
+						<parameter usageKind="output" name="target_schema"/>
+					</data>
+				</component>
+				<component name="value" library="core" uid="29" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view rbx="75" rby="37"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="value"/>
+					</data>
+				</component>
+				<component name="char-from-code" library="core" uid="24" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="449" rbx="550" rby="37"/>
+				</component>
+				<component name="constant" library="core" uid="31" kind="2">
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="403" lty="123" rbx="454" rby="139"/>
+					<data>
+						<constant value="38" datatype="string"/>
+					</data>
+				</component>
+				<component name="char-from-code" library="core" uid="32" kind="5">
+					<sources>
+						<datapoint pos="0" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="518" lty="103" rbx="619" rby="140"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
