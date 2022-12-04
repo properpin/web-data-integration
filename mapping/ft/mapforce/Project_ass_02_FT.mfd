@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2022r2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="ID_GEN" library="user" uid="57" kind="19" visible="0" blackbox="0">
+					<view ltx="312" lty="150" rbx="358" rby="167"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="id" outkey="40" componentid="56"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="252" lty="431" rbx="323" rby="447"/>
+					<data>
+						<constant value="1000000" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="7" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="20"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="350" lty="394" rbx="425" rby="447"/>
+				</component>
+				<component name="NAME" library="user" uid="69" kind="19" visible="0" blackbox="0">
+					<view ltx="340" lty="286" rbx="437" rby="303"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="41" componentid="67"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="name" outkey="42" componentid="68"/>
+						</root>
+					</data>
+				</component>
+				<component name="forbes_top 2000_2022" library="text" uid="5" kind="16">
+					<properties/>
+					<view ltx="-46" lty="5" rbx="197" rby="505"/>
+					<data>
+						<root scrollposition="245">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="51" expanded="1">
+										<entry name="organizationName" outkey="10"/>
+										<entry name="industry" outkey="11"/>
+										<entry name="country" outkey="12"/>
+										<entry name="revenue" outkey="13"/>
+										<entry name="employees" outkey="14"/>
+										<entry name="ceoName" outkey="15"/>
+										<entry name="city" outkey="16"/>
+										<entry name="yearFounded" outkey="17"/>
+										<entry name="webSite" outkey="18"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\..\..\..\..\Downloads\forbes_top 2000_2022.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="forbes_top 2000_2022" block="Rows">
+									<field0 name="name" type="string"/>
+									<field1 name="year" type="string"/>
+									<field2 name="month" type="string"/>
+									<field3 name="uri" type="string"/>
+									<field4 name="description" type="string"/>
+									<field5 name="rank" type="string"/>
+									<field6 name="listUri" type="string"/>
+									<field7 name="organization" type="string"/>
+									<field8 name="visible" type="string"/>
+									<field9 name="position" type="string"/>
+									<field10 name="organizationName" type="string"/>
+									<field11 name="state" type="string"/>
+									<field12 name="timestamp" type="string"/>
+									<field13 name="naturalId" type="string"/>
+									<field14 name="imageExists" type="string"/>
+									<field15 name="image" type="string"/>
+									<field16 name="industry" type="string"/>
+									<field17 name="country" type="string"/>
+									<field18 name="revenue" type="string"/>
+									<field19 name="profits" type="string"/>
+									<field20 name="assets" type="string"/>
+									<field21 name="marketValue" type="string"/>
+									<field22 name="profitsRank" type="string"/>
+									<field23 name="assetsRank" type="string"/>
+									<field24 name="marketValueRank" type="string"/>
+									<field25 name="employees" type="string"/>
+									<field26 name="revenueRank" type="string"/>
+									<field27 name="ceoName" type="string"/>
+									<field28 name="ceoTitle" type="string"/>
+									<field29 name="revenueList" type="string"/>
+									<field30 name="assetsList" type="string"/>
+									<field31 name="profitList" type="string"/>
+									<field32 name="employeesList" type="string"/>
+									<field33 name="date" type="string"/>
+									<field34 name="city" type="string"/>
+									<field35 name="csfDisplayFields" type="string"/>
+									<field36 name="yearFounded" type="string"/>
+									<field37 name="webSite" type="string"/>
+									<field38 name="industryLeader" type="string"/>
+									<field39 name="squareImage" type="string"/>
+									<field40 name="portraitImage" type="string"/>
+									<field41 name="landscapeImage" type="string"/>
+									<field42 name="industries" type="string"/>
+									<field43 name="premiumProfile" type="string"/>
+									<field44 name="thumbnail" type="string"/>
+									<field45 name="ceoCompensations" type="string"/>
+									<field46 name="clients" type="string"/>
+									<field47 name="parentCompany" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="target_schema_new" library="xml" uid="44" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="510" lty="25" rbx="738" rby="459"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="companies" expanded="1">
+										<entry name="company" inpkey="43" expanded="1">
+											<entry name="id" inpkey="32"/>
+											<entry name="name" inpkey="44"/>
+											<entry name="industries" expanded="1">
+												<entry name="industry" expanded="1">
+													<entry name="name" inpkey="45"/>
+												</entry>
+											</entry>
+											<entry name="revenue" inpkey="46"/>
+											<entry name="foundingYear" inpkey="53"/>
+											<entry name="country" inpkey="47"/>
+											<entry name="city" inpkey="48"/>
+											<entry name="numberOfEmployees" inpkey="49"/>
+											<entry name="ceoNames" expanded="1">
+												<entry name="ceoName" expanded="1">
+													<entry name="name" inpkey="39"/>
+												</entry>
+											</entry>
+											<entry name="website" inpkey="50"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\..\..\Downloads\target_schema_new.xsd" instanceroot="{}companies" inputinstance="..\..\..\..\..\Downloads\target_schema_new.xml" outputinstance="..\..\..\..\..\Downloads\target_schema_new.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51">
+						<edges>
+							<edge vertexkey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="46"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="ID_GEN" library="user" uid="50" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="51" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="426" rbx="495" rby="16"/>
+					<data>
+						<constant value="FT_ID_" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="52" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="300" lty="72" rbx="345" rby="88"/>
+					<data>
+						<constant value="0" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="309" lty="100" rbx="346" rby="116"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="auto-number" library="core" uid="54" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="3"/>
+						<datapoint pos="2" key="7"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="389" lty="35" rbx="521" rby="119"/>
+				</component>
+				<component name="concat" library="core" uid="55" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="529" lty="35" rbx="604" rby="88"/>
+				</component>
+				<component name="id" library="core" uid="56" kind="7">
+					<sources>
+						<datapoint pos="0" key="10"/>
+					</sources>
+					<view ltx="704" rbx="738" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="id"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="NAME" library="user" uid="63" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="64" kind="2">
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="300" lty="64" rbx="341" rby="80"/>
+					<data>
+						<constant value="," datatype="string"/>
+					</data>
+				</component>
+				<component name="tokenize-regexp" library="core" uid="65" kind="5">
+					<sources>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="3"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="362" rbx="465" rby="68"/>
+				</component>
+				<component name="normalize-space" library="core" uid="66" kind="5">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="391" lty="119" rbx="496" rby="155"/>
+				</component>
+				<component name="input" library="core" uid="67" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view rbx="76" rby="36"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="name" library="core" uid="68" kind="7">
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<view ltx="596" rbx="648" rby="36"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="name"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
